@@ -1,0 +1,314 @@
+{
+  "passed": 76,
+  "failed": 0,
+  "total": 76,
+  "environment": "Chromium via set_content; exact delivered HTML, explicit memory/denied-storage adapters; managed file/http navigation blocked",
+  "results": [
+    {
+      "name": "Startup: game UI and all embedded assets initialize without errors",
+      "passed": true
+    },
+    {
+      "name": "Home: one Ted, no character selector or old free-text field",
+      "passed": true
+    },
+    {
+      "name": "Home desktop: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "Default: persistence remains opt-in",
+      "passed": true
+    },
+    {
+      "name": "Start button opens the first story with three real choices",
+      "passed": true
+    },
+    {
+      "name": "Branch choice enters its own scene and stores the intention",
+      "passed": true
+    },
+    {
+      "name": "Immediate Ted response remains visible in the new reading turn",
+      "passed": true
+    },
+    {
+      "name": "Choice effect updates substance exactly once",
+      "passed": true
+    },
+    {
+      "name": "Keyboard 3 chooses the third story answer",
+      "passed": true
+    },
+    {
+      "name": "Only reached chapters are replayable",
+      "passed": true
+    },
+    {
+      "name": "Cancelling a chapter restart preserves every event",
+      "passed": true
+    },
+    {
+      "name": "Confirmed chapter restart resets only its later consequences",
+      "passed": true
+    },
+    {
+      "name": "Double-click does not consume a second decision",
+      "passed": true
+    },
+    {
+      "name": "Gallery is immediately complete: 22 accessible cards",
+      "passed": true
+    },
+    {
+      "name": "Excluded original number 14 is not returned",
+      "passed": true
+    },
+    {
+      "name": "Gallery filename search finds the exact approved photo",
+      "passed": true
+    },
+    {
+      "name": "Chapter filter exposes all four HQ photos",
+      "passed": true
+    },
+    {
+      "name": "Filtered lightbox uses only its matching gallery set",
+      "passed": true
+    },
+    {
+      "name": "Lightbox next-photo keyboard navigation works",
+      "passed": true
+    },
+    {
+      "name": "All 22 full-size photos decode and are reachable with Next",
+      "passed": true
+    },
+    {
+      "name": "Escape closes the photo archive without changing the story",
+      "passed": true
+    },
+    {
+      "name": "Saved game resumes directly at the active IT minigame",
+      "passed": true
+    },
+    {
+      "name": "IT inspection displays a readable clue and persists it",
+      "passed": true
+    },
+    {
+      "name": "Wrong IT order provides feedback, resets the tray and never softlocks",
+      "passed": true
+    },
+    {
+      "name": "IT hint explains the actual solution",
+      "passed": true
+    },
+    {
+      "name": "Correct IT order exits to the next story scene",
+      "passed": true
+    },
+    {
+      "name": "Pitch selection does not award points before confirmation",
+      "passed": true
+    },
+    {
+      "name": "Pitch preview uses all three selected cards and enables commit",
+      "passed": true
+    },
+    {
+      "name": "Pitch confirmation stores the exact sentence and continues",
+      "passed": true
+    },
+    {
+      "name": "Firewall consumes one resource and awaits feedback confirmation",
+      "passed": true
+    },
+    {
+      "name": "Firewall choices lock while feedback is pending",
+      "passed": true
+    },
+    {
+      "name": "Reloaded pending firewall retains spent resource and next button",
+      "passed": true
+    },
+    {
+      "name": "Firewall fully playable on mobile: all six solved with Ted asleep",
+      "passed": true
+    },
+    {
+      "name": "IT: cancelling skip preserves active minigame",
+      "passed": true
+    },
+    {
+      "name": "IT: confirming skip continues through the written fallback",
+      "passed": true
+    },
+    {
+      "name": "Pitch: cancelling skip preserves active minigame",
+      "passed": true
+    },
+    {
+      "name": "Pitch: confirming skip continues through the written fallback",
+      "passed": true
+    },
+    {
+      "name": "Firewall: cancelling skip preserves active minigame",
+      "passed": true
+    },
+    {
+      "name": "Firewall: confirming skip continues through the written fallback",
+      "passed": true
+    },
+    {
+      "name": "Opt-in storage persists events without touching old chat data",
+      "passed": true
+    },
+    {
+      "name": "Stored progress is offered on the home screen instead of discarded",
+      "passed": true
+    },
+    {
+      "name": "Resume reproduces the chosen branch and its original flags",
+      "passed": true
+    },
+    {
+      "name": "Disabling persistence removes only the new game key",
+      "passed": true
+    },
+    {
+      "name": "Quota errors keep gameplay alive and show honest storage status",
+      "passed": true
+    },
+    {
+      "name": "Failed persistence is not left falsely enabled",
+      "passed": true
+    },
+    {
+      "name": "Storage denial does not prevent starting or playing",
+      "passed": true
+    },
+    {
+      "name": "Corrupt save is reported, not executed or silently overwritten",
+      "passed": true
+    },
+    {
+      "name": "Invalid imported actions are rejected without changing the live state",
+      "passed": true
+    },
+    {
+      "name": "Valid imported events resume at the exact final choice",
+      "passed": true
+    },
+    {
+      "name": "Final choice displays at least two reachable answer cards",
+      "passed": true
+    },
+    {
+      "name": "Large-text setting updates rendered story and remains overflow-free",
+      "passed": true
+    },
+    {
+      "name": "Reduced-motion preference is applied immediately",
+      "passed": true
+    },
+    {
+      "name": "Browser download produces a valid JSON game export",
+      "passed": true
+    },
+    {
+      "name": "Mobile chapter menu exposes reached chapters and documents",
+      "passed": true
+    },
+    {
+      "name": "Documents remain readable on mobile, including actual recognition",
+      "passed": true
+    },
+    {
+      "name": "Mobile Ted profile shows all three live statistic meters",
+      "passed": true
+    },
+    {
+      "name": "Complete founder playthrough works through every actual button and minigame",
+      "passed": true
+    },
+    {
+      "name": "End screen shows receipt and the reached ending, not a dead end",
+      "passed": true
+    },
+    {
+      "name": "End screen human: successful rendering with its own ending text",
+      "passed": true
+    },
+    {
+      "name": "End screen rest: successful rendering with its own ending text",
+      "passed": true
+    },
+    {
+      "name": "End screen exit: successful rendering with its own ending text",
+      "passed": true
+    },
+    {
+      "name": "Home layout 1440×960: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "Home layout 1280×720: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "Home layout 1024×768: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "Home layout 768×1024: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "Home layout 700×900: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "Home layout 390×844: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "Home layout 360×740: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "Home layout 320×640: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "Story layout 1440×960: controls stay inside the viewport",
+      "passed": true
+    },
+    {
+      "name": "Story layout 768×1024: controls stay inside the viewport",
+      "passed": true
+    },
+    {
+      "name": "Story layout 390×844: controls stay inside the viewport",
+      "passed": true
+    },
+    {
+      "name": "Story layout 360×740: controls stay inside the viewport",
+      "passed": true
+    },
+    {
+      "name": "Story layout 320×640: controls stay inside the viewport",
+      "passed": true
+    },
+    {
+      "name": "No runtime JavaScript errors across all browser scenarios",
+      "passed": true
+    },
+    {
+      "name": "No external HTTP or HTTPS requests during any game scenario",
+      "passed": true
+    }
+  ],
+  "runtime_errors": [],
+  "network_requests": []
+}

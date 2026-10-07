@@ -1,0 +1,952 @@
+TAP version 13
+# Subtest: 57 named scenes, five chapters, four endings and three games
+ok 1 - 57 named scenes, five chapters, four endings and three games
+  ---
+  duration_ms: 2.226579
+  type: 'test'
+  ...
+# Subtest: 22 approved embedded photos, no duplicate numbers, no excluded photo 14
+ok 2 - 22 approved embedded photos, no duplicate numbers, no excluded photo 14
+  ---
+  duration_ms: 0.222466
+  type: 'test'
+  ...
+# Subtest: No API path, runtime fetch or external scripts in the game
+ok 3 - No API path, runtime fetch or external scripts in the game
+  ---
+  duration_ms: 3.681361
+  type: 'test'
+  ...
+# Subtest: Every choice has a known next node and unique identifier within its scene
+ok 4 - Every choice has a known next node and unique identifier within its scene
+  ---
+  duration_ms: 0.305462
+  type: 'test'
+  ...
+# Subtest: Story graph is acyclic and all 57 nodes are structurally reachable
+ok 5 - Story graph is acyclic and all 57 nodes are structurally reachable
+  ---
+  duration_ms: 0.214164
+  type: 'test'
+  ...
+# Subtest: Canonical complete route: founder, all 22 photos
+ok 6 - Canonical complete route: founder, all 22 photos
+  ---
+  duration_ms: 7.721203
+  type: 'test'
+  ...
+# Subtest: Canonical complete route: human, all 22 photos
+ok 7 - Canonical complete route: human, all 22 photos
+  ---
+  duration_ms: 6.958999
+  type: 'test'
+  ...
+# Subtest: Canonical complete route: rest, all 22 photos
+ok 8 - Canonical complete route: rest, all 22 photos
+  ---
+  duration_ms: 7.152212
+  type: 'test'
+  ...
+# Subtest: Canonical complete route: exit, all 22 photos
+ok 9 - Canonical complete route: exit, all 22 photos
+  ---
+  duration_ms: 4.423784
+  type: 'test'
+  ...
+# Subtest: All skip routes still reach an ending and include every approved image
+ok 10 - All skip routes still reach an ending and include every approved image
+  ---
+  duration_ms: 17.701885
+  type: 'test'
+  ...
+# Subtest: At least two final actions remain available for low preparation
+ok 11 - At least two final actions remain available for low preparation
+  ---
+  duration_ms: 4.508792
+  type: 'test'
+  ...
+# Subtest: Intro choices have different intermediate scenes and a later callback
+ok 12 - Intro choices have different intermediate scenes and a later callback
+  ---
+  duration_ms: 8.084944
+  type: 'test'
+  ...
+# Subtest: Late evidence route grants valid documents without an early lucky choice
+ok 13 - Late evidence route grants valid documents without an early lucky choice
+  ---
+  duration_ms: 7.800703
+  type: 'test'
+  ...
+# Subtest: Rest negotiation can change into late evidence without a story loop
+ok 14 - Rest negotiation can change into late evidence without a story loop
+  ---
+  duration_ms: 8.028538
+  type: 'test'
+  ...
+# Subtest: Actual composed pitch reappears unchanged in rehearsal and review
+ok 15 - Actual composed pitch reappears unchanged in rehearsal and review
+  ---
+  duration_ms: 7.234746
+  type: 'test'
+  ...
+# Subtest: IT order: clear → place → test
+ok 16 - IT order: clear → place → test
+  ---
+  duration_ms: 0.849145
+  type: 'test'
+  ...
+# Subtest: IT order: clear → test → place
+ok 17 - IT order: clear → test → place
+  ---
+  duration_ms: 1.151823
+  type: 'test'
+  ...
+# Subtest: IT order: place → clear → test
+ok 18 - IT order: place → clear → test
+  ---
+  duration_ms: 1.182499
+  type: 'test'
+  ...
+# Subtest: IT order: place → test → clear
+ok 19 - IT order: place → test → clear
+  ---
+  duration_ms: 1.318696
+  type: 'test'
+  ...
+# Subtest: IT order: test → clear → place
+ok 20 - IT order: test → clear → place
+  ---
+  duration_ms: 1.043849
+  type: 'test'
+  ...
+# Subtest: IT order: test → place → clear
+ok 21 - IT order: test → place → clear
+  ---
+  duration_ms: 1.088547
+  type: 'test'
+  ...
+# Subtest: IT inspections, hints and partial ordering survive save and resume
+ok 22 - IT inspections, hints and partial ordering survive save and resume
+  ---
+  duration_ms: 1.425547
+  type: 'test'
+  ...
+# Subtest: Pitch 0/0/0: preview, one-shot commit and verbatim callback
+ok 23 - Pitch 0/0/0: preview, one-shot commit and verbatim callback
+  ---
+  duration_ms: 2.851215
+  type: 'test'
+  ...
+# Subtest: Pitch 0/0/1: preview, one-shot commit and verbatim callback
+ok 24 - Pitch 0/0/1: preview, one-shot commit and verbatim callback
+  ---
+  duration_ms: 2.667256
+  type: 'test'
+  ...
+# Subtest: Pitch 0/0/2: preview, one-shot commit and verbatim callback
+ok 25 - Pitch 0/0/2: preview, one-shot commit and verbatim callback
+  ---
+  duration_ms: 2.715769
+  type: 'test'
+  ...
+# Subtest: Pitch 0/1/0: preview, one-shot commit and verbatim callback
+ok 26 - Pitch 0/1/0: preview, one-shot commit and verbatim callback
+  ---
+  duration_ms: 2.825205
+  type: 'test'
+  ...
+# Subtest: Pitch 0/1/1: preview, one-shot commit and verbatim callback
+ok 27 - Pitch 0/1/1: preview, one-shot commit and verbatim callback
+  ---
+  duration_ms: 2.967601
+  type: 'test'
+  ...
+# Subtest: Pitch 0/1/2: preview, one-shot commit and verbatim callback
+ok 28 - Pitch 0/1/2: preview, one-shot commit and verbatim callback
+  ---
+  duration_ms: 2.638072
+  type: 'test'
+  ...
+# Subtest: Pitch 0/2/0: preview, one-shot commit and verbatim callback
+ok 29 - Pitch 0/2/0: preview, one-shot commit and verbatim callback
+  ---
+  duration_ms: 2.574105
+  type: 'test'
+  ...
+# Subtest: Pitch 0/2/1: preview, one-shot commit and verbatim callback
+ok 30 - Pitch 0/2/1: preview, one-shot commit and verbatim callback
+  ---
+  duration_ms: 2.709299
+  type: 'test'
+  ...
+# Subtest: Pitch 0/2/2: preview, one-shot commit and verbatim callback
+ok 31 - Pitch 0/2/2: preview, one-shot commit and verbatim callback
+  ---
+  duration_ms: 2.552903
+  type: 'test'
+  ...
+# Subtest: Pitch 1/0/0: preview, one-shot commit and verbatim callback
+ok 32 - Pitch 1/0/0: preview, one-shot commit and verbatim callback
+  ---
+  duration_ms: 2.851685
+  type: 'test'
+  ...
+# Subtest: Pitch 1/0/1: preview, one-shot commit and verbatim callback
+ok 33 - Pitch 1/0/1: preview, one-shot commit and verbatim callback
+  ---
+  duration_ms: 2.856212
+  type: 'test'
+  ...
+# Subtest: Pitch 1/0/2: preview, one-shot commit and verbatim callback
+ok 34 - Pitch 1/0/2: preview, one-shot commit and verbatim callback
+  ---
+  duration_ms: 2.860468
+  type: 'test'
+  ...
+# Subtest: Pitch 1/1/0: preview, one-shot commit and verbatim callback
+ok 35 - Pitch 1/1/0: preview, one-shot commit and verbatim callback
+  ---
+  duration_ms: 2.498941
+  type: 'test'
+  ...
+# Subtest: Pitch 1/1/1: preview, one-shot commit and verbatim callback
+ok 36 - Pitch 1/1/1: preview, one-shot commit and verbatim callback
+  ---
+  duration_ms: 2.464118
+  type: 'test'
+  ...
+# Subtest: Pitch 1/1/2: preview, one-shot commit and verbatim callback
+ok 37 - Pitch 1/1/2: preview, one-shot commit and verbatim callback
+  ---
+  duration_ms: 2.589358
+  type: 'test'
+  ...
+# Subtest: Pitch 1/2/0: preview, one-shot commit and verbatim callback
+ok 38 - Pitch 1/2/0: preview, one-shot commit and verbatim callback
+  ---
+  duration_ms: 2.648778
+  type: 'test'
+  ...
+# Subtest: Pitch 1/2/1: preview, one-shot commit and verbatim callback
+ok 39 - Pitch 1/2/1: preview, one-shot commit and verbatim callback
+  ---
+  duration_ms: 2.789641
+  type: 'test'
+  ...
+# Subtest: Pitch 1/2/2: preview, one-shot commit and verbatim callback
+ok 40 - Pitch 1/2/2: preview, one-shot commit and verbatim callback
+  ---
+  duration_ms: 2.931586
+  type: 'test'
+  ...
+# Subtest: Pitch 2/0/0: preview, one-shot commit and verbatim callback
+ok 41 - Pitch 2/0/0: preview, one-shot commit and verbatim callback
+  ---
+  duration_ms: 2.601356
+  type: 'test'
+  ...
+# Subtest: Pitch 2/0/1: preview, one-shot commit and verbatim callback
+ok 42 - Pitch 2/0/1: preview, one-shot commit and verbatim callback
+  ---
+  duration_ms: 2.492511
+  type: 'test'
+  ...
+# Subtest: Pitch 2/0/2: preview, one-shot commit and verbatim callback
+ok 43 - Pitch 2/0/2: preview, one-shot commit and verbatim callback
+  ---
+  duration_ms: 2.526903
+  type: 'test'
+  ...
+# Subtest: Pitch 2/1/0: preview, one-shot commit and verbatim callback
+ok 44 - Pitch 2/1/0: preview, one-shot commit and verbatim callback
+  ---
+  duration_ms: 2.55131
+  type: 'test'
+  ...
+# Subtest: Pitch 2/1/1: preview, one-shot commit and verbatim callback
+ok 45 - Pitch 2/1/1: preview, one-shot commit and verbatim callback
+  ---
+  duration_ms: 2.872757
+  type: 'test'
+  ...
+# Subtest: Pitch 2/1/2: preview, one-shot commit and verbatim callback
+ok 46 - Pitch 2/1/2: preview, one-shot commit and verbatim callback
+  ---
+  duration_ms: 2.722739
+  type: 'test'
+  ...
+# Subtest: Pitch 2/2/0: preview, one-shot commit and verbatim callback
+ok 47 - Pitch 2/2/0: preview, one-shot commit and verbatim callback
+  ---
+  duration_ms: 2.6632
+  type: 'test'
+  ...
+# Subtest: Pitch 2/2/1: preview, one-shot commit and verbatim callback
+ok 48 - Pitch 2/2/1: preview, one-shot commit and verbatim callback
+  ---
+  duration_ms: 2.44536
+  type: 'test'
+  ...
+# Subtest: Pitch 2/2/2: preview, one-shot commit and verbatim callback
+ok 49 - Pitch 2/2/2: preview, one-shot commit and verbatim callback
+  ---
+  duration_ms: 2.550789
+  type: 'test'
+  ...
+# Subtest: Contradictory guarantee does not masquerade as verified substance
+ok 50 - Contradictory guarantee does not masquerade as verified substance
+  ---
+  duration_ms: 0.134334
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 01: mute/mute/ai/ai/self/self
+ok 51 - Firewall allocation 01: mute/mute/ai/ai/self/self
+  ---
+  duration_ms: 5.890412
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 02: mute/mute/ai/self/ai/self
+ok 52 - Firewall allocation 02: mute/mute/ai/self/ai/self
+  ---
+  duration_ms: 5.183092
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 03: mute/mute/ai/self/self/ai
+ok 53 - Firewall allocation 03: mute/mute/ai/self/self/ai
+  ---
+  duration_ms: 5.319099
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 04: mute/mute/self/ai/ai/self
+ok 54 - Firewall allocation 04: mute/mute/self/ai/ai/self
+  ---
+  duration_ms: 5.771363
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 05: mute/mute/self/ai/self/ai
+ok 55 - Firewall allocation 05: mute/mute/self/ai/self/ai
+  ---
+  duration_ms: 5.238586
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 06: mute/mute/self/self/ai/ai
+ok 56 - Firewall allocation 06: mute/mute/self/self/ai/ai
+  ---
+  duration_ms: 4.862337
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 07: mute/ai/mute/ai/self/self
+ok 57 - Firewall allocation 07: mute/ai/mute/ai/self/self
+  ---
+  duration_ms: 5.29356
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 08: mute/ai/mute/self/ai/self
+ok 58 - Firewall allocation 08: mute/ai/mute/self/ai/self
+  ---
+  duration_ms: 5.14181
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 09: mute/ai/mute/self/self/ai
+ok 59 - Firewall allocation 09: mute/ai/mute/self/self/ai
+  ---
+  duration_ms: 4.964001
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 10: mute/ai/ai/mute/self/self
+ok 60 - Firewall allocation 10: mute/ai/ai/mute/self/self
+  ---
+  duration_ms: 5.171435
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 11: mute/ai/ai/self/mute/self
+ok 61 - Firewall allocation 11: mute/ai/ai/self/mute/self
+  ---
+  duration_ms: 4.972774
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 12: mute/ai/ai/self/self/mute
+ok 62 - Firewall allocation 12: mute/ai/ai/self/self/mute
+  ---
+  duration_ms: 5.127398
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 13: mute/ai/self/mute/ai/self
+ok 63 - Firewall allocation 13: mute/ai/self/mute/ai/self
+  ---
+  duration_ms: 5.44648
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 14: mute/ai/self/mute/self/ai
+ok 64 - Firewall allocation 14: mute/ai/self/mute/self/ai
+  ---
+  duration_ms: 4.864901
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 15: mute/ai/self/ai/mute/self
+ok 65 - Firewall allocation 15: mute/ai/self/ai/mute/self
+  ---
+  duration_ms: 5.177995
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 16: mute/ai/self/ai/self/mute
+ok 66 - Firewall allocation 16: mute/ai/self/ai/self/mute
+  ---
+  duration_ms: 4.83743
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 17: mute/ai/self/self/mute/ai
+ok 67 - Firewall allocation 17: mute/ai/self/self/mute/ai
+  ---
+  duration_ms: 4.816248
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 18: mute/ai/self/self/ai/mute
+ok 68 - Firewall allocation 18: mute/ai/self/self/ai/mute
+  ---
+  duration_ms: 5.614325
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 19: mute/self/mute/ai/ai/self
+ok 69 - Firewall allocation 19: mute/self/mute/ai/ai/self
+  ---
+  duration_ms: 4.85093
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 20: mute/self/mute/ai/self/ai
+ok 70 - Firewall allocation 20: mute/self/mute/ai/self/ai
+  ---
+  duration_ms: 4.826713
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 21: mute/self/mute/self/ai/ai
+ok 71 - Firewall allocation 21: mute/self/mute/self/ai/ai
+  ---
+  duration_ms: 5.199667
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 22: mute/self/ai/mute/ai/self
+ok 72 - Firewall allocation 22: mute/self/ai/mute/ai/self
+  ---
+  duration_ms: 4.977071
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 23: mute/self/ai/mute/self/ai
+ok 73 - Firewall allocation 23: mute/self/ai/mute/self/ai
+  ---
+  duration_ms: 5.171755
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 24: mute/self/ai/ai/mute/self
+ok 74 - Firewall allocation 24: mute/self/ai/ai/mute/self
+  ---
+  duration_ms: 5.477538
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 25: mute/self/ai/ai/self/mute
+ok 75 - Firewall allocation 25: mute/self/ai/ai/self/mute
+  ---
+  duration_ms: 5.083492
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 26: mute/self/ai/self/mute/ai
+ok 76 - Firewall allocation 26: mute/self/ai/self/mute/ai
+  ---
+  duration_ms: 5.255262
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 27: mute/self/ai/self/ai/mute
+ok 77 - Firewall allocation 27: mute/self/ai/self/ai/mute
+  ---
+  duration_ms: 5.513292
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 28: mute/self/self/mute/ai/ai
+ok 78 - Firewall allocation 28: mute/self/self/mute/ai/ai
+  ---
+  duration_ms: 5.369415
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 29: mute/self/self/ai/mute/ai
+ok 79 - Firewall allocation 29: mute/self/self/ai/mute/ai
+  ---
+  duration_ms: 5.200109
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 30: mute/self/self/ai/ai/mute
+ok 80 - Firewall allocation 30: mute/self/self/ai/ai/mute
+  ---
+  duration_ms: 5.214991
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 31: ai/mute/mute/ai/self/self
+ok 81 - Firewall allocation 31: ai/mute/mute/ai/self/self
+  ---
+  duration_ms: 5.455294
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 32: ai/mute/mute/self/ai/self
+ok 82 - Firewall allocation 32: ai/mute/mute/self/ai/self
+  ---
+  duration_ms: 5.30688
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 33: ai/mute/mute/self/self/ai
+ok 83 - Firewall allocation 33: ai/mute/mute/self/self/ai
+  ---
+  duration_ms: 5.588746
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 34: ai/mute/ai/mute/self/self
+ok 84 - Firewall allocation 34: ai/mute/ai/mute/self/self
+  ---
+  duration_ms: 5.422404
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 35: ai/mute/ai/self/mute/self
+ok 85 - Firewall allocation 35: ai/mute/ai/self/mute/self
+  ---
+  duration_ms: 5.403887
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 36: ai/mute/ai/self/self/mute
+ok 86 - Firewall allocation 36: ai/mute/ai/self/self/mute
+  ---
+  duration_ms: 4.895638
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 37: ai/mute/self/mute/ai/self
+ok 87 - Firewall allocation 37: ai/mute/self/mute/ai/self
+  ---
+  duration_ms: 6.223236
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 38: ai/mute/self/mute/self/ai
+ok 88 - Firewall allocation 38: ai/mute/self/mute/self/ai
+  ---
+  duration_ms: 5.237044
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 39: ai/mute/self/ai/mute/self
+ok 89 - Firewall allocation 39: ai/mute/self/ai/mute/self
+  ---
+  duration_ms: 4.874095
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 40: ai/mute/self/ai/self/mute
+ok 90 - Firewall allocation 40: ai/mute/self/ai/self/mute
+  ---
+  duration_ms: 5.630159
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 41: ai/mute/self/self/mute/ai
+ok 91 - Firewall allocation 41: ai/mute/self/self/mute/ai
+  ---
+  duration_ms: 5.086947
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 42: ai/mute/self/self/ai/mute
+ok 92 - Firewall allocation 42: ai/mute/self/self/ai/mute
+  ---
+  duration_ms: 5.294151
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 43: ai/ai/mute/mute/self/self
+ok 93 - Firewall allocation 43: ai/ai/mute/mute/self/self
+  ---
+  duration_ms: 5.746445
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 44: ai/ai/mute/self/mute/self
+ok 94 - Firewall allocation 44: ai/ai/mute/self/mute/self
+  ---
+  duration_ms: 5.049511
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 45: ai/ai/mute/self/self/mute
+ok 95 - Firewall allocation 45: ai/ai/mute/self/self/mute
+  ---
+  duration_ms: 4.973505
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 46: ai/ai/self/mute/mute/self
+ok 96 - Firewall allocation 46: ai/ai/self/mute/mute/self
+  ---
+  duration_ms: 5.263244
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 47: ai/ai/self/mute/self/mute
+ok 97 - Firewall allocation 47: ai/ai/self/mute/self/mute
+  ---
+  duration_ms: 5.551861
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 48: ai/ai/self/self/mute/mute
+ok 98 - Firewall allocation 48: ai/ai/self/self/mute/mute
+  ---
+  duration_ms: 5.104183
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 49: ai/self/mute/mute/ai/self
+ok 99 - Firewall allocation 49: ai/self/mute/mute/ai/self
+  ---
+  duration_ms: 5.404358
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 50: ai/self/mute/mute/self/ai
+ok 100 - Firewall allocation 50: ai/self/mute/mute/self/ai
+  ---
+  duration_ms: 5.037422
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 51: ai/self/mute/ai/mute/self
+ok 101 - Firewall allocation 51: ai/self/mute/ai/mute/self
+  ---
+  duration_ms: 4.878722
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 52: ai/self/mute/ai/self/mute
+ok 102 - Firewall allocation 52: ai/self/mute/ai/self/mute
+  ---
+  duration_ms: 5.183853
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 53: ai/self/mute/self/mute/ai
+ok 103 - Firewall allocation 53: ai/self/mute/self/mute/ai
+  ---
+  duration_ms: 5.092876
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 54: ai/self/mute/self/ai/mute
+ok 104 - Firewall allocation 54: ai/self/mute/self/ai/mute
+  ---
+  duration_ms: 5.193718
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 55: ai/self/ai/mute/mute/self
+ok 105 - Firewall allocation 55: ai/self/ai/mute/mute/self
+  ---
+  duration_ms: 5.145616
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 56: ai/self/ai/mute/self/mute
+ok 106 - Firewall allocation 56: ai/self/ai/mute/self/mute
+  ---
+  duration_ms: 5.298578
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 57: ai/self/ai/self/mute/mute
+ok 107 - Firewall allocation 57: ai/self/ai/self/mute/mute
+  ---
+  duration_ms: 5.381443
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 58: ai/self/self/mute/mute/ai
+ok 108 - Firewall allocation 58: ai/self/self/mute/mute/ai
+  ---
+  duration_ms: 4.975558
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 59: ai/self/self/mute/ai/mute
+ok 109 - Firewall allocation 59: ai/self/self/mute/ai/mute
+  ---
+  duration_ms: 5.31395
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 60: ai/self/self/ai/mute/mute
+ok 110 - Firewall allocation 60: ai/self/self/ai/mute/mute
+  ---
+  duration_ms: 5.176322
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 61: self/mute/mute/ai/ai/self
+ok 111 - Firewall allocation 61: self/mute/mute/ai/ai/self
+  ---
+  duration_ms: 4.852943
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 62: self/mute/mute/ai/self/ai
+ok 112 - Firewall allocation 62: self/mute/mute/ai/self/ai
+  ---
+  duration_ms: 4.868787
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 63: self/mute/mute/self/ai/ai
+ok 113 - Firewall allocation 63: self/mute/mute/self/ai/ai
+  ---
+  duration_ms: 5.180509
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 64: self/mute/ai/mute/ai/self
+ok 114 - Firewall allocation 64: self/mute/ai/mute/ai/self
+  ---
+  duration_ms: 4.881386
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 65: self/mute/ai/mute/self/ai
+ok 115 - Firewall allocation 65: self/mute/ai/mute/self/ai
+  ---
+  duration_ms: 4.921928
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 66: self/mute/ai/ai/mute/self
+ok 116 - Firewall allocation 66: self/mute/ai/ai/mute/self
+  ---
+  duration_ms: 5.211766
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 67: self/mute/ai/ai/self/mute
+ok 117 - Firewall allocation 67: self/mute/ai/ai/self/mute
+  ---
+  duration_ms: 4.933064
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 68: self/mute/ai/self/mute/ai
+ok 118 - Firewall allocation 68: self/mute/ai/self/mute/ai
+  ---
+  duration_ms: 5.091464
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 69: self/mute/ai/self/ai/mute
+ok 119 - Firewall allocation 69: self/mute/ai/self/ai/mute
+  ---
+  duration_ms: 5.18158
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 70: self/mute/self/mute/ai/ai
+ok 120 - Firewall allocation 70: self/mute/self/mute/ai/ai
+  ---
+  duration_ms: 4.886604
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 71: self/mute/self/ai/mute/ai
+ok 121 - Firewall allocation 71: self/mute/self/ai/mute/ai
+  ---
+  duration_ms: 5.150373
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 72: self/mute/self/ai/ai/mute
+ok 122 - Firewall allocation 72: self/mute/self/ai/ai/mute
+  ---
+  duration_ms: 5.13528
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 73: self/ai/mute/mute/ai/self
+ok 123 - Firewall allocation 73: self/ai/mute/mute/ai/self
+  ---
+  duration_ms: 4.828135
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 74: self/ai/mute/mute/self/ai
+ok 124 - Firewall allocation 74: self/ai/mute/mute/self/ai
+  ---
+  duration_ms: 5.309013
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 75: self/ai/mute/ai/mute/self
+ok 125 - Firewall allocation 75: self/ai/mute/ai/mute/self
+  ---
+  duration_ms: 5.273219
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 76: self/ai/mute/ai/self/mute
+ok 126 - Firewall allocation 76: self/ai/mute/ai/self/mute
+  ---
+  duration_ms: 5.248351
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 77: self/ai/mute/self/mute/ai
+ok 127 - Firewall allocation 77: self/ai/mute/self/mute/ai
+  ---
+  duration_ms: 5.290505
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 78: self/ai/mute/self/ai/mute
+ok 128 - Firewall allocation 78: self/ai/mute/self/ai/mute
+  ---
+  duration_ms: 5.03543
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 79: self/ai/ai/mute/mute/self
+ok 129 - Firewall allocation 79: self/ai/ai/mute/mute/self
+  ---
+  duration_ms: 4.999214
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 80: self/ai/ai/mute/self/mute
+ok 130 - Firewall allocation 80: self/ai/ai/mute/self/mute
+  ---
+  duration_ms: 5.146317
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 81: self/ai/ai/self/mute/mute
+ok 131 - Firewall allocation 81: self/ai/ai/self/mute/mute
+  ---
+  duration_ms: 5.24757
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 82: self/ai/self/mute/mute/ai
+ok 132 - Firewall allocation 82: self/ai/self/mute/mute/ai
+  ---
+  duration_ms: 4.839973
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 83: self/ai/self/mute/ai/mute
+ok 133 - Firewall allocation 83: self/ai/self/mute/ai/mute
+  ---
+  duration_ms: 5.364587
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 84: self/ai/self/ai/mute/mute
+ok 134 - Firewall allocation 84: self/ai/self/ai/mute/mute
+  ---
+  duration_ms: 4.944212
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 85: self/self/mute/mute/ai/ai
+ok 135 - Firewall allocation 85: self/self/mute/mute/ai/ai
+  ---
+  duration_ms: 5.51218
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 86: self/self/mute/ai/mute/ai
+ok 136 - Firewall allocation 86: self/self/mute/ai/mute/ai
+  ---
+  duration_ms: 4.990842
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 87: self/self/mute/ai/ai/mute
+ok 137 - Firewall allocation 87: self/self/mute/ai/ai/mute
+  ---
+  duration_ms: 5.263605
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 88: self/self/ai/mute/mute/ai
+ok 138 - Firewall allocation 88: self/self/ai/mute/mute/ai
+  ---
+  duration_ms: 5.119987
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 89: self/self/ai/mute/ai/mute
+ok 139 - Firewall allocation 89: self/self/ai/mute/ai/mute
+  ---
+  duration_ms: 5.101239
+  type: 'test'
+  ...
+# Subtest: Firewall allocation 90: self/self/ai/ai/mute/mute
+ok 140 - Firewall allocation 90: self/self/ai/ai/mute/mute
+  ---
+  duration_ms: 5.409895
+  type: 'test'
+  ...
+# Subtest: Optimal firewall protects Ted, resolves all six and has no countdown
+ok 141 - Optimal firewall protects Ted, resolves all six and has no countdown
+  ---
+  duration_ms: 4.744699
+  type: 'test'
+  ...
+# Subtest: Firewall cannot replenish a resource by replaying a stale action
+ok 142 - Firewall cannot replenish a resource by replaying a stale action
+  ---
+  duration_ms: 3.547538
+  type: 'test'
+  ...
+# Subtest: Full event export/import reproduces transcript, metrics and checksums of state
+ok 143 - Full event export/import reproduces transcript, metrics and checksums of state
+  ---
+  duration_ms: 7.536203
+  type: 'test'
+  ...
+# Subtest: Each checkpoint rewinds exactly to the reached chapter and drops later effects
+ok 144 - Each checkpoint rewinds exactly to the reached chapter and drops later effects
+  ---
+  duration_ms: 7.634582
+  type: 'test'
+  ...
+# Subtest: Replaying a chapter does not duplicate documents or earned statistics
+ok 145 - Replaying a chapter does not duplicate documents or earned statistics
+  ---
+  duration_ms: 8.648205
+  type: 'test'
+  ...
+# Subtest: Malformed and stale actions never mutate their input state
+ok 146 - Malformed and stale actions never mutate their input state
+  ---
+  duration_ms: 0.332694
+  type: 'test'
+  ...
+# Subtest: Reject unsafe or incompatible save: invalidJSON
+ok 147 - Reject unsafe or incompatible save: invalidJSON
+  ---
+  duration_ms: 0.113551
+  type: 'test'
+  ...
+# Subtest: Reject unsafe or incompatible save: oldChat
+ok 148 - Reject unsafe or incompatible save: oldChat
+  ---
+  duration_ms: 0.047852
+  type: 'test'
+  ...
+# Subtest: Reject unsafe or incompatible save: wrongSchema
+ok 149 - Reject unsafe or incompatible save: wrongSchema
+  ---
+  duration_ms: 0.043576
+  type: 'test'
+  ...
+# Subtest: Reject unsafe or incompatible save: foreignAction
+ok 150 - Reject unsafe or incompatible save: foreignAction
+  ---
+  duration_ms: 0.04629
+  type: 'test'
+  ...
+# Subtest: Reject unsafe or incompatible save: extraField
+ok 151 - Reject unsafe or incompatible save: extraField
+  ---
+  duration_ms: 0.042054
+  type: 'test'
+  ...
+# Subtest: Reject unsafe or incompatible save: badRevision
+ok 152 - Reject unsafe or incompatible save: badRevision
+  ---
+  duration_ms: 0.037086
+  type: 'test'
+  ...
+# Subtest: Reject unsafe or incompatible save: badEnding
+ok 153 - Reject unsafe or incompatible save: badEnding
+  ---
+  duration_ms: 0.034742
+  type: 'test'
+  ...
+# Subtest: Reject unsafe or incompatible save: oversize
+ok 154 - Reject unsafe or incompatible save: oversize
+  ---
+  duration_ms: 0.032449
+  type: 'test'
+  ...
+# Subtest: All statistic values stay within the visible 0–5 scale
+ok 155 - All statistic values stay within the visible 0–5 scale
+  ---
+  duration_ms: 26.83844
+  type: 'test'
+  ...
+# Subtest: Frozen story data cannot be altered by a saved action
+ok 156 - Frozen story data cannot be altered by a saved action
+  ---
+  duration_ms: 0.168084
+  type: 'test'
+  ...
+# Subtest: 600 seeded full playthroughs: every ending and node, no softlock, always 22 photos
+ok 157 - 600 seeded full playthroughs: every ending and node, no softlock, always 22 photos
+  ---
+  duration_ms: 3795.514747
+  type: 'test'
+  ...
+1..157
+# tests 157
+# suites 0
+# pass 157
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 4641.1244

@@ -1,0 +1,84 @@
+PASS Startup: game UI and all embedded assets initialize without errors
+PASS Home: one Ted, no character selector or old free-text field
+PASS Home desktop: no horizontal overflow
+PASS Default: persistence remains opt-in
+PASS Start button opens the first story with three real choices
+PASS Branch choice enters its own scene and stores the intention
+PASS Immediate Ted response remains visible in the new reading turn
+PASS Choice effect updates substance exactly once
+PASS Keyboard 3 chooses the third story answer
+PASS Only reached chapters are replayable
+PASS Cancelling a chapter restart preserves every event
+PASS Confirmed chapter restart resets only its later consequences
+PASS Double-click does not consume a second decision
+PASS Gallery is immediately complete: 22 accessible cards
+PASS Excluded original number 14 is not returned
+PASS Gallery filename search finds the exact approved photo
+PASS Chapter filter exposes all four HQ photos
+PASS Filtered lightbox uses only its matching gallery set
+PASS Lightbox next-photo keyboard navigation works
+PASS All 22 full-size photos decode and are reachable with Next
+PASS Escape closes the photo archive without changing the story
+PASS Saved game resumes directly at the active IT minigame
+PASS IT inspection displays a readable clue and persists it
+PASS Wrong IT order provides feedback, resets the tray and never softlocks
+PASS IT hint explains the actual solution
+PASS Correct IT order exits to the next story scene
+PASS Pitch selection does not award points before confirmation
+PASS Pitch preview uses all three selected cards and enables commit
+PASS Pitch confirmation stores the exact sentence and continues
+PASS Firewall consumes one resource and awaits feedback confirmation
+PASS Firewall choices lock while feedback is pending
+PASS Reloaded pending firewall retains spent resource and next button
+PASS Firewall fully playable on mobile: all six solved with Ted asleep
+PASS IT: cancelling skip preserves active minigame
+PASS IT: confirming skip continues through the written fallback
+PASS Pitch: cancelling skip preserves active minigame
+PASS Pitch: confirming skip continues through the written fallback
+PASS Firewall: cancelling skip preserves active minigame
+PASS Firewall: confirming skip continues through the written fallback
+PASS Opt-in storage persists events without touching old chat data
+PASS Stored progress is offered on the home screen instead of discarded
+PASS Resume reproduces the chosen branch and its original flags
+PASS Disabling persistence removes only the new game key
+PASS Quota errors keep gameplay alive and show honest storage status
+PASS Failed persistence is not left falsely enabled
+PASS Storage denial does not prevent starting or playing
+PASS Corrupt save is reported, not executed or silently overwritten
+PASS Invalid imported actions are rejected without changing the live state
+PASS Valid imported events resume at the exact final choice
+PASS Final choice displays at least two reachable answer cards
+PASS Large-text setting updates rendered story and remains overflow-free
+PASS Reduced-motion preference is applied immediately
+PASS Browser download produces a valid JSON game export
+PASS Mobile chapter menu exposes reached chapters and documents
+PASS Documents remain readable on mobile, including actual recognition
+PASS Mobile Ted profile shows all three live statistic meters
+PASS Complete founder playthrough works through every actual button and minigame
+PASS End screen shows receipt and the reached ending, not a dead end
+PASS End screen human: successful rendering with its own ending text
+PASS End screen rest: successful rendering with its own ending text
+PASS End screen exit: successful rendering with its own ending text
+PASS Home layout 1440×960: no horizontal overflow
+PASS Home layout 1280×720: no horizontal overflow
+PASS Home layout 1024×768: no horizontal overflow
+PASS Home layout 768×1024: no horizontal overflow
+PASS Home layout 700×900: no horizontal overflow
+PASS Home layout 390×844: no horizontal overflow
+PASS Home layout 360×740: no horizontal overflow
+PASS Home layout 320×640: no horizontal overflow
+PASS Story layout 1440×960: controls stay inside the viewport
+PASS Story layout 768×1024: controls stay inside the viewport
+PASS Story layout 390×844: controls stay inside the viewport
+PASS Story layout 360×740: controls stay inside the viewport
+PASS Story layout 320×640: controls stay inside the viewport
+PASS No runtime JavaScript errors across all browser scenarios
+PASS No external HTTP or HTTPS requests during any game scenario
+{
+  "passed": 76,
+  "failed": 0,
+  "total": 76,
+  "environment": "Chromium via set_content; exact delivered HTML, explicit memory/denied-storage adapters; managed file/http navigation blocked",
+  "runtime_errors": [],
+  "network_requests": []
+}
