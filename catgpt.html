@@ -793,10 +793,13 @@ function updateJump(){const scroll=$('storyScroll'),scene=$('turnStart')||$('cur
    Ersetzt Freitext durch geprüfte Übergänge. Revisionsnummern verhindern doppelte Effekte. */
 function send(event){
  const beforeNode=state.node,oldStats={...state.stats},activeId=document.activeElement?.id;
+ // On phones, choosing an answer must not move the reader away from their text.
+ // Explicit navigation and starting a session still move to the requested scene.
+ const readingPosition=event.type==='choose'&&window.matchMedia('(max-width:700px)').matches?$('storyScroll').scrollTop:null;
  try{state=G.reduce(state,{...event,r:event.r===undefined?state.events.length:event.r});}catch(error){toast(error.message);return false;}
  if(state.complete&&!endings.includes(state.ending))endings.push(state.ending);
  const changed=beforeNode!==state.node;
- if(changed){pitchStage=firstPitchStage();inspectFocus=null;queueOpen=false;choiceLockUntil=performance.now()+180;renderFrame();renderTranscript();scrollCurrent();announce(`${G.STORY[state.node].title}. ${G.choices(state).length?`${G.choices(state).length} Antworten stehen zur Auswahl.`:state.complete?'Schicht abgeschlossen.':'Minispiel geöffnet.'}`);}
+ if(changed){pitchStage=firstPitchStage();inspectFocus=null;queueOpen=false;choiceLockUntil=performance.now()+180;renderFrame();renderTranscript();if(readingPosition===null)scrollCurrent();else{$('storyScroll').scrollTop=readingPosition;requestAnimationFrame(()=>{updateJump();});}announce(`${G.STORY[state.node].title}. ${G.choices(state).length?`${G.choices(state).length} Antworten stehen zur Auswahl.`:state.complete?'Schicht abgeschlossen.':'Minispiel geöffnet.'}`);}
  else {renderMini();renderChoices();renderFrame();if(activeId)focusMini(activeId);if(event.type==='fire_act'){announce(state.games.firewall.log.at(-1).text);requestAnimationFrame(()=>$('fireNext')?.scrollIntoView({block:'nearest',behavior:'instant'}));}else if(event.type==='it_inspect')announce(G.IT_ITEMS.find(i=>i.id===event.item).text);else if(event.type==='it_test')announce(state.games.it.feedback);else if(event.type==='hint'){announce('Hinweis geöffnet.');scrollMini();}else if(event.type==='fire_next')scrollMini();}
  persist();return true;
 }
