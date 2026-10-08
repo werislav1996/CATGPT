@@ -373,6 +373,8 @@ Nachbesserung 0.6.1: 32 Bildvorstellungen, zahlreiche Szenen und Antwortreaktion
 
 ### Veröffentlichung
 
+Aktuell: **0.6.1**, Code-Commit `b39014d`, GitHub-Run `37778873169`. 64 Spieltests, 18 Browser-Prüfgruppen und Deployment erfolgreich. Neue Texte, Versionsnummer und Szenenwechsel zusätzlich auf der Live-Seite bei 390×844 bestätigt. Folgend der ursprüngliche Nachweis zu 0.6.0.
+
 Version 0.6 ist unter https://werislav1996.github.io/CATGPT/ veröffentlicht. Code-Commit: `6cbfd76`. GitHub-Run `37772629041`: Build, 64 Node-Tests, 18 Browser-Prüfgruppen und Pages-Deployment erfolgreich.
 
 Direkt auf der öffentlichen URL zusätzlich geprüft: Version 0.6.0, Einstieg, Audio starten/stummschalten/wiederaufnehmen, Bild- und Antwortwechsel sowie komplette Ballaufgabe über die großen Lauftasten bei 390×844. Keine JavaScript-Fehler.

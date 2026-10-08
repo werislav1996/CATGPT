@@ -1,6 +1,6 @@
 # CATGPT 0.6.1 – Prüfbericht
 
-Stand: 8. Oktober 2026. Die Textüberarbeitung 0.6.1 wurde lokal mit 64 Spieltests und 18 Browser-Prüfgruppen geprüft. Die unten dokumentierte Veröffentlichung betrifft zunächst 0.6.0.
+Stand: 8. Oktober 2026. Die Textüberarbeitung 0.6.1 wurde lokal und in GitHub Actions mit 64 Spieltests und 18 Browser-Prüfgruppen geprüft, veröffentlicht und anschließend live kontrolliert.
 
 Zusätzlich wurden alle acht gespeicherten Fixtures aus dem vorherigen Git-Stand (0.6.0) mit 0.6.1 geladen: laufende Minispiele, Kapitelgrenze und alle vier Enden bleiben verwendbar. Der beanstandete E-Mail-Spruch ist aus Textquelle, erzeugter HTML-Datei und Aufgabenmatrix entfernt. Die Humorqualität bleibt eine redaktionelle Einschätzung.
 
@@ -38,6 +38,10 @@ Die allgemeinen Bedienflächen sind groß. Einzelne Zellen des 7×5-Ballspielfel
 Historische Dateien unter `tests/archive/`, ältere Browserberichte und ältere Vorschauen gehören zu früheren Versionen und sind kein Nachweis für 0.6.
 
 ## Veröffentlichung
+
+0.6.1: [Run 37778873169](https://github.com/werislav1996/CATGPT/actions/runs/37778873169), Code-Commit `b39014d`. Build, 64 Spieltests, 18 Browser-Prüfgruppen und Pages-Deployment erfolgreich. Live unter mobilem Viewport 390×844 geprüft: Version, neue Bildunterschriften, entfernter E-Mail-Spruch, Einstieg, Antwortreaktion und expliziter Bildwechsel. Kein horizontaler Überlauf oder JavaScript-Fehler. Der erste Abruf vor Deployment-Ende lieferte noch 0.6.0; nach Abschluss wurde 0.6.1 bestätigt. Wie im regulären Browser-Test liegen zwischen Eingaben kurze Pausen für den bestehenden Doppelklickschutz.
+
+Historischer Nachweis 0.6.0:
 
 GitHub Actions: [Run 37772629041](https://github.com/werislav1996/CATGPT/actions/runs/37772629041), Code-Commit `6cbfd76`. 64 Node-Tests und 18 Browser-Prüfgruppen unter Linux erfolgreich, anschließend Pages-Deployment erfolgreich.
 
