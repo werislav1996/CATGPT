@@ -1,1 +1,18 @@
-{"seed":63471,"runs":600,"nodes":68,"endings":["human","founder","exit","rest"],"samples":[{"scenes":52,"words":3053,"choices":48,"photos":33,"events":73},{"scenes":55,"words":3157,"choices":51,"photos":33,"events":76},{"scenes":52,"words":3000,"choices":48,"photos":33,"events":73},{"scenes":51,"words":2914,"choices":47,"photos":33,"events":58},{"scenes":52,"words":3048,"choices":48,"photos":33,"events":73},{"scenes":52,"words":3033,"choices":48,"photos":33,"events":73},{"scenes":53,"words":3067,"choices":49,"photos":33,"events":67},{"scenes":54,"words":3137,"choices":50,"photos":33,"events":75},{"scenes":51,"words":2978,"choices":47,"photos":33,"events":65},{"scenes":51,"words":2962,"choices":47,"photos":33,"events":69},{"scenes":51,"words":2939,"choices":47,"photos":33,"events":72},{"scenes":51,"words":2937,"choices":47,"photos":33,"events":72},{"scenes":51,"words":2965,"choices":47,"photos":33,"events":72},{"scenes":51,"words":2989,"choices":47,"photos":33,"events":72},{"scenes":52,"words":3041,"choices":48,"photos":33,"events":66},{"scenes":51,"words":3022,"choices":47,"photos":33,"events":72},{"scenes":52,"words":3023,"choices":48,"photos":33,"events":62},{"scenes":51,"words":2933,"choices":47,"photos":33,"events":69},{"scenes":52,"words":2994,"choices":48,"photos":33,"events":73},{"scenes":52,"words":3031,"choices":48,"photos":33,"events":73}]}
+{
+  "runs": 300,
+  "scenes": 44,
+  "endings": [
+    "exit",
+    "founder",
+    "rest",
+    "human"
+  ],
+  "words": {
+    "min": 2487,
+    "max": 2800
+  },
+  "choices": {
+    "min": 28,
+    "max": 32
+  }
+}

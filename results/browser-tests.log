@@ -1,84 +1,71 @@
-PASS Startup: game UI and all embedded assets initialize without errors
-PASS Home: one Ted, no character selector or old free-text field
-PASS Home desktop: no horizontal overflow
-PASS Default: persistence remains opt-in
-PASS Start button opens the first story with three real choices
-PASS Branch choice enters its own scene and stores the intention
-PASS Immediate Ted response remains visible in the new reading turn
-PASS Choice effect updates substance exactly once
-PASS Keyboard 3 chooses the third story answer
-PASS Only reached chapters are replayable
-PASS Cancelling a chapter restart preserves every event
-PASS Confirmed chapter restart resets only its later consequences
-PASS Double-click does not consume a second decision
-PASS Gallery is immediately complete: 33 accessible cards
-PASS Excluded original number 14 is not returned
-PASS Gallery filename search finds the exact approved photo
-PASS Chapter filter exposes all seven HQ photos
-PASS Filtered lightbox uses only its matching gallery set
-PASS Lightbox next-photo keyboard navigation works
-PASS All 33 full-size photos decode and are reachable with Next
-PASS Escape closes the photo archive without changing the story
-PASS Saved game resumes directly at the active IT minigame
-PASS IT inspection displays a readable clue and persists it
-PASS Wrong IT order provides feedback, resets the tray and never softlocks
-PASS IT hint explains the actual solution
-PASS Correct IT order exits to the next story scene
-PASS Pitch selection does not award points before confirmation
-PASS Pitch preview uses all three selected cards and enables commit
-PASS Pitch confirmation stores the exact sentence and continues
-PASS Firewall consumes one resource and awaits feedback confirmation
-PASS Firewall choices lock while feedback is pending
-PASS Reloaded pending firewall retains spent resource and next button
-PASS Firewall fully playable on mobile: all six solved with Ted asleep
-PASS IT: cancelling skip preserves active minigame
-PASS IT: confirming skip continues through the written fallback
-PASS Pitch: cancelling skip preserves active minigame
-PASS Pitch: confirming skip continues through the written fallback
-PASS Firewall: cancelling skip preserves active minigame
-PASS Firewall: confirming skip continues through the written fallback
-PASS Opt-in storage persists events without touching old chat data
-PASS Stored progress is offered on the home screen instead of discarded
-PASS Resume reproduces the chosen branch and its original flags
-PASS Disabling persistence removes only the new game key
-PASS Quota errors keep gameplay alive and show honest storage status
-PASS Failed persistence is not left falsely enabled
-PASS Storage denial does not prevent starting or playing
-PASS Corrupt save is reported, not executed or silently overwritten
-PASS Invalid imported actions are rejected without changing the live state
-PASS Valid imported events resume at the exact final choice
-PASS Final choice displays at least two reachable answer cards
-PASS Large-text setting updates rendered story and remains overflow-free
-PASS Reduced-motion preference is applied immediately
-PASS Browser download produces a valid JSON game export
-PASS Mobile chapter menu exposes reached chapters and documents
-PASS Documents remain readable on mobile, including actual recognition
-PASS Mobile Ted profile shows all three live statistic meters
-PASS Complete founder playthrough works through every actual button and minigame
-PASS End screen shows receipt and the reached ending, not a dead end
-PASS End screen human: successful rendering with its own ending text
-PASS End screen rest: successful rendering with its own ending text
-PASS End screen exit: successful rendering with its own ending text
-PASS Home layout 1440×960: no horizontal overflow
-PASS Home layout 1280×720: no horizontal overflow
-PASS Home layout 1024×768: no horizontal overflow
-PASS Home layout 768×1024: no horizontal overflow
-PASS Home layout 700×900: no horizontal overflow
-PASS Home layout 390×844: no horizontal overflow
-PASS Home layout 360×740: no horizontal overflow
-PASS Home layout 320×640: no horizontal overflow
-PASS Story layout 1440×960: controls stay inside the viewport
-PASS Story layout 768×1024: controls stay inside the viewport
-PASS Story layout 390×844: controls stay inside the viewport
-PASS Story layout 360×740: controls stay inside the viewport
-PASS Story layout 320×640: controls stay inside the viewport
-PASS No runtime JavaScript errors across all browser scenarios
-PASS No external HTTP or HTTPS requests during any game scenario
-{
-  "passed": 76,
-  "failed": 0,
-  "total": 76,
-  "environment": "Chromium via set_content; exact delivered HTML, explicit memory/denied-storage adapters; managed file/http navigation blocked",
-  "runtime_errors": [],
-  "network_requests": []
-}
+PASS Startup: exact HTML initializes, default consent off, 33 photos
+PASS Desktop starts without horizontal overflow
+PASS Starts as a conversation with three specific replies
+PASS Selected sentence and matching sarcastic response remain in main chat
+PASS Scroll keeps direct reaction in the visible conversation area
+PASS Previous prompt is retained rather than replaced by another slide
+PASS Old choice revision is rejected without advancing or scoring twice
+PASS Keyboard choice sends actual answer and its boundary intention
+PASS Cancel chapter restart preserves conversation state
+PASS Confirmed chapter restart resets messages and later choices
+PASS Double click cannot consume the following choice
+PASS Last answer is shown while still in chapter one
+PASS Boundary text announces the destination and confirmation is available
+PASS Chapter does not auto-advance after waiting
+PASS Only explicit confirmation enters the next chapter, with prior reply intact
+PASS All 33 photos available before completion
+PASS Excluded photo 14 is not reintroduced
+PASS Filename search returns exact photo
+PASS Eleven latest photos remain filtered and reachable
+PASS All 33 full-motif images decode in the gallery
+PASS Lightbox keyboard navigation works
+PASS Escape closes modal and returns to chat
+PASS History includes own reply and original Ted reaction
+PASS Reading old messages does not change any gameplay state
+PASS Room arrow keys move human, not the story
+PASS Ball pickup requires reaching its room position
+PASS Ted reacts before player secures or throws ball
+PASS Optional extra round relocates ball but no chapter
+PASS Extra round cannot repeat indefinitely
+PASS Ball completion shows precise result and waits for discussion
+PASS Ball result and employee-representation callback are present
+PASS Wrong food order names what is missing without resetting menu
+PASS Portions adjustable both ways, water accepted once
+PASS Correct order opens Ted-specific finishing choices
+PASS Chefedition choice changes subsequent Ted dialogue
+PASS Wrong tool for paw marks explains broom requirement
+PASS Full litter bin blocks another clump without losing progress
+PASS Litter task includes all five clumps and four tracks
+PASS Inspection is interactive and not an automatic scene jump
+PASS Documented cleaning is acknowledged in Ted follow-up
+PASS Ending founder renders final reply, receipt and completed tasks
+PASS Ending human renders final reply, receipt and completed tasks
+PASS Ending rest renders final reply, receipt and completed tasks
+PASS Ending exit renders final reply, receipt and completed tasks
+PASS Consent stores v3 only and leaves prior version key untouched
+PASS Reload replays saved user and Ted messages at the same branch
+PASS Disabling persistence removes only current version save
+PASS Failed save is not falsely reported as saved
+PASS Denied local storage does not stop the game
+PASS Corrupt save is not overwritten by starting without persistence
+PASS JSON file import reconstructs current minigame via UI
+PASS Old incompatible import is refused, current branch preserved
+PASS Export downloads a valid current-format event-only save
+PASS Viewport 320x740: no horizontal overflow and game controls scroll-reachable
+PASS Large text 320x740: layout remains within viewport
+PASS Viewport 360x780: no horizontal overflow and game controls scroll-reachable
+PASS Large text 360x780: layout remains within viewport
+PASS Viewport 390x844: no horizontal overflow and game controls scroll-reachable
+PASS Large text 390x844: layout remains within viewport
+PASS Viewport 768x1024: no horizontal overflow and game controls scroll-reachable
+PASS Large text 768x1024: layout remains within viewport
+PASS Viewport 1024x768: no horizontal overflow and game controls scroll-reachable
+PASS Large text 1024x768: layout remains within viewport
+PASS Viewport 1440x940: no horizontal overflow and game controls scroll-reachable
+PASS Large text 1440x940: layout remains within viewport
+PASS Viewport 844x390: no horizontal overflow and game controls scroll-reachable
+PASS Large text 844x390: layout remains within viewport
+PASS Mobile direct answer is visible before next-topic photo or chapter
+PASS No uncaught browser errors in all tested flows
+PASS No HTTP requests made by the offline game
+TOTAL 70 / 70
