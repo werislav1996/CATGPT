@@ -1,7 +1,7 @@
 {
   "passed": 18,
   "failed": 0,
-  "url": "http://127.0.0.1:60362/",
+  "url": "http://127.0.0.1:65512/",
   "environment": "Desktop Chromium with mobile viewports; not physical iOS/Android QA",
   "checks": [
     {

@@ -1,6 +1,6 @@
 # CATGPT – Ein Kater. Dein Problem.
 
-Version **0.6.0** · 8. Oktober 2026
+Version **0.6.1** · 8. Oktober 2026
 
 **[Jetzt spielen](https://werislav1996.github.io/CATGPT/)**
 
@@ -8,6 +8,7 @@ Ted geht an die Börse. Du holst vorher kurz den Ball. Eine absurde Firmenführu
 
 ## Was neu ist
 
+- 0.6.1: 32 Bildvorstellungen, zahlreiche Szenen und Antwortreaktionen mit konkreterer Firmensatire überarbeitet. Das Schrankbüro bleibt erhalten; der plumpe E-Mail-Spruch ist entfernt. Spielstände aus 0.6.0 bleiben verwendbar.
 - Mobile Szenenansicht: ein Foto im Mittelpunkt, kurze Texte und große Antwortflächen.
 - Deine Antwort und Teds Reaktion bleiben am selben Bild. Du öffnest den nächsten Moment bewusst; kein automatisches Scrollen durch einen langen Chat.
 - Bildpaare werden nacheinander gezeigt. Ein vollständiger Durchlauf zeigt alle 33 freigegebenen Motive; Original-Nr. 14 bleibt ausgeschlossen.

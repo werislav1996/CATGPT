@@ -161,7 +161,7 @@ Die folgende Zuordnung ist der geplante gemeinsame Hauptweg. Jede Zeile ist ein 
 | [x] | 2 | 29 `remoteit` | Ball im Außendienst. Möbel werden zur Firewall; daraus entsteht die Rückholaufgabe. |
 | [x] | 2 | 17 `mat` | Außenstelle: Ted zeigt dem Stammsitz den Rücken und beantragt Reisekosten. |
 | [x] | 2 | 3 `think` | Lampe: „Unsere hellste Mitarbeiterin. Ich habe ihr gekündigt. Sie hat mich schlecht aussehen lassen.“ |
-| [x] | 2 | 33 `desk` | Physische Firewall: „Versuch mal, eine E-Mail durch meinen Arsch zu schicken.“ |
+| [x] | 2 | 33 `desk` | Freigabestelle: „Jede Freigabe muss erst unter mir durch.“ Zeitung durch Tastatur ersetzt und dafür einen Digitalisierungspreis beantragt. |
 | [x] | 2 | 13 `work` | In Gerätenähe liegen als Leistungsnachweis: Ted beantragt die Urheberschaft am laufenden Rechner. |
 | [x] | 2 | 28 `security` | Zugangskontrolle per Katzenblick. Ein Passwort gilt erst, wenn Ted es nicht hören wollte. |
 | [x] | 3 – Unbegrenztes Wachstum | 1 `floor` | Zusammenbruch wegen angeblicher Unterversorgung: letzte Mahlzeit vor dramatisch kurzer Zeit. |
@@ -362,6 +362,8 @@ Hier nur tatsächlich abgeschlossene Arbeiten eintragen.
 | 08.10.2026 | A–J, K01–K05 | Version 0.6: Szenenansicht, einzeln präsentierte Fotos, kürzere Story, überarbeitete Minispiele, Bruder-Jakob-Musik und Effekte. | 64 Node-Tests einschließlich 300 Pfaden; 18 Browser-Prüfgruppen, vollständiger UI-Durchlauf mit 33 sichtbaren Fotos. | Echte Mobilgeräte und menschliches Probespielen/Hören. |
 
 ### Grenzen des aktuellen Nachweises
+
+Nachbesserung 0.6.1: 32 Bildvorstellungen, zahlreiche Szenen und Antwortreaktionen mit stärkerer bildbezogener Firmensatire überarbeitet. Schrankbüro beibehalten, beanstandeten E-Mail-Spruch entfernt. Erneut 64 Spieltests und 18 Browser-Prüfgruppen bestanden; acht Spielstand-Fixtures aus 0.6.0 weiterhin ladbar.
 
 - E10 wurde mit mobiler Chromium-Emulation geprüft, nicht durch Spielen auf einem realen Telefon.
 - D11/D12 wurden am Text und den dargestellten Fotos redaktionell geprüft. Ein unabhängiger menschlicher Humor-/Zeittest ist offen.

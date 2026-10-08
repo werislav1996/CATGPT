@@ -1,6 +1,8 @@
-# CATGPT 0.6 – Prüfbericht
+# CATGPT 0.6.1 – Prüfbericht
 
-Stand: 8. Oktober 2026. Die mobile Ausgabe wurde lokal, in GitHub Actions und anschließend auf der veröffentlichten Seite geprüft.
+Stand: 8. Oktober 2026. Die Textüberarbeitung 0.6.1 wurde lokal mit 64 Spieltests und 18 Browser-Prüfgruppen geprüft. Die unten dokumentierte Veröffentlichung betrifft zunächst 0.6.0.
+
+Zusätzlich wurden alle acht gespeicherten Fixtures aus dem vorherigen Git-Stand (0.6.0) mit 0.6.1 geladen: laufende Minispiele, Kapitelgrenze und alle vier Enden bleiben verwendbar. Der beanstandete E-Mail-Spruch ist aus Textquelle, erzeugter HTML-Datei und Aufgabenmatrix entfernt. Die Humorqualität bleibt eine redaktionelle Einschätzung.
 
 ## Automatisierte Spielregeln
 

@@ -1,3 +1,10 @@
+# Änderungen 0.6.1
+
+- 32 Bildunterschriften und Fotokommentare mit eigenen Pointen zum jeweiligen Motiv überarbeitet; Schrankbüro als Referenz beibehalten.
+- Dialoge und neun zusätzliche Antwortreaktionen führen die Motive weiter: unabhängiger Spiegel-Aufsichtsrat, aufgedruckte Kantinen-Farm, gedrehte Verlustkurve und Sofa-Tochtergesellschaften.
+- Plumpen E-Mail-Spruch entfernt und die Schreibtischszene um Teds Freigabestelle und seine angebliche Digitalisierung aufgebaut.
+- Ruhigen Abschluss beibehalten. Spielregeln und Speicherformat 4 unverändert, Spielstände aus 0.6.0 weiter nutzbar.
+
 # Änderungen 0.6.0
 
 - Mobile Oberfläche als fokussierte Szene mit Einzelfoto und unteren Antwortflächen gestaltet.
