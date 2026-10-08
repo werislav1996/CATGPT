@@ -1,346 +1,394 @@
 TAP version 13
-# Subtest: 44 authored scenes, five chapters, four endings, three everyday games
-ok 1 - 44 authored scenes, five chapters, four endings, three everyday games
+# Subtest: 43 authored scenes, five chapters, four endings, three everyday games
+ok 1 - 43 authored scenes, five chapters, four endings, three everyday games
   ---
-  duration_ms: 1.753334
+  duration_ms: 1.3247
   type: 'test'
   ...
 # Subtest: All 33 approved assets retained; no photo 14 or excluded filename
 ok 2 - All 33 approved assets retained; no photo 14 or excluded filename
   ---
-  duration_ms: 0.230783
+  duration_ms: 0.2386
   type: 'test'
   ...
 # Subtest: Offline: no requests, runtime AI, libraries or form endpoints
 ok 3 - Offline: no requests, runtime AI, libraries or form endpoints
   ---
-  duration_ms: 2.152205
+  duration_ms: 1.8692
   type: 'test'
   ...
 # Subtest: Every response has a unique local ID, own reaction and valid destination
 ok 4 - Every response has a unique local ID, own reaction and valid destination
   ---
-  duration_ms: 0.318362
+  duration_ms: 0.3431
   type: 'test'
   ...
 # Subtest: Graph is acyclic and every scene is structurally reachable
 ok 5 - Graph is acyclic and every scene is structurally reachable
   ---
-  duration_ms: 0.231254
+  duration_ms: 0.2374
   type: 'test'
   ...
 # Subtest: Full route founder retains all photos and full transcript
 ok 6 - Full route founder retains all photos and full transcript
   ---
-  duration_ms: 14.420903
+  duration_ms: 16.8303
   type: 'test'
   ...
 # Subtest: Full route human retains all photos and full transcript
 ok 7 - Full route human retains all photos and full transcript
   ---
-  duration_ms: 12.73483
+  duration_ms: 11.8001
   type: 'test'
   ...
 # Subtest: Full route rest retains all photos and full transcript
 ok 8 - Full route rest retains all photos and full transcript
   ---
-  duration_ms: 12.338882
+  duration_ms: 10.3255
   type: 'test'
   ...
 # Subtest: Full route exit retains all photos and full transcript
 ok 9 - Full route exit retains all photos and full transcript
   ---
-  duration_ms: 12.563856
+  duration_ms: 9.3272
   type: 'test'
   ...
 # Subtest: All games skipped still allow ending founder
 ok 10 - All games skipped still allow ending founder
   ---
-  duration_ms: 5.871899
+  duration_ms: 4.5465
   type: 'test'
   ...
 # Subtest: All games skipped still allow ending human
 ok 11 - All games skipped still allow ending human
   ---
-  duration_ms: 5.834984
+  duration_ms: 4.1487
   type: 'test'
   ...
 # Subtest: All games skipped still allow ending rest
 ok 12 - All games skipped still allow ending rest
   ---
-  duration_ms: 5.601277
+  duration_ms: 4.2421
   type: 'test'
   ...
 # Subtest: All games skipped still allow ending exit
 ok 13 - All games skipped still allow ending exit
   ---
-  duration_ms: 5.214633
+  duration_ms: 3.8346
   type: 'test'
   ...
 # Subtest: Intro choices have distinct replies and genuinely different follow-up questions
 ok 14 - Intro choices have distinct replies and genuinely different follow-up questions
   ---
-  duration_ms: 0.285634
+  duration_ms: 0.2636
   type: 'test'
   ...
 # Subtest: User message precedes direct reply, effects and next prompt in that order
 ok 15 - User message precedes direct reply, effects and next prompt in that order
   ---
-  duration_ms: 0.230813
+  duration_ms: 0.2324
   type: 'test'
   ...
 # Subtest: Chapter boundary preserves current chapter until explicit confirmation
 ok 16 - Chapter boundary preserves current chapter until explicit confirmation
   ---
-  duration_ms: 0.267527
+  duration_ms: 0.2972
   type: 'test'
   ...
 # Subtest: Cannot bypass an unconfirmed chapter with a choice
 ok 17 - Cannot bypass an unconfirmed chapter with a choice
   ---
-  duration_ms: 0.391541
+  duration_ms: 0.377
   type: 'test'
   ...
 # Subtest: Every cross-chapter option has an authored destination label
 ok 18 - Every cross-chapter option has an authored destination label
   ---
-  duration_ms: 0.192105
+  duration_ms: 0.1441
   type: 'test'
   ...
 # Subtest: Game results wait for acknowledgment rather than jumping to a chapter
 ok 19 - Game results wait for acknowledgment rather than jumping to a chapter
   ---
-  duration_ms: 2.308968
+  duration_ms: 1.3306
   type: 'test'
   ...
 # Subtest: Skipping ball gets specific reaction and explicit acknowledgment
 ok 20 - Skipping ball gets specific reaction and explicit acknowledgment
   ---
-  duration_ms: 0.200047
+  duration_ms: 0.1518
   type: 'test'
   ...
 # Subtest: Skipping food gets specific reaction and explicit acknowledgment
 ok 21 - Skipping food gets specific reaction and explicit acknowledgment
   ---
-  duration_ms: 0.224222
+  duration_ms: 0.5308
   type: 'test'
   ...
 # Subtest: Skipping litter gets specific reaction and explicit acknowledgment
 ok 22 - Skipping litter gets specific reaction and explicit acknowledgment
   ---
-  duration_ms: 0.24913
+  duration_ms: 0.2947
   type: 'test'
   ...
 # Subtest: Double/stale submissions cannot duplicate choice effects
 ok 23 - Double/stale submissions cannot duplicate choice effects
   ---
-  duration_ms: 0.226867
+  duration_ms: 0.2143
   type: 'test'
   ...
 # Subtest: Forged extra event fields, malformed revision and unknown actions are rejected
 ok 24 - Forged extra event fields, malformed revision and unknown actions are rejected
   ---
-  duration_ms: 0.205505
+  duration_ms: 0.1955
   type: 'test'
   ...
 # Subtest: Ball cannot be picked up remotely or delivered without pickup
 ok 25 - Ball cannot be picked up remotely or delivered without pickup
   ---
-  duration_ms: 0.257242
+  duration_ms: 0.3006
   type: 'test'
   ...
 # Subtest: Ball movement respects furniture, Ted and board edges
 ok 26 - Ball movement respects furniture, Ted and board edges
   ---
-  duration_ms: 0.474184
+  duration_ms: 0.3112
   type: 'test'
   ...
 # Subtest: Ball solved via shortest navigable return route
 ok 27 - Ball solved via shortest navigable return route
   ---
-  duration_ms: 1.823077
+  duration_ms: 1.3904
   type: 'test'
   ...
 # Subtest: One optional Ted throw produces a new retrievable ball, never endless loop
 ok 28 - One optional Ted throw produces a new retrievable ball, never endless loop
   ---
-  duration_ms: 3.286139
+  duration_ms: 2.3377
   type: 'test'
   ...
 # Subtest: Cannot reward a finished ball game a second time
 ok 29 - Cannot reward a finished ball game a second time
   ---
-  duration_ms: 2.112808
+  duration_ms: 1.5862
   type: 'test'
   ...
 # Subtest: Food incorrect order gives actionable correction without losing selections
 ok 30 - Food incorrect order gives actionable correction without losing selections
   ---
-  duration_ms: 0.570657
+  duration_ms: 0.6066
   type: 'test'
   ...
 # Subtest: Correct food order, then contextual finale walk
 ok 31 - Correct food order, then contextual finale walk
   ---
-  duration_ms: 1.213262
+  duration_ms: 1.0041
   type: 'test'
   ...
 # Subtest: Correct food order, then contextual finale label
 ok 32 - Correct food order, then contextual finale label
   ---
-  duration_ms: 1.03024
+  duration_ms: 1.1679
   type: 'test'
   ...
 # Subtest: Food inventory bounded and invalid preparation steps rejected
 ok 33 - Food inventory bounded and invalid preparation steps rejected
   ---
-  duration_ms: 1.189196
+  duration_ms: 1.8473
   type: 'test'
   ...
 # Subtest: Litter wrong tool comments specifically without removing a target
 ok 34 - Litter wrong tool comments specifically without removing a target
   ---
-  duration_ms: 0.298834
+  duration_ms: 0.4695
   type: 'test'
   ...
 # Subtest: Litter clean empty cell is safe and does not award progress
 ok 35 - Litter clean empty cell is safe and does not award progress
   ---
-  duration_ms: 0.319594
+  duration_ms: 0.36
   type: 'test'
   ...
 # Subtest: Litter bin must be emptied at capacity
 ok 36 - Litter bin must be emptied at capacity
   ---
-  duration_ms: 1.518295
+  duration_ms: 1.0134
   type: 'test'
   ...
 # Subtest: Litter cannot refill, inspect or finish prematurely
 ok 37 - Litter cannot refill, inspect or finish prematurely
   ---
-  duration_ms: 0.937582
+  duration_ms: 0.6684
   type: 'test'
   ...
 # Subtest: Litter completion document cleans all nine targets and waits for response
 ok 38 - Litter completion document cleans all nine targets and waits for response
   ---
-  duration_ms: 3.52896
+  duration_ms: 4.1802
   type: 'test'
   ...
 # Subtest: Litter completion stop cleans all nine targets and waits for response
 ok 39 - Litter completion stop cleans all nine targets and waits for response
   ---
-  duration_ms: 3.422753
+  duration_ms: 2.2566
   type: 'test'
   ...
 # Subtest: Self-agency choices are remembered in specific later scenes
 ok 40 - Self-agency choices are remembered in specific later scenes
   ---
-  duration_ms: 14.237762
+  duration_ms: 8.3958
   type: 'test'
   ...
 # Subtest: Game decisions return in final factual task summary
 ok 41 - Game decisions return in final factual task summary
   ---
-  duration_ms: 12.148119
+  duration_ms: 10.4824
   type: 'test'
   ...
 # Subtest: Credit and rest agreements each unlock exactly their final route
 ok 42 - Credit and rest agreements each unlock exactly their final route
   ---
-  duration_ms: 11.656018
+  duration_ms: 8.4736
   type: 'test'
   ...
 # Subtest: Every canonical ending replays exactly and serializes with pending messages
 ok 43 - Every canonical ending replays exactly and serializes with pending messages
   ---
-  duration_ms: 51.507333
+  duration_ms: 44.7109
   type: 'test'
   ...
 # Subtest: Mid-game restore ball reconstructs actions exactly
 ok 44 - Mid-game restore ball reconstructs actions exactly
   ---
-  duration_ms: 0.418942
+  duration_ms: 0.3834
   type: 'test'
   ...
 # Subtest: Mid-game restore food reconstructs actions exactly
 ok 45 - Mid-game restore food reconstructs actions exactly
   ---
-  duration_ms: 0.662173
+  duration_ms: 0.4987
   type: 'test'
   ...
 # Subtest: Mid-game restore litter reconstructs actions exactly
 ok 46 - Mid-game restore litter reconstructs actions exactly
   ---
-  duration_ms: 0.846537
+  duration_ms: 0.5407
   type: 'test'
   ...
 # Subtest: Checkpoint 1 restarts at its original entry with later effects discarded
 ok 47 - Checkpoint 1 restarts at its original entry with later effects discarded
   ---
-  duration_ms: 12.206676
+  duration_ms: 9.4806
   type: 'test'
   ...
 # Subtest: Checkpoint 2 restarts at its original entry with later effects discarded
 ok 48 - Checkpoint 2 restarts at its original entry with later effects discarded
   ---
-  duration_ms: 11.677009
+  duration_ms: 8.0898
   type: 'test'
   ...
 # Subtest: Checkpoint 3 restarts at its original entry with later effects discarded
 ok 49 - Checkpoint 3 restarts at its original entry with later effects discarded
   ---
-  duration_ms: 12.137593
+  duration_ms: 9.8325
   type: 'test'
   ...
 # Subtest: Checkpoint 4 restarts at its original entry with later effects discarded
 ok 50 - Checkpoint 4 restarts at its original entry with later effects discarded
   ---
-  duration_ms: 12.062251
+  duration_ms: 9.0902
   type: 'test'
   ...
 # Subtest: Checkpoint 5 restarts at its original entry with later effects discarded
 ok 51 - Checkpoint 5 restarts at its original entry with later effects discarded
   ---
-  duration_ms: 11.705842
+  duration_ms: 12.0262
   type: 'test'
   ...
 # Subtest: Old formats, invalid JSON, oversized saves and modified events rejected
 ok 52 - Old formats, invalid JSON, oversized saves and modified events rejected
   ---
-  duration_ms: 10.910311
+  duration_ms: 9.1693
   type: 'test'
   ...
 # Subtest: Data immutable, failed action does not corrupt existing state
 ok 53 - Data immutable, failed action does not corrupt existing state
   ---
-  duration_ms: 0.60001
+  duration_ms: 0.5419
   type: 'test'
   ...
 # Subtest: 300 varied full paths: no dead ends, every scene and ending reached, all photos present
 ok 54 - 300 varied full paths: no dead ends, every scene and ending reached, all photos present
   ---
-  duration_ms: 2702.488184
+  duration_ms: 2023.8886
   type: 'test'
   ...
 # Subtest: Skipping litter never falsely claims the user stopped Ted or signed an inspection
 ok 55 - Skipping litter never falsely claims the user stopped Ted or signed an inspection
   ---
-  duration_ms: 0.760469
+  duration_ms: 0.7269
   type: 'test'
   ...
 # Subtest: Skipping ball with no representation flags never claims the human walked
 ok 56 - Skipping ball with no representation flags never claims the human walked
   ---
-  duration_ms: 0.772036
+  duration_ms: 0.7641
   type: 'test'
   ...
-1..56
-# tests 56
+# Subtest: New edition uses a separate save key and explicitly rejects format 3
+ok 57 - New edition uses a separate save key and explicitly rejects format 3
+  ---
+  duration_ms: 0.7748
+  type: 'test'
+  ...
+# Subtest: Fast tour reaches the office after three answers and retains all intro photos
+ok 58 - Fast tour reaches the office after three answers and retains all intro photos
+  ---
+  duration_ms: 1.5953
+  type: 'test'
+  ...
+# Subtest: Brand Chefedition: validated choice, exact reply, export/replay
+ok 59 - Brand Chefedition: validated choice, exact reply, export/replay
+  ---
+  duration_ms: 3.1962
+  type: 'test'
+  ...
+# Subtest: Brand Napf Royal: validated choice, exact reply, export/replay
+ok 60 - Brand Napf Royal: validated choice, exact reply, export/replay
+  ---
+  duration_ms: 3.038
+  type: 'test'
+  ...
+# Subtest: Brand Mousse de Miau: validated choice, exact reply, export/replay
+ok 61 - Brand Mousse de Miau: validated choice, exact reply, export/replay
+  ---
+  duration_ms: 2.4033
+  type: 'test'
+  ...
+# Subtest: Branding cannot replace food preparation or inject arbitrary strings
+ok 62 - Branding cannot replace food preparation or inject arbitrary strings
+  ---
+  duration_ms: 3.4984
+  type: 'test'
+  ...
+# Subtest: Embedded assets are generated from committed source without remote dependencies
+ok 63 - Embedded assets are generated from committed source without remote dependencies
+  ---
+  duration_ms: 5.549
+  type: 'test'
+  ...
+# Subtest: All executable inline scripts parse
+ok 64 - All executable inline scripts parse
+  ---
+  duration_ms: 3.7872
+  type: 'test'
+  ...
+1..64
+# tests 64
 # suites 0
-# pass 56
+# pass 64
 # fail 0
 # cancelled 0
 # skipped 0
 # todo 0
-# duration_ms 3102.079746
+# duration_ms 2382.8898

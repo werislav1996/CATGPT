@@ -1,0 +1,80 @@
+{
+  "passed": 18,
+  "failed": 0,
+  "url": "http://127.0.0.1:60362/",
+  "environment": "Desktop Chromium with mobile viewports; not physical iOS/Android QA",
+  "checks": [
+    {
+      "name": "320x640: layout, reply stays on photo, explicit next photo, stable scroll",
+      "passed": true
+    },
+    {
+      "name": "360x740: layout, reply stays on photo, explicit next photo, stable scroll",
+      "passed": true
+    },
+    {
+      "name": "390x844: layout, reply stays on photo, explicit next photo, stable scroll",
+      "passed": true
+    },
+    {
+      "name": "430x932: layout, reply stays on photo, explicit next photo, stable scroll",
+      "passed": true
+    },
+    {
+      "name": "768x1024: layout, reply stays on photo, explicit next photo, stable scroll",
+      "passed": true
+    },
+    {
+      "name": "1440x960: layout, reply stays on photo, explicit next photo, stable scroll",
+      "passed": true
+    },
+    {
+      "name": "Synthesized music produces a nonzero output signal after the start gesture",
+      "passed": true
+    },
+    {
+      "name": "Opt-in save restores the unread reaction and audio mute independently",
+      "passed": true
+    },
+    {
+      "name": "Music/effects levels, visibility pause and resume work without duplicate scheduler",
+      "passed": true
+    },
+    {
+      "name": "Old local save retained and incompatible import rejected without replacing the game",
+      "passed": true
+    },
+    {
+      "name": "All other ending fixtures load with their own receipt and final photograph",
+      "passed": true
+    },
+    {
+      "name": "Ball: two tapped destinations navigate around obstacles, pickup and box finish",
+      "passed": true
+    },
+    {
+      "name": "Food: visible preparation and chosen luxury brand survive completion",
+      "passed": true
+    },
+    {
+      "name": "Litter: automatic bin handling, grouped sweeping, refill and inspection",
+      "passed": true
+    },
+    {
+      "name": "Complete real UI playthrough: founder ending and all 33 photographs visibly presented",
+      "passed": true
+    },
+    {
+      "name": "History keeps photos, replies and specific minigame results without restarting progress",
+      "passed": true
+    },
+    {
+      "name": "320px large text, reduced motion and denied storage remain playable",
+      "passed": true
+    },
+    {
+      "name": "No runtime JavaScript errors in tested browser scenarios",
+      "passed": true
+    }
+  ]
+}

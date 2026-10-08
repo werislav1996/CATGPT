@@ -1,6 +1,6 @@
 {
   "runs": 300,
-  "scenes": 44,
+  "scenes": 43,
   "endings": [
     "exit",
     "founder",
@@ -8,11 +8,11 @@
     "human"
   ],
   "words": {
-    "min": 2487,
-    "max": 2800
+    "min": 1798,
+    "max": 2127
   },
   "choices": {
-    "min": 28,
+    "min": 26,
     "max": 32
   }
 }

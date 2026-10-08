@@ -73,6 +73,42 @@ body.large-text .bubble-text,body.large-text .reply{font-size:17px}body.large-te
 .choice-list.game-dock{grid-template-columns:repeat(2,minmax(0,1fr))}.decision-dock:has(.game-dock) .dock-footer{display:none}.decision-dock:has(.game-dock){padding-top:9px;padding-bottom:10px}.room-grid{max-width:430px}.room-cell{aspect-ratio:1.13}.choice-list.game-dock .btn{min-height:40px}
 
 </style>
+<!-- BEGIN MOBILE_STYLE -->
+<style id="mobileStyle">
+/* CATGPT 0.6: one scene, one photograph, room to read. */
+:root{--bg:#171a17;--side:#1d211c;--panel:#252b23;--ink:#f1eddf;--muted:#afb5a6;--gold:#e9bf80;--line:#353e32;--green:#b2c995}
+body{background:radial-gradient(ellipse at top,#30372a 0,#171a17 65%)}
+.app{display:flex!important;width:min(100%,960px);height:100dvh;margin:auto;border-inline:1px solid #ffffff08;background:var(--bg)}
+.sidebar,.cat-panel{display:none!important}.main{width:100%;flex:1;min-height:0}.mobile-menu{display:inline-flex!important}
+.topbar{height:66px;padding:env(safe-area-inset-top) 20px 0;min-height:66px;background:#1d231dd9;border-bottom:1px solid var(--line)}
+.top-id strong{font-size:15px}.top-id small{font-size:10px;max-width:230px}.top-avatar{width:34px;height:34px}.top-tools{gap:5px}.top-tools .pill,.top-tools>[data-action="gallery"],.top-tools>[data-action="profile"]{display:none!important}
+.icon-btn,.mobile-menu{min-width:44px;min-height:44px}.sound-toggle{font-size:11px;border:1px solid var(--line);border-radius:50px;width:auto;padding:0 13px;white-space:nowrap}
+.chapter-line{height:35px;padding:0 22px;background:transparent;font-size:9px;letter-spacing:.6px;flex:none}.mobile-status{display:none!important}.stages{margin-left:auto}
+.game-area{display:flex;flex:1;min-height:0;flex-direction:column}.story-scroll{min-height:0;flex:1;overflow:auto;overscroll-behavior:contain;scrollbar-gutter:auto;overflow-anchor:none;scroll-behavior:auto}
+.transcript{width:100%;max-width:660px;padding:18px 26px 24px;margin:auto}.scene-stage{margin:0;animation:sceneIn .22s ease-out}.scene-stage.review{animation:none}
+.scene-kicker{display:flex;justify-content:space-between;gap:12px;color:var(--muted);font:10px/1.5 var(--mono);letter-spacing:1px;margin-bottom:10px}.scene-kicker span:last-child{color:var(--gold)}
+.scene-title{font:500 28px/1.18 Georgia,serif;letter-spacing:-.5px;margin:0 0 16px;color:var(--ink)}
+.scene-photo{display:block;width:100%;padding:0;border:1px solid #ffffff15;border-radius:20px;overflow:hidden;text-align:left;background:#101510;position:relative}
+.scene-photo img{width:100%;height:clamp(190px,36dvh,370px);object-fit:contain;display:block;background:radial-gradient(ellipse,#30372a,#11160f);margin:0}
+.scene-photo .chat-photo-caption{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 17px;background:#242b20;color:var(--gold);font:italic 18px/1.4 Georgia,serif}.scene-photo svg{width:16px;height:16px;flex:none;opacity:.65}
+.scene-copy{font-size:16px;line-height:1.75;margin-top:18px;color:#e1e3d6}.scene-copy p{margin:0 0 12px}.scene-copy p:last-child{margin-bottom:0}
+.scene-copy .ted-label{display:block;font:10px/1.5 var(--mono);color:var(--gold);letter-spacing:1px;margin-bottom:8px}.scene-progress{display:flex;justify-content:center;gap:6px;margin:11px 0 0}.scene-progress i{width:6px;height:6px;border-radius:50%;background:#444c3a}.scene-progress i.active{width:19px;border-radius:5px;background:var(--gold)}
+.review .scene-photo img{height:clamp(135px,25dvh,250px)}.review-player{padding:12px 15px;background:#343d2c;border:1px solid #62734d;border-radius:14px 14px 3px 14px;margin:15px 0;color:#e3e8d5;font-size:13px;line-height:1.6}.review-player small{display:block;font:9px var(--mono);color:#c2cfad;margin-bottom:5px}.review .scene-copy{margin-top:13px}.review-effects{font-size:11px;color:var(--green);margin-top:12px}
+.decision-dock{flex:none;background:#20261f;border-top:1px solid #45513b;padding:13px 22px max(15px,env(safe-area-inset-bottom));max-height:47dvh;overflow:auto;box-shadow:0 -9px 35px #0c140d33}.decision-inner{max-width:608px;margin:auto}.decision-top{margin-bottom:9px}.decision-top .eyebrow{font-size:9px;color:var(--muted);letter-spacing:.9px}.choice-hint,.read-scene,.dock-footer{display:none!important}.choice-list{display:grid;grid-template-columns:1fr;gap:8px}.choice-card{display:flex;align-items:center;gap:12px;border:1px solid #536044;background:#2b3426;border-radius:12px;min-height:48px;padding:12px 14px;text-align:left;transition:background .13s,border-color .13s,transform .13s}.choice-card:hover{background:#37442e;border-color:var(--gold)}.choice-card:active{transform:scale(.99)}.choice-label{font-size:14px;line-height:1.45;color:var(--ink);flex:1}.choice-number{display:none}.choice-card>svg{width:16px;height:16px;color:var(--gold);flex:none}.choice-list .btn{min-height:48px;border-radius:12px;justify-content:center;font-size:14px}.choice-list .btn.primary{background:var(--gold);color:#292316;border-color:var(--gold);font-weight:600}.choice-list.game-dock{grid-template-columns:1fr 1fr}.decision-dock:has(.game-dock){padding:10px 22px max(10px,env(safe-area-inset-bottom))}.decision-dock:has(.game-dock) .decision-top{display:none}.jump-current{display:none!important}
+.welcome{display:grid!important;grid-template-columns:1fr 1fr;padding:40px 30px;gap:30px;max-width:900px;margin:auto}.welcome .photo-stack{max-width:none;width:100%;margin:0;align-self:center}.welcome .hero-photo{height:380px;aspect-ratio:auto;object-fit:cover}.welcome-copy h1{font-size:43px;line-height:1.12}.welcome-copy .sub{font-size:15px;line-height:1.7}.welcome-copy .facts{flex-wrap:wrap;font-size:10px}.welcome-copy .start-btn{width:100%;min-height:55px;border-radius:13px}.welcome-copy .save-opt{font-size:11px}.welcome-copy .home-note{font-size:10px}.home{overflow:auto;min-height:0;flex:1}
+.chat-minigame{margin:0;padding:20px;border:1px solid #45513b;border-radius:20px;background:#222a20;box-shadow:0 14px 45px #0002}.mini-header h3{font:26px/1.2 Georgia,serif;margin-top:7px}.mini-header .eyebrow{font-size:9px}.mini-header>svg{width:25px;color:var(--gold)}.mini-toolbar{display:flex;gap:8px;margin:14px 0}.mini-toolbar .btn{min-height:44px;padding:9px 13px}.game-instruction{font-size:13px;line-height:1.6;color:var(--muted);margin-bottom:14px}.game-readout{font-size:11px;gap:8px;padding:10px 0;flex-wrap:wrap}.room-grid{max-width:500px;width:100%;gap:4px;padding:8px;border-radius:16px;background:#111a12;touch-action:manipulation}.room-cell{border-radius:6px;min-width:0;aspect-ratio:1.12;border:1px solid #3e4b35;background:#273422;position:relative}.room-cell small{font-size:8px}.room-cell.blocked{background:#413a30;border-color:#65543e}.room-cell.is-player{background:#c4d49a;color:#233018;box-shadow:0 0 20px #b4cd6844}.room-cell.home{border-color:var(--gold)}.room-cell.has-ball{background:#374929}.room-cell:focus-visible{outline:3px solid var(--gold)}.room-cell svg{width:23px;height:23px}.room-cell .toy-ball{width:24px;height:24px;background:linear-gradient(120deg,#f0c957 50%,#5795c0 50%);box-shadow:2px 3px 0 #0004}.direction-pad{display:none}.ball-controls{display:block}.ball-actions{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}.ball-actions .btn{min-height:46px}.ball-actions .btn:disabled{display:none}.game-end-options{display:grid;gap:8px;margin-top:15px}.game-end-options .btn{min-height:48px;text-align:left;line-height:1.5;padding:11px 14px;border-radius:11px}.ted-game-feedback{background:#303924;border-left:3px solid var(--gold);border-radius:0 12px 12px 0;padding:13px 15px;margin-top:15px}.ted-game-feedback strong{color:var(--gold);font-size:9px;letter-spacing:1px}.ted-game-feedback p{font-size:13px;line-height:1.65;margin:6px 0 0}
+.food-options{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}.food-option{min-height:90px;border-radius:12px;padding:10px 8px;background:#2c3627;border:1px solid #505f44}.food-option strong{font-size:12px}.food-option small{font-size:10px;line-height:1.4}.food-option.selected{border-color:var(--gold);background:#49412c}.food-option::before{display:block;font-size:25px;margin-bottom:7px;content:'🍽️'}.food-option[data-food="house"]::before{content:'🐟'}.food-option[data-food="luxury"]::before{content:'👑'}.food-option[data-food="snack"]::before{content:'🧆'}.food-option[data-food="blue"]::before{content:'🥣'}.food-option[data-food="gold"]::before{content:'🏆'}.food-option[data-food="box"]::before{content:'📦'}.order-ticket{font-size:12px;padding:13px;background:#374329;border:1px dashed #7a8d59;border-radius:12px;line-height:1.6}.food-prep{gap:12px}.portion-controls{gap:8px}.portion-controls .btn{min-height:44px;font-size:12px}.bowl-visual{min-width:100px}.bowl .kibble{animation:dropIn .22s ease-out}
+.litter-grid{gap:7px;padding:12px;border-radius:17px;background:#c5b799;box-shadow:inset 0 0 0 5px #716952}.litter-cell{aspect-ratio:1.1;background:#d5c6a6;border:0;border-radius:6px;color:#756b51;min-height:38px}.litter-cell.clump{background:#bda67e}.clump-shape{background:#766443;border-radius:40%;width:65%;height:55%;box-shadow:3px 2px 0 #0002}.litter-traces{display:flex;gap:9px;padding:13px}.trace{font-size:25px;min-height:46px;min-width:46px;border-radius:12px}.trace.clean{color:var(--green);opacity:.45}.litter-tools{gap:7px;flex-wrap:wrap;margin:12px 0}.litter-tools .btn{min-height:45px}.litter-tools .btn.primary{background:var(--gold);color:#221d12}.mini-actions .btn{min-height:44px}
+.audio-setting{display:block;padding:16px 0;border-bottom:1px solid var(--line)}.audio-setting label{display:flex;justify-content:space-between;align-items:center;font-size:13px;margin-bottom:10px}.audio-setting input[type=range]{width:100%;accent-color:var(--gold);min-height:36px}.audio-caption{font-size:11px;color:var(--muted);line-height:1.7}.menu-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:18px}.menu-grid .btn{min-height:48px;justify-content:center}.history-photo{max-height:180px;max-width:100%;object-fit:contain;border-radius:10px;margin:8px 0}.log-user{margin-top:15px}.ending-receipt{padding:20px;margin-top:20px;border-radius:16px}.ending-receipt h2{font:30px Georgia,serif}.end-fine{line-height:1.7}body.large-text .scene-copy{font-size:19px}body.large-text .choice-label{font-size:17px}
+@keyframes sceneIn{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}@keyframes dropIn{from{transform:translateY(-10px);opacity:0}to{transform:none;opacity:1}}
+@media(max-width:650px){.app{border:0}.topbar{height:62px;padding-inline:10px}.top-id small{font-size:9px;max-width:150px}.top-id{gap:7px}.top-tools{gap:1px}.sound-toggle{font-size:10px;padding:0 10px}.chapter-line{padding:0 18px;height:30px;font-size:8px}.transcript{padding:14px 17px 22px}.scene-title{font-size:24px;margin-bottom:12px}.scene-kicker{font-size:9px;margin-bottom:8px}.scene-photo{border-radius:16px}.scene-photo img{height:clamp(180px,32dvh,300px)}.scene-photo .chat-photo-caption{font-size:17px;padding:11px 14px}.scene-copy{font-size:15px;line-height:1.7;margin-top:15px}.decision-dock{padding:11px 14px max(12px,env(safe-area-inset-bottom))}.choice-card{padding:11px 13px;min-height:46px}.choice-label{font-size:13px}.choice-list{gap:7px}.decision-dock:has(.game-dock){padding-inline:14px}.chat-minigame{padding:14px;border-radius:16px}.mini-header h3{font-size:23px}.room-grid{gap:3px;padding:5px}.room-cell small{font-size:6px}.room-cell{aspect-ratio:.94}.room-cell .toy-ball{width:20px;height:20px}.food-option{padding:8px 5px}.food-option strong{font-size:11px}.food-option small{font-size:9px}.food-options{gap:5px}.welcome{display:flex!important;flex-direction:column;padding:22px;gap:23px}.welcome .photo-stack{max-width:430px;margin:auto}.welcome .hero-photo{height:235px;object-position:center 55%}.welcome-copy{max-width:430px;margin:auto}.welcome-copy h1{font-size:39px}.welcome-copy .sub{font-size:14px}.welcome-copy>.eyebrow{font-size:8px}.welcome .hero-photo-caption strong{font-size:23px}.home-note{margin-bottom:10px}}
+@media(max-width:360px){.top-id small{display:none}.transcript{padding:12px}.decision-dock{padding-inline:10px}.scene-title{font-size:22px}.scene-photo img{height:185px}.choice-label{font-size:12px}.food-option small{font-size:8px}.chat-minigame{padding:11px}.litter-grid{gap:5px;padding:9px}.top-avatar{width:28px;height:28px}}
+@media(max-width:650px){.scene-stage:not(.review) .scene-photo img{height:clamp(150px,24dvh,235px)}.scene-title{font-size:22px}.scene-photo .chat-photo-caption{font-size:16px}.scene-copy{font-size:14px;line-height:1.65}.scene-copy p{margin-bottom:10px}}
+.room-cell.is-player{overflow:visible;z-index:2}.room-cell.is-player svg{filter:drop-shadow(0 2px 2px #0005)}.room-cell.blocked>span{font-size:20px}.room-cell.blocked small{font-size:7px}.food-prep{display:flex;align-items:center;justify-content:space-between}.food-prep .portion-controls{display:grid;grid-template-columns:1fr 1fr;max-width:215px}.food-prep #foodWater{grid-column:1/-1}.food-options .btn{min-height:52px;padding:8px;font-size:12px;line-height:1.4}.food-options .btn.primary{border-color:var(--gold);background:#4a412b;color:var(--gold)}
+@media(prefers-reduced-motion:reduce){.scene-stage,.bowl .kibble{animation:none}.choice-card{transition:none}}body.reduce-motion .scene-stage,body.reduce-motion .bowl .kibble{animation:none}body.reduce-motion .choice-card{transition:none}
+
+</style>
+<!-- END MOBILE_STYLE -->
 </head>
 <body>
 <svg aria-hidden="true" width="0" height="0" style="position:absolute;overflow:hidden">
@@ -124,12 +160,12 @@ body.large-text .bubble-text,body.large-text .reply{font-size:17px}body.large-te
  <main class="main" id="main">
   <header class="topbar">
    <div class="top-id"><button class="icon-btn mobile-menu" data-action="navigation" aria-label="Kapitelmenü öffnen"><svg><use href="#i-menu"/></svg></button><img class="avatar top-avatar" id="topAvatar" alt="Ted, der CEO von CATGPT"><div><strong>Ted <span class="muted">/ CEO</span></strong><small id="topStatus">Anwesend. Nicht verantwortlich.</small></div></div>
-   <div class="top-tools"><span class="pill gold"><i class="dot"></i>Story-Modus</span><button class="icon-btn" data-action="gallery" aria-label="Alle 33 Beweisfotos öffnen" title="Alle Fotos"><svg><use href="#i-images"/></svg></button><button class="icon-btn mobile-profile-button" data-action="profile" aria-label="Ted und Spielwerte anzeigen"><svg><use href="#i-cat"/></svg></button><button class="icon-btn" data-action="settings" aria-label="Spielstand und Einstellungen öffnen" title="Spielstand & Einstellungen"><svg><use href="#i-gear"/></svg></button></div>
+   <div class="top-tools"><button id="soundToggle" class="icon-btn sound-toggle" type="button" aria-label="Ton ausschalten">Ton an</button><span class="pill gold"><i class="dot"></i>Story-Modus</span><button class="icon-btn" data-action="gallery" aria-label="Alle 33 Beweisfotos öffnen" title="Alle Fotos"><svg><use href="#i-images"/></svg></button><button class="icon-btn mobile-profile-button" data-action="profile" aria-label="Ted und Spielwerte anzeigen"><svg><use href="#i-cat"/></svg></button><button class="icon-btn" data-action="settings" aria-label="Spielstand und Einstellungen öffnen" title="Spielstand & Einstellungen"><svg><use href="#i-gear"/></svg></button></div>
   </header>
   <div class="chapter-line"><span id="chapterLabel">EINE FIRMA IN 33 BEWEISFOTOS</span><div class="stages" id="topStages"></div><div class="mobile-status" id="mobileStats"></div></div>
   <section class="home" id="home" aria-labelledby="homeTitle"><div class="welcome">
 <div class="photo-stack"><img class="hero-photo" id="heroPhoto" alt="Ted liegt auf dem Schreibtisch vor den Monitoren"><span class="hired-stamp">DU BIST EINGESTELLT.</span><span class="hero-photo-caption"><small>33 FOTOS. EIN CEO. NULL EIGENLEISTUNG.</small><strong>Arbeitsspeicher voll.<br>Schreibtisch auch.</strong></span></div>
-<div class="welcome-copy"><div class="eyebrow">CATGPT · DEIN CHAT MIT DER GESCHÄFTSLEITUNG</div><h1 id="homeTitle">Du wolltest chatten.<br><em>Ted wollte Personal.</em></h1><p class="sub">Ted hat eine Firma von KI bauen lassen.<br>Jetzt chattet er mit dir. Und delegiert dabei<br>seinen kompletten Katzentag. Sehr persönlich.</p><div class="facts"><span><svg><use href="#i-clock"/></svg>ca. 20 Minuten</span><span><svg><use href="#i-game"/></svg>3 Minispiele</span><span><svg><use href="#i-branch"/></svg>4 Enden</span></div><button class="btn primary start-btn" id="startButton"><span>Ted anschreiben</span><svg><use href="#i-arrow"/></svg></button><p class="resume-note" id="resumeNote" hidden></p><label class="save-opt"><input type="checkbox" id="landingSave">Spielstand auf diesem Gerät speichern</label><div class="home-bottom"><button class="text-btn" data-action="gallery">Alle 33 Fotos ansehen</button><button class="text-btn" data-action="about">Wie spielt man?</button></div><p class="home-note">Du machst die Arbeit. Ted macht den Eindruck.<br>Echte Fotos. Erfundenes Unternehmen. Vorbereitete Antworten.</p></div></div></section>
+<div class="welcome-copy"><div class="eyebrow">CATGPT · DEIN CHAT MIT DER GESCHÄFTSLEITUNG</div><h1 id="homeTitle">Ein Kater.<br><em>Dein Problem.</em></h1><p class="sub">Ted geht an die Börse. Du holst vorher kurz den Ball.<br>Eine Firmenführung mit 33 Beweisfotos, drei Aufgaben und einer sehr weichen Geschäftsleitung.</p><div class="facts"><span><svg><use href="#i-clock"/></svg>ca. 20 Minuten</span><span><svg><use href="#i-game"/></svg>3 Minispiele</span><span><svg><use href="#i-branch"/></svg>4 Enden</span></div><button class="btn primary start-btn" id="startButton"><span>Ted anschreiben</span><svg><use href="#i-arrow"/></svg></button><p class="resume-note" id="resumeNote" hidden></p><label class="save-opt"><input type="checkbox" id="landingSave">Spielstand auf diesem Gerät speichern</label><div class="home-bottom"><button class="text-btn" data-action="gallery">Alle 33 Fotos ansehen</button><button class="text-btn" data-action="about">Wie spielt man?</button></div><p class="home-note">Mit Miau-Musik: Bruder Jakob, auf Katzenart.<br>Ton oben jederzeit abschaltbar. Keine Installation.</p></div></div></section>
   <section class="game-area" id="gameArea" hidden aria-label="Deine Schicht bei CATGPT">
    <div class="story-scroll" id="storyScroll"><div class="transcript" id="transcript"></div></div>
    <footer class="decision-dock" id="decisionDock"><div class="decision-inner"><div class="decision-top"><span class="eyebrow" id="decisionLabel">Deine Antwort</span><button class="read-scene" id="readScene" type="button"><span>Teds Antwort</span><svg><use href="#i-down"/></svg></button><span class="choice-hint" id="keyHint">1–4 WÄHLEN · IN RUHE LESEN</span></div><div class="choice-list" id="choices"></div><div class="dock-footer"><span class="flavour">DU WÄHLST. TED DELEGIERT.</span><button data-action="documents" id="footerDocuments">Dokumente · 0</button><button data-action="gallery">Fotoarchiv · 33</button></div></div></footer>
@@ -150,9 +186,9 @@ body.large-text .bubble-text,body.large-text .reply{font-size:17px}body.large-te
 </div>
 <dialog id="galleryDialog" class="gallery-dialog" aria-labelledby="galleryTitle"><div class="dialog-head"><div><h2 id="galleryTitle">Die Beweislage.</h2><p>33 Fotos. Ein Kater. Keine belastbaren Tätigkeitsnachweise.</p></div><button class="icon-btn" data-close aria-label="Fotoarchiv schließen"><svg><use href="#i-close"/></svg></button></div><div id="galleryOverview"><div class="gallery-toolbar"><label class="sr-only" for="gallerySearch">Fotos nach Titel, Datei oder Originalnummer durchsuchen</label><input class="search" id="gallerySearch" placeholder="Motiv, Dateiname oder Originalnummer …" autocomplete="off"><div class="gallery-filters" id="galleryFilters"></div><div class="gallery-count" id="galleryCount"></div></div><div class="gallery-grid" id="galleryGrid"></div><p class="gallery-empty" id="galleryEmpty" hidden>Keine Treffer. Alle 33 Fotos bleiben ohne Filter erreichbar.</p></div><div class="lightbox" id="lightbox" hidden><div class="lightbox-tools"><button class="text-btn" id="backToGallery"><svg><use href="#i-left"/></svg>Zur Übersicht</button><span class="lightbox-count" id="lightboxCount"></span></div><img class="lightbox-image" id="lightboxImage" alt=""><div class="lightbox-footer"><div><h3 id="lightboxTitle"></h3><p id="lightboxStory"></p><small id="lightboxFile"></small></div><div class="lightbox-nav"><button class="icon-btn" id="prevPhoto" aria-label="Vorheriges Foto"><svg><use href="#i-left"/></svg></button><button class="icon-btn" id="nextPhoto" aria-label="Nächstes Foto"><svg><use href="#i-right"/></svg></button></div></div></div></dialog>
 <dialog id="documentsDialog" aria-labelledby="documentsTitle"><div class="dialog-head"><div><h2 id="documentsTitle">Nicht nur versprochen.</h2><p>Deine Beweise und bestätigten Abmachungen.</p></div><button class="icon-btn" data-close aria-label="Dokumente schließen"><svg><use href="#i-close"/></svg></button></div><div class="dialog-body" id="documentsBody"></div></dialog>
-<dialog id="settingsDialog" aria-labelledby="settingsTitle"><div class="dialog-head"><div><h2 id="settingsTitle">Die Schicht verwalten.</h2><p>Ted hat diesen Teil selbstverständlich delegiert.</p></div><button class="icon-btn" data-close aria-label="Einstellungen schließen"><svg><use href="#i-close"/></svg></button></div><div class="dialog-body"><label class="setting"><span><strong>Lokal speichern</strong><p>Nur auf diesem Gerät. Ohne Speicherung endet die Sitzung beim Schließen. Ein Export funktioniert unabhängig davon.</p></span><input type="checkbox" class="switch" id="settingSave"></label><label class="setting"><span><strong>Größere Leseschrift</strong><p>Mehr Platz für Dialoge und Antwortmöglichkeiten.</p></span><input type="checkbox" class="switch" id="settingLarge"></label><label class="setting"><span><strong>Weniger Bewegung</strong><p>Keine weichen Übergänge. Die Systemeinstellung wird berücksichtigt.</p></span><input type="checkbox" class="switch" id="settingMotion"></label><div class="settings-state" id="settingsState"></div><div class="button-row"><button class="btn" id="exportSave"><svg><use href="#i-download"/></svg>Spielstand exportieren</button><button class="btn" id="importSave"><svg><use href="#i-upload"/></svg>Spielstand importieren</button></div><input id="saveFile" type="file" accept=".json,application/json" hidden><div class="button-row"><button class="btn" id="restartChapter"><svg><use href="#i-restart"/></svg>Kapitel neu starten</button><button class="btn danger" id="newShift">Neue Schicht</button></div><p class="end-fine">Frühere Chatverläufe werden weder übernommen noch gelöscht. Es gibt keinen Server, keine kostenpflichtigen Aufrufe und keine versteckte KI-Verbindung.</p></div></dialog>
-<dialog id="aboutDialog" aria-labelledby="aboutTitle"><div class="dialog-head"><div><h2 id="aboutTitle">Der CEO schläft.</h2><p>Ein spielbarer Chat · Version 0.5</p></div><button class="icon-btn" data-close aria-label="Spielinformationen schließen"><svg><use href="#i-close"/></svg></button></div><div class="dialog-body"><p class="about-quote">Du schreibst. Ted antwortet.<br>Du arbeitest. Ted hat eine Meinung.</p><p>Ein geschriebener Satire-Chat mit Ted, dem faulen Britisch-Kurzhaar-CEO. Seine Firma ist von KI gebaut worden. Im Spiel antwortet keine laufende KI: Jede Auswahl hat eine vorbereitete Reaktion.</p><h3>So spielst du</h3><p>Wähle eine Antwort unten. Dein Satz und Teds direkte Reaktion bleiben im Chat. Die Fotos sind seine Anhänge. Das nächste Thema wird nicht anstelle seiner Antwort gezeigt. Kapitel wechseln erst, wenn du den angekündigten nächsten Auftrag bestätigst.</p><p>Drei Spiele bilden den Katzenalltag ab: Ball zurückholen, eine erfundene Futterbestellung bedienen und ein schematisches Katzenklo reinigen. Jedes hat Hinweise und eine Abkürzung. Kein Zeitdruck, keine Bezahlung und keine neue Pflichtaufgabe nach der dritten.</p><h3>Fotos und Entscheidungen</h3><p>Alle 33 Fotos sind im Archiv frei zugänglich und in der Story eingebunden. Original-Nr. 14 bleibt ausgeschlossen. Deine Zusagen, Grenzen und Spielentscheidungen werden später wieder aufgegriffen. Vier Enden, kein Zwang, Ted immer gefallen zu müssen.</p><h3>In Ruhe lesen</h3><p>Ungefähr 20 Minuten sind das Spielzeitziel, keine gemessene Zusage. Die Tasten 1 bis 4 wählen Antworten. Tab und Enter funktionieren überall. Die Pfeiltasten steuern den Menschen nur im fokussierten Ball-Spiel. Über „Teds Antwort“ springst du zum neuen Gesprächsteil.</p><p class="notice">Version 0.5.0 · Speicherformat 3 · catgpt.game.v3. Die Handlung und die Spiele wurden neu geschrieben. Alte Spielstände bleiben unberührt, sind aber mit dieser Ausgabe nicht kompatibel. Für eine neue Schicht diese Version nutzen; für einen alten Stand die bisherige Datei behalten. Export/Import und freiwilliges lokales Speichern findest du in den Einstellungen.</p><p>Ted ist echt. Seine Unternehmensrolle ist Satire. Die Seite ist offline nutzbar, enthält keine Tracker und braucht weder Konto noch API-Schlüssel.</p></div></dialog>
-<dialog id="navigationDialog" class="mobile-nav" aria-labelledby="navigationTitle"><div class="dialog-head"><div><h2 id="navigationTitle">Deine Schicht.</h2><p>Erreichte Kapitel mit Rücksetzen neu beginnen.</p></div><button class="icon-btn" data-close aria-label="Kapitelmenü schließen"><svg><use href="#i-close"/></svg></button></div><div class="dialog-body"><nav class="chapters" id="mobileChapterNav" aria-label="Erreichte Kapitel"></nav><div class="button-row"><button class="btn" data-action="documents">Dokumente</button><button class="btn" data-action="gallery">Alle Fotos</button><button class="btn" data-action="home">Startseite</button></div></div></dialog>
+<dialog id="settingsDialog" aria-labelledby="settingsTitle"><div class="dialog-head"><div><h2 id="settingsTitle">Die Schicht verwalten.</h2><p>Ted hat diesen Teil selbstverständlich delegiert.</p></div><button class="icon-btn" data-close aria-label="Einstellungen schließen"><svg><use href="#i-close"/></svg></button></div><div class="dialog-body"><label class="setting"><span><strong>Lokal speichern</strong><p>Nur auf diesem Gerät. Ohne Speicherung endet die Sitzung beim Schließen. Ein Export funktioniert unabhängig davon.</p></span><input type="checkbox" class="switch" id="settingSave"></label><label class="setting"><span><strong>Größere Leseschrift</strong><p>Mehr Platz für Dialoge und Antwortmöglichkeiten.</p></span><input type="checkbox" class="switch" id="settingLarge"></label><label class="setting"><span><strong>Weniger Bewegung</strong><p>Keine weichen Übergänge. Die Systemeinstellung wird berücksichtigt.</p></span><input type="checkbox" class="switch" id="settingMotion"></label><div class="audio-setting"><label for="audioMuted">Alles stummschalten<input id="audioMuted" class="switch" type="checkbox"></label></div><div class="audio-setting"><label for="musicVolume">Miau-Musik <span id="musicValue"></span></label><input id="musicVolume" type="range" min="0" max="100" step="1"></div><div class="audio-setting"><label for="effectsVolume">Spielgeräusche <span id="effectsValue"></span></label><input id="effectsVolume" type="range" min="0" max="100" step="1"></div><p class="audio-caption">Bruder Jakob · die Miau-Runde. Direkt im Spiel erzeugt, ohne Aufnahme oder Download.</p><div class="settings-state" id="settingsState"></div><div class="button-row"><button class="btn" id="exportSave"><svg><use href="#i-download"/></svg>Spielstand exportieren</button><button class="btn" id="importSave"><svg><use href="#i-upload"/></svg>Spielstand importieren</button></div><input id="saveFile" type="file" accept=".json,application/json" hidden><div class="button-row"><button class="btn" id="restartChapter"><svg><use href="#i-restart"/></svg>Kapitel neu starten</button><button class="btn danger" id="newShift">Neue Schicht</button></div><p class="end-fine">Frühere Chatverläufe werden weder übernommen noch gelöscht. Es gibt keinen Server, keine kostenpflichtigen Aufrufe und keine versteckte KI-Verbindung.</p></div></dialog>
+<dialog id="aboutDialog" aria-labelledby="aboutTitle"><div class="dialog-head"><div><h2 id="aboutTitle">Der CEO schläft.</h2><p>Eine absurde Firmenführung · Version 0.6</p></div><button class="icon-btn" data-close aria-label="Spielinformationen schließen"><svg><use href="#i-close"/></svg></button></div><div class="dialog-body"><p class="about-quote">Du schreibst. Ted antwortet.<br>Du arbeitest. Ted hat eine Meinung.</p><p>Ein geschriebener Satire-Chat mit Ted, dem faulen Britisch-Kurzhaar-CEO. Seine Firma ist von KI gebaut worden. Im Spiel antwortet keine laufende KI: Jede Auswahl hat eine vorbereitete Reaktion.</p><h3>So spielst du</h3><p>Wähle eine Antwort unten. Dein Satz und Teds direkte Reaktion bleiben beim Foto und im Gesprächsverlauf. Jedes Foto bekommt seinen eigenen Auftritt. Das nächste Thema wird nicht anstelle seiner Antwort gezeigt. Kapitel wechseln erst, wenn du den angekündigten nächsten Auftrag bestätigst.</p><p>Drei Spiele bilden den Katzenalltag ab: Ball zurückholen, eine erfundene Futterbestellung bedienen und ein schematisches Katzenklo reinigen. Jedes hat Hinweise und eine Abkürzung. Kein Zeitdruck, keine Bezahlung und keine neue Pflichtaufgabe nach der dritten.</p><h3>Fotos und Entscheidungen</h3><p>Alle 33 Fotos sind im Archiv frei zugänglich und in der Story eingebunden. Original-Nr. 14 bleibt ausgeschlossen. Deine Zusagen, Grenzen und Spielentscheidungen werden später wieder aufgegriffen. Vier Enden, kein Zwang, Ted immer gefallen zu müssen.</p><h3>In Ruhe lesen</h3><p>Ungefähr 20 Minuten sind das Spielzeitziel, keine gemessene Zusage. Die Tasten 1 bis 4 wählen Antworten. Tab und Enter funktionieren überall. Die Pfeiltasten steuern den Menschen nur im fokussierten Ball-Spiel. Über „Teds Antwort“ springst du zum neuen Gesprächsteil.</p><p class="notice">Version 0.5.0 · Speicherformat 3 · catgpt.game.v3. Die Handlung und die Spiele wurden neu geschrieben. Alte Spielstände bleiben unberührt, sind aber mit dieser Ausgabe nicht kompatibel. Für eine neue Schicht diese Version nutzen; für einen alten Stand die bisherige Datei behalten. Export/Import und freiwilliges lokales Speichern findest du in den Einstellungen.</p><p>Ted ist echt. Seine Unternehmensrolle ist Satire. Die Seite ist offline nutzbar, enthält keine Tracker und braucht weder Konto noch API-Schlüssel.</p></div></dialog>
+<dialog id="navigationDialog" class="mobile-nav" aria-labelledby="navigationTitle"><div class="dialog-head"><div><h2 id="navigationTitle">Deine Schicht.</h2><p>Erreichte Kapitel mit Rücksetzen neu beginnen.</p></div><button class="icon-btn" data-close aria-label="Kapitelmenü schließen"><svg><use href="#i-close"/></svg></button></div><div class="dialog-body"><div class="menu-grid"><button class="btn" data-action="history">Gesprächsverlauf</button><button class="btn" data-action="settings">Ton &amp; Einstellungen</button><button class="btn" data-action="profile">Ted &amp; Spielwerte</button><button class="btn" data-action="about">So geht’s</button></div><h3 class="end-fine">Kapitel erneut spielen</h3><nav class="chapters" id="mobileChapterNav" aria-label="Erreichte Kapitel"></nav><div class="button-row"><button class="btn" data-action="documents">Dokumente</button><button class="btn" data-action="gallery">Alle Fotos</button><button class="btn" data-action="home">Startseite</button></div></div></dialog>
 <dialog id="profileDialog" aria-labelledby="profileTitle"><div class="dialog-head"><div><h2 id="profileTitle">Ted. Geschäftsleitung.</h2><p>CEO &amp; Founder. Laut Ted.</p></div><button class="icon-btn" data-close aria-label="Ted-Profil schließen"><svg><use href="#i-close"/></svg></button></div><div class="dialog-body"><img class="mobile-ceo-photo" id="profilePhoto" alt="Ted"><p id="profileStatus"></p><div class="stats" id="profileStats"></div><div class="button-row"><button class="btn" data-action="gallery">Die gesamte Beweislage</button></div></div></dialog>
 <dialog class="history-dialog" id="historyDialog" aria-labelledby="historyTitle"><div class="dialog-head"><div><h2 id="historyTitle">Das hat Ted wirklich gesagt.</h2><p>Der vollständige Chat. Eine Überschrift springt zur damaligen Nachricht.</p></div><button class="icon-btn" data-close aria-label="Dialogprotokoll schließen"><svg><use href="#i-close"/></svg></button></div><div class="dialog-body" id="historyBody"></div></dialog>
 <dialog id="confirmDialog" aria-labelledby="confirmTitle"><div class="dialog-head"><div><h2 id="confirmTitle">Wirklich?</h2></div><button class="icon-btn" data-close aria-label="Abbrechen"><svg><use href="#i-close"/></svg></button></div><div class="dialog-body"><p class="confirm-text" id="confirmText"></p><div class="button-row" style="justify-content:flex-end"><button class="btn" id="confirmNo">Abbrechen</button><button class="btn primary" id="confirmYes">Bestätigen</button></div></div></dialog>
@@ -499,8 +535,112 @@ for(const ending of Object.keys(ENDINGS)){
  ],[],{end:true});
 }
 
+/* BEGIN STORY_EDITION */
+/* Photo-led edition. The shortened opening and new actions use save format 4. */
+const rewrite=(id,text)=>{STORY[id].text=text;};
+const caption=(id,title,note)=>{PHOTO_STORY[id].caption=title;if(note)PHOTO_STORY[id].note=note;};
+CHAPTERS[0].title='Du hast den Job bereits.';CHAPTERS[0].task='Zur Firmenführung. Nicht versehentlich noch einen Arbeitsvertrag anklicken.';
+CHAPTERS[2].short='Unbegrenztes Wachstum';CHAPTERS[2].title='Der Markt hat Hunger.';
+CHAPTERS[3].short='Der erste echte Output';CHAPTERS[3].title='Das große Geschäft.';
+CHAPTERS[4].short='Die große Vorführung';CHAPTERS[4].title='Ein Börsengang mit vier Pfoten.';
+caption('judge','Bewerbung eingegangen. Du hast geklickt.','Die Personalabteilung hat dich überprüft: mindestens ein Finger, offenbar Internet. Überqualifiziert, aber verfügbar.');
+caption('director','Vier Vorstände. Eine Katze. Null Haftung.','CEO, Personalchef, Ethikrat und Beschwerdestelle. Jede Pfote verweist auf eine andere Pfote.');
+caption('alert','Jahresleistung: einmal aufrecht.','Bitte ein Foto machen. Für den Tätigkeitsbericht reicht es, wenn ich darauf senkrecht bin.');
+caption('tilt','Ich suche den Winkel, aus dem das kostenlos klingt.','Deine Rückfrage hat meine Kopfhaltung verändert. Die erste Umstrukturierung ist damit abgeschlossen.');
+caption('portfolio','Drei haben eine Glocke. Keiner einen Abschluss.','Die Bälle programmieren. Der Fisch betreut das Netz. Das Wollknäuel verwaltet die Verstrickungen. Ein Team mit erstaunlich wenig Gehaltsforderungen.');
+caption('remoteit','Die IT hat sich räumlich gekündigt.','Der gelb-blaue Kollege sitzt hinter unserer Firewall. Das Tischgestell hat bisher jeden Angriff von mir abgewehrt. Ich habe allerdings noch keinen versucht.');
+caption('mat','Geschäftsreise. Rückfahrt nicht budgetiert.','Vom Schrank auf die Matte. International wird es, sobald jemand die Balkontür aufmacht.');
+caption('think','Zu hell für diese Unternehmenskultur.','Unsere hellste Mitarbeiterin. Ich habe ihr gekündigt. Sie hat mich schlecht aussehen lassen.');
+caption('desk','Die Firewall ist jetzt körperlich.','Versuch mal, eine E-Mail durch meinen Arsch zu schicken. Sicherheit ist bei uns keine Software. Es ist eine Sitzordnung.');
+caption('work','War maßgeblich in der Nähe beteiligt.','Der Laptop rechnet, der Mensch tippt. Ich liege im Bild. Die KI hat daraus eine Gründerbiografie gemacht.');
+caption('security','Passwort: Lassmich. Zweiter Faktor: inruhe.','Zwei Augen. Zwei Faktoren. Sobald ich blinzle, gilt dein Zugang als widerrufen.');
+caption('floor','Akuter Notfall. Napf nicht im Gesicht.','Ich bin bereits auf Bodenniveau. Wenn ich noch weiter entgegenkomme, müssen wir einen Keller bauen.');
+caption('stretch','Wachstum, das die Matratze versteht.','Im letzten Quartal habe ich zwei Kissen übernommen. Die Kartellbehörde ist die Decke. Wir kennen uns privat.');
+caption('solar','Nachhaltig. Bis zur nächsten Wolke.','Die Firma läuft mit Solarenergie. Sobald eine Wolke kommt, musst du mich mit einer Taschenlampe motivieren.');
+caption('bed','Vor dem Essen bitte keine Bewegung.','Ich spare Energie für die Bewertung deines Essens. Ein anspruchsvoller Beruf mit sehr weichem Arbeitsweg.');
+caption('duvet','Sterne-Küche. Das Muster hat Blumen.','Unsere Kantine ist botanisch zertifiziert. Ich habe das Blumenmuster eigenpfötig nicht ausgesucht.');
+caption('wellness','Die Kissen tragen das Unternehmen.','Ich habe nach dem Mittagessen Verantwortung abgegeben. Hauptsächlich an dieses Polster.');
+caption('upsidedown','Geschäftsführer gedreht. Zahlen gerettet.','Die Zahlen waren schlecht. Ich habe den Geschäftsführer gedreht. Jetzt geht alles nach oben.');
+caption('sofa','Die Produktion läuft. Innerlich.','Der einzige Prozess, den ich heute selbst gestartet habe, endet leider in deinem Aufgabenbereich.');
+caption('nap','Stand-by. Gehalt-by auch.','Ich schlafe nicht. Ich warte auf ein Update, das meine Arbeit erledigt. Bisher heißt das Update du.');
+caption('lounge','Die Schaufel übernimmt den operativen Teil.','Ich habe mich extra hingesetzt, damit wir die Zuständigkeitslücke zwischen meinen Pfoten besprechen können.');
+caption('chaos','Das Budget schaut zurück.','So sehe ich aus, wenn jemand meinen Output in Rechnung stellt. Ich dachte, Abfall wäre eine kostenlose Cloud.');
+caption('approval','Geprüft mit geschlossenen Augen.','Ich prüfe mit geschlossenen Augen. So beeinflusst mich das Ergebnis nicht.');
+caption('sun','Mitarbeiterbindung. Mechanisch.','Ich halte hier nur den Stoff fest. Falls dein Feierabend darin steckt, ist das ein bedauerlicher Zufall.');
+caption('marketshare','Marktanteil: Sofa. Rest: ebenfalls Sofa.','Die linke Hälfte habe ich gekauft. Die rechte Hälfte habe ich besetzt. Der Kartellfall läuft beim Kissen.');
+caption('edge','Kurz vor dem Durchbruch. Das Kissen zuerst.','Wir stehen an der Kapazitätsgrenze. Nicht an meiner. Ich habe meine nie ausprobiert.');
+caption('boss','Führungsebene. Zwei Bretter höher.','Der Kratzbaum ist mein einziger nachweisbarer Karriereweg. Bitte im Lebenslauf trotzdem „organisches Wachstum“ schreiben.');
+caption('closeup','Sachargument: dieses Gesicht.','Schau mir in die Augen und sag noch einmal, dass Anwesenheit keine Arbeitsleistung ist. Nein, nicht so überzeugend.');
+caption('walkover','Die Übernahme ist abgeschlossen.','Bitte bewege das Unternehmen nicht. Ich liege darauf.');
+caption('cozy','Ein warmer Moment. Ohne Anschlussauftrag.','Du bist anstrengend, aber warm. Das ist in meinem Bewertungssystem erstaunlich weit oben.');
+caption('belly','Vollständige Offenlegung der Substanz.','Ein Bauch. Kein Produkt. Bitte beim Börsenprospekt die Reihenfolge tauschen.');
+caption('paws','Die Pfoten stimmen für Feierabend.','Vier Ja-Stimmen. Die IT ist bereits unter den Tisch gerollt.');
+
+Object.assign(STORY.c1_welcome.choices.find(c=>c.id==='job'),{label:'Gut. Zeig mir dein „Unternehmen“.',next:'c1_upright',reply:'Hervorragend. Du hast die Anführungszeichen bemerkt. Die Rechtsabteilung arbeitet daran.'});
+STORY.c1_upright.photos=['director','alert'];STORY.c1_upright.photo='director';
+rewrite('c1_welcome','Du hast geklickt. Die KI wertet das als Bewerbung. Willkommen bei CATGPT.\n\nHeute gehen wir an die Börse. Vorher musst du kurz die IT holen, das Management füttern und einen kleinen Produktionsrückstand beseitigen. Ich bin Ted. Mir gehört die Idee, dass du das machst.');
+rewrite('c1_job','Dein Job: Head of Das-müsste-mal-jemand. Du führst eine Abteilung mit einem Mitarbeiter. Du.\n\nDer Vertrag liegt unter mir. Wir betrachten ihn deshalb als beidseitig belastet.');
+delete STORY.c1_job;
+rewrite('c1_pay','Vergütung: ein Blickkontakt pro Quartal. Obstkorb: Foto eines Apfels. Homeoffice: mein Home, dein Office.\n\nEin eigener Stuhl wäre verhandelbar, sobald ich mich für einen anderen entscheide.');
+rewrite('c1_origin','Mein Gründungsprompt: „Mach mich reich, aber beschäftige mich nicht damit.“ Die KI hat eine Firma gebaut und dich reingelassen.\n\nDie erste Finanzierungsrunde war eine leere Schachtel. Ich habe hineingepasst. Alle waren begeistert.');
+rewrite('c1_board',s=>['Vier Ämter. Eine Katze. Keine dieser Pfoten holt Bälle.',s.flags.titleFan?'Dein Titel ist inzwischen länger als unsere Gehaltsliste. Die Liste ist leer.':'Unsere Hierarchie ist flach. Direkt unter mir ist dein Stuhl.']);
+rewrite('c1_board_question','Der Ethikrat sieht kein Problem. Seine Begründung: schnurr.\n\nWir haben übrigens eine unabhängige Kontrolle. Die Lampe sieht alles. Deshalb verdunkle ich sie gelegentlich.');
+rewrite('c1_chair','Shared Desk heißt: Du teilst, ich liege. Dein eigener Stuhl steht vorerst nur als Konzept im Raum.\n\nIch schreibe ihn auf die Tagesordnung. Papier kann man wenigstens unter mich schieben.');
+rewrite('c1_upright','So. Ich sitze aufrecht. Das war mein Beitrag zum heutigen Börsengang.\n\nDu übernimmst die drei Kleinigkeiten: Ball, Futter, Katzenklo. Die KI nennt es Operations. Ich nenne es einen sehr guten Tag für mich.');
+rewrite('c1_scope',s=>[s.flags.threeOnly?'Drei Aufgaben. Die vierte habe ich in „freiwilliges Pflichtvergnügen“ umbenannt. Deinem Gesicht nach streichen wir die.':'Die Firmenführung beginnt. Bitte im Gebäude nicht an die Kleiderbügel stoßen.','Unser Hauptquartier hat zwei Regalböden. Die IT ist ein Ball. Er hat sich aus seiner Zuständigkeit gerollt.']);
+rewrite('c2_office','Unser Hauptquartier. Die Wäsche dämmt den Schall. Das Scharnier ist die einzige Führungskraft, die etwas bewegt.\n\nDer gelb-blaue Ball ist die IT. Auf dem Foto ist er noch im Büro. Inzwischen macht er Homeoffice unter dem Tisch. Ohne Rücksprache. Sehr modern.');
+rewrite('c2_team','Die Bälle entwickeln. Der Fisch betreut das Netz. Das Wollknäuel kümmert sich um Verstrickungen.\n\nAlle arbeiten agil: Sobald man sie braucht, sind sie woanders. Wir suchen den gelb-blauen Kollegen. Bitte nicht die Buchhaltung apportieren.');
+rewrite('c2_remote','Der Kollege sitzt hinter der Firewall. Ein Tischgestell.\n\nTippe im Zimmerplan auf ein freies Ziel. Dein Mensch läuft hin. Bring den Ball zurück. Ich bin auch im Weg. Das ist mein Führungsstil.');
+rewrite('c2_ball','Tippe auf den Ball, heb ihn auf und bring ihn zum Start zurück. Möbel und Geschäftsleitung bleiben liegen.');
+rewrite('c2_outpost','Das ist unsere Außenstelle. Ich bin vom Schrank zur Matte gereist und zur Vermeidung weiterer Kosten geblieben.\n\nIm Prospekt steht „international aufgestellt“. Die Balkontür war offen.');
+rewrite('c2_lamp','Die Lampe arbeitet seit Stunden. Ohne Meeting. Ohne Titel. Ohne LinkedIn-Post über ihren Weg von der Steckdose zum Erfolg.\n\nSehr illoyal. Befördern wir sie oder drehen wir ihre Leistung runter?');
+rewrite('c2_desk',s=>['Die KI macht den Code. Du machst die Eingaben. Ich blockiere den Arbeitsplatz. Drei Spezialisten.',s.flags.ownChair?'Deinen eigenen Stuhl gebe ich frei. Der Schreibtisch gehört weiter der physischen Firewall.':'Wir haben zwei Bildschirme und null Tastaturzugang. Sicherheit durch Körpermasse.','Auf dem Laptop liegt das Gründungsprotokoll. Das Gesicht hier wirkt allerdings deutlich professioneller.']);
+rewrite('c2_space','Ich bin eine Pfotenbreite gerutscht. Die Pressemitteilung spricht von einem Standortwechsel.\n\nDu kommst jetzt ans Protokoll. Schnell, bevor die Geschäftsleitung rückexpandiert.');
+rewrite('c2_protocol','Website: KI. Code: KI. Personalbeschaffung: KI. Mein Beitrag: „Mach es erfolgreich, aber beschäftige mich nicht.“\n\nBitte speichern. Unter „Vision“, nicht unter „Beweismittel“.');
+rewrite('c2_security',s=>[has(s,'protocol')?'Du hast das Protokoll. Der Datenschutzbeauftragte ist beleidigt. Ich bin das übrigens auch.':'Zugangskontrolle bestanden. Du siehst nützlich aus.','Die IT ist zurück. Jetzt fällt unser größter Kunde aus: mein Magen. Er hat seit der letzten Mahlzeit nichts bekommen.']);
+rewrite('c3_hunger',s=>['Akuter Engpass. Ich liege schon auf Napfhöhe. Noch näher dran wäre ich Teil der Bestellung.',s.flags.humanHungry?'Deinen Hunger führen wir ab jetzt als zweiten Standort.':'Die Nachfrage ist riesig. Der Markt bin ich.','Das Budget bist du. Eine erfreulich einfache Finanzstruktur.']);
+rewrite('c3_growth','Leider kann auch erneuerbare Energie keine Dose öffnen. Der Sonne fehlt der Daumen.\n\nDeshalb haben wir dich eingestellt. Die KI fand fünf Finger übertrieben, aber du warst gerade da.');
+rewrite('c3_order','Das Blumenmuster ist unsere Kantinengestaltung. Sehr exklusiv. Ich habe es nicht bezahlt.\n\nMeine Bestellung: Hausmenü, blaue Schale, zwei Portionen und Wasser. Danach darfst du entscheiden, ob ich hinlaufe oder das Essen einen teureren Namen bekommt.');
+rewrite('c3_food','Stelle die Bestellung zusammen. Danach retten wir den Markenwert mit einem Etikett.');
+rewrite('c3_result',s=>[s.games.food.result==='skipped'?'Vorbereitete Portion akzeptiert. Mein Magen hat den fehlenden Projektplan nicht bemerkt.':s.games.food.finish==='label'?`„${s.games.food.brand||'Chefedition'}“. Dasselbe Futter, neues Etikett. Ich finde es plötzlich hervorragend. Bitte nie auf mich als Investor vertrauen.`:'Ich bin selbst zum Napf gegangen. Die Geschäftsleitung verlangt vier Tage Regeneration.',s.flags.humanHungry?'Jetzt zu deinem Hunger. Du bekommst eine Pause statt einer Ticketnummer.':'Die Kissen tragen jetzt den gesamten Vorstand. Eine Karriere ohne Aufstieg.','Was darf’s für dich sein? Eine Pause, ein Anteil oder ein völlig nutzloser Titel?']);
+rewrite('c3_agreement','Pause für beide. Schriftlich. Die Rechtsabteilung hat versucht, „beide“ durch „Ted“ zu ersetzen. Du warst schneller.\n\nNoch ein Wunsch, bevor ich die Pfote vom Dokument nehme?');
+rewrite('c3_credit','Dein Name unter deiner Arbeit. Meiner auf dem Gebäude. So erkennt man schon von außen, wer nichts tragen musste.\n\nDas ist ab jetzt schriftlich. Mit einer überraschend widerwilligen Pfote bestätigt.');
+rewrite('c3_title','Chief Napkin Officer. Du wischst alles auf. Ich lasse dich in einer Präsentation kreisförmig darstellen.\n\nOder du nimmst die Pause. Aber die hat keine Visitenkarte.');
+rewrite('c3_pivot',s=>['Geschäftsführer gedreht. Problem gelöst. Die Folien stehen jetzt kopfüber, also geht der Verlust nach oben.',has(s,'rest')?'Deine Pause ist vereinbart. Noch genau eine Aufgabe.':'Noch eine Aufgabe, dann die Vorführung.','Das Katzenklo. Ich habe den produktiven Teil bereits persönlich übernommen.']);
+rewrite('c4_mission','Die Produktion läuft. Mein Darm ist gerade die einzige Abteilung mit messbarem Output.\n\nDu übernimmst die Altlasten. Ich habe ein Tool beschafft. Es ist eine Schaufel. Sie braucht kein Passwort.');
+rewrite('c4_tools',s=>[s.flags.teamRespect?'Die Mitarbeitervertretung der Bälle lehnt den Schaufeldienst ab. Begründung: rund. Juristisch erstaunlich wasserdicht.':'Die Schaufel ist unser einziges Tool ohne Abo. Ich wollte 9,99 im Monat verlangen. Sie hat nicht reagiert.','Klumpen weg, Spuren weg, Streu rein. Danach prüfe ich das Ergebnis mit geschlossenen Augen. So bleibe ich unvoreingenommen.']);
+rewrite('c4_litter','Schaufel für Klumpen, Besen für Spuren. Du sanierst. Ted nimmt später den Preis entgegen.');
+rewrite('c4_debrief',s=>['Ball zurück. Napf voll. Anlage sauber. Ich habe in derselben Zeit drei Unterlagen getestet: Sofa, Bett, dich.',s.flags.ownChair?'Dein eigener Sitzplatz wird gerade freigegeben. Vom Konzept her.':s.flags.workSpace?'Du hast den Schreibtisch erobert. Ich plane bereits eine Wiederbesetzung.':'Die ganze Sofafläche gehört zum Konzern. Du darfst als Randnotiz sitzen.','Du bist fertig. Das ist ein schwerer Fehler im Geschäftsmodell.']);
+rewrite('c4_thanks','Danke. Ehrlich. Du hast geholfen, obwohl diese Firma zu 90 Prozent aus meiner Liegeposition besteht.\n\nBitte keinen Screenshot. Die Investoren halten mich für emotional nicht zuständig.');
+rewrite('c4_edge',s=>['Kurz vor dem Durchbruch. Das Kissen hat schon nachgegeben.',has(s,'credit')?'Deine Zusage gilt. In der Bilanz muss ich erstmals unter meinem eigenen Beitrag unterschreiben. Die Zeile ist erschreckend kurz.':has(s,'rest')?'Deine Pause gilt. Der Vorstand sucht vergeblich nach einem Sternchen.':'Du bist fertig. Der nächste Ball ist keine automatische Vertragsverlängerung.','Zur Vorführung. Ich gehe schon einmal zwei Bretter höher. Kompetenz braucht Abstand.']);
+rewrite('c5_reveal',s=>[s.flags.sawTwist?'Du hast es geahnt: Die Vorführung läuft seit deinem ersten Klick.':'Überraschung: Die Vorführung warst du. Die KI hat eine Seite gebaut, die einen Menschen dazu bringt, meinen Katzentag zu erledigen.','Unser Produkt heißt Mensch-as-a-Service. Der Server bist du. Das Abo habe ich vergessen zu erwähnen.','Der Börsengang findet auf dem Kratzbaum statt. Die Bälle sind Investoren. Die Mehrheit ist unter den Tisch gerollt.']);
+rewrite('c5_contact',s=>['Die Übernahme ist abgeschlossen. Bitte bewege das Unternehmen nicht. Ich liege darauf.',s.flags.ownChair?'Dein Sitzplatz ist frei. Ich wollte nur prüfen, ob du warm genug dafür bist.':s.flags.thanksNoted?'Du hast mein Danke notiert. Ich bestreite nur die Herzchen in der Formatierung.':'Ja, ich mag dich. Du bist warm und kannst Dosen öffnen. Es wäre absurd, da keine Gefühle zu entwickeln.','Das ist kein neuer Auftrag. Einmal kraulen ist optional. Laut Personalabteilung. Also mir, vor fünf Minuten.']);
+// Keep the factual result functions: they distinguish actual actions from shortcuts.
+STORY.c2_lamp.choices[0].label='Befördere sie zur Stehlampe.';
+STORY.c2_lamp.choices[0].reply='Chief Illumination Officer. Die Lampe bekommt die Anerkennung. Sie hat abgelehnt, meinen Namen mit auszuleuchten. Sehr unabhängige Führungskraft.';
+STORY.c2_lamp.choices[1].label='Die Lampe führt ab jetzt dich.';
+STORY.c2_lamp.choices[1].reply='Sie steht bereits über mir. Wir nennen das flache Hierarchie und stellen sie vorsichtshalber auf den Boden.';
+STORY.c3_growth.choices[0].label='Ich kündige. Frag die Sonne.';
+STORY.c3_growth.choices[0].reply='Die Sonne hat um 18 Uhr einen anderen Kunden. Du bleibst vorerst mein Daumen mit Internetanschluss.';
+STORY.c4_mission.choices[2].label='Endlich ein Produkt. Leider scheiße.';
+STORY.c4_mission.choices[2].reply='Organisch gewachsen. Regional produziert. Die Marketingabteilung hat sich seit heute Morgen nicht mehr eingekriegt.';
+STORY.c5_balance.choices[0].label='Wir gründen neu. Die Lampe prüft die Bilanz.';
+STORY.c5_balance.choices[1].label='Ich spiele mit. Befördere mich ins Lächerliche.';
+STORY.c5_balance.choices[2].label='Firma zu. Beide auf die Couch.';
+STORY.c5_balance.choices[3].label='Ich gehe. Der Ball wird dein Nachfolger.';
+ENDINGS.founder.last='Dein Name steht unter der Arbeit. Die Lampe prüft die Bilanz. Ich habe versucht, sie zu bestechen. Sie nimmt nur Strom. Ein sehr schwieriger Markt.';
+ENDINGS.human.last='Hiermit ernenne ich dich zum Senior Executive Chief of Alles. Du bekommst einen Untergebenen: dich von morgen. Bitte arbeite ihn heute noch ein. Nein? Schade.';
+ENDINGS.rest.last='Die Firma ist geschlossen. Du liegst. Ich liege. Zum ersten Mal stimmt unser Geschäftsmodell mit den tatsächlichen Tätigkeiten überein.';
+ENDINGS.exit.last='Der Ball übernimmt deine Stelle. Er ist rund, schweigt und lässt sich herumschubsen. Ein ideales Profil. Leider kann er keine Dose öffnen. Ich glaube, ich habe einen Fehler gemacht.';
+for(const ending of Object.keys(ENDINGS)){
+ const previous=STORY['c5_end_'+ending].text;
+ STORY['c5_end_'+ending].text=s=>{const text=previous(s);text[0]=ENDINGS[ending].last;return text;};
+}
+
+/* END STORY_EDITION */
+
 /* === SUCHANKER: CATGPT_CONFIG === */
-const CONFIG=Object.freeze({name:'Ted',version:'0.5.0',schema:3,storageKey:'catgpt.game.v3',maxEvents:1200,maxSaveBytes:300000});
+const CONFIG=Object.freeze({name:'Ted',version:'0.6.0',schema:4,storageKey:'catgpt.game.v4',maxEvents:1200,maxSaveBytes:300000});
 const copy=v=>JSON.parse(JSON.stringify(v));
 const read=(v,s)=>typeof v==='function'?v(s):v;
 const lines=(v,s)=>{const result=read(v,s);return (Array.isArray(result)?result:[result||'']).flatMap(x=>String(x).split('\n\n')).filter(Boolean);};
@@ -529,7 +669,7 @@ function applyEffects(s,e={}){
 }
 function initGame(id){
  if(id==='ball')return {id,x:0,y:4,ball:[5,0],held:false,phase:'fetch',steps:0,throws:0,feedback:'Der Ball liegt oben am Fenster. Du startest unten links. Die beschrifteten Möbel sind Hindernisse.',hint:false,done:false};
- if(id==='food')return {id,menu:null,bowl:null,scoops:0,water:false,served:false,attempts:0,feedback:'Hausmenü · blaue Schale · 2 Spielportionen · Wasser daneben. Kein echter Fütterungsplan.',hint:false,done:false};
+ if(id==='food')return {id,menu:null,bowl:null,scoops:0,water:false,served:false,brand:'Chefedition',attempts:0,feedback:'Hausmenü · blaue Schale · 2 Spielportionen · Wasser daneben. Kein echter Fütterungsplan.',hint:false,done:false};
  if(id==='litter')return {id,tool:'scoop',cleaned:[],bin:0,emptied:0,scoops:0,inspection:false,feedback:'Schaufel für die dunklen Klumpen. Besen für die Spuren davor. Drei Klumpen passen in den Spieleimer.',hint:false,done:false};
  throw new Error('Unbekanntes Minispiel');
 }
@@ -556,7 +696,7 @@ function finishGame(s,id,summary,answer,result={}){
 }
 function legalMoves(g){return Object.fromEntries(Object.entries(DIRECTIONS).map(([k,[dx,dy]])=>{const x=g.x+dx,y=g.y+dy;return [k,g.phase==='fetch'&&x>=0&&y>=0&&x<ROOM.width&&y<ROOM.height&&!ROOM.blocks.some(b=>b.x===x&&b.y===y)];}));}
 function litterReady(g){return [...LITTER.clumps,...LITTER.tracks].every(n=>g.cleaned.includes(n))&&g.bin===0&&g.scoops===2;}
-const EVENT_KEYS={start:[],choose:['node','id'],advance:[],hint:['game'],skip:['game'],ball_move:['dir'],ball_pick:[],ball_deliver:[],ball_finish:['method'],food_pick:['group','id'],food_scoop:['delta'],food_water:[],food_serve:[],food_finish:['method'],litter_tool:['tool'],litter_clean:['cell'],litter_empty:[],litter_fill:[],litter_inspect:[],litter_finish:['method']};
+const EVENT_KEYS={start:[],choose:['node','id'],advance:[],hint:['game'],skip:['game'],ball_move:['dir'],ball_pick:[],ball_deliver:[],ball_finish:['method'],food_pick:['group','id'],food_scoop:['delta'],food_water:[],food_serve:[],food_brand:['id'],food_finish:['method'],litter_tool:['tool'],litter_clean:['cell'],litter_empty:[],litter_fill:[],litter_inspect:[],litter_finish:['method']};
 function validateEvent(e,s){
  if(!e||typeof e!=='object'||Array.isArray(e)||!Object.hasOwn(EVENT_KEYS,e.type))throw new Error('Unbekannte Spielaktion.');
  const expected=['type','r',...EVENT_KEYS[e.type]];
@@ -621,9 +761,10 @@ function doEvent(s,e){
    if(errors.length){g.feedback='Ted: „Ich verlange wenig. Nur genau das Bestellte.“ Noch ändern: '+errors.join(' · ')+'. Deine anderen Einstellungen bleiben erhalten.';return;}
    g.served=true;g.feedback='Die Bestellung stimmt. Ted schnuppert und schaut dich an. „Trägst du mich jetzt zum Napf, oder soll ich den Rest meiner Karriere wirklich selbst gehen?“';return;
   }
+  if(e.type==='food_brand'){if(!g.served||!['Chefedition','Napf Royal','Mousse de Miau'].includes(e.id))throw new Error('Erst servieren, dann ein gültiges Etikett auswählen.');g.brand=e.id;g.feedback='Gleicher Inhalt. '+e.id+'. Der Markenwert hat sich soeben völlig grundlos verdoppelt.';return;}
   if(e.type==='food_finish'){
    if(!g.served||!['walk','label'].includes(e.method))throw new Error('Erst die richtige Bestellung servieren.');g.finish=e.method;
-   finishGame(s,'food',e.method==='walk'?'Dein Futter steht da. Den kurzen Weg zum Napf gehst du selbst.':'Dasselbe Hausmenü bekommt das Etikett „Chefedition“.',e.method==='walk'?'Ted geht tatsächlich zum Napf. „Gut. Aber dokumentiere diesen Weg als Geschäftsreise, nicht als neue Dienstbereitschaft.“':'„Chefedition? Warum hast du das nicht gleich gesagt?“ Ted geht hin. Inhalt unverändert, Akzeptanz gesteigert. Die Marketingabteilung hat leider einen Punkt.');if(e.method==='label')applyEffects(s,{stats:{show:1}});else s.flags.tedWalked=true;return;
+   finishGame(s,'food',e.method==='walk'?'Dein Futter steht da. Den kurzen Weg zum Napf gehst du selbst.':`Dasselbe Hausmenü bekommt das Etikett „${g.brand}“.`,e.method==='walk'?'Ted geht tatsächlich zum Napf. „Gut. Aber dokumentiere diesen Weg als Geschäftsreise, nicht als neue Dienstbereitschaft.“':`„${g.brand}? Warum hast du das nicht gleich gesagt?“ Ted geht hin. Inhalt unverändert, Akzeptanz gesteigert. Die Marketingabteilung hat leider einen Punkt.`);if(e.method==='label')applyEffects(s,{stats:{show:1}});else s.flags.tedWalked=true;return;
   }
  }
  if(e.type.startsWith('litter_')){
@@ -654,7 +795,7 @@ function checkpoint(s,ch){if(!Number.isInteger(ch)||!Object.hasOwn(s.checkpoints
 function pack(s,endings=[]){return {format:'CATGPT_TED_GAME',schema:CONFIG.schema,build:CONFIG.version,events:copy(s.events),endings:[...new Set(endings)].filter(e=>Object.hasOwn(ENDINGS,e))};}
 function unpack(raw){
  if(typeof raw!=='string'||raw.length>CONFIG.maxSaveBytes)throw new Error('Die Spielstanddatei ist zu groß.');let p;try{p=JSON.parse(raw);}catch{throw new Error('Keine gültige Spielstanddatei (JSON).');}
- if(!p||p.format!=='CATGPT_TED_GAME'||p.schema!==CONFIG.schema)throw new Error('Dieser Stand gehört nicht zum Chat-Spiel 0.5 (Format 3). Ältere Spielstände bleiben unverändert; bitte mit der bisherigen HTML-Datei fortsetzen oder hier eine neue Schicht beginnen.');
+ if(!p||p.format!=='CATGPT_TED_GAME'||p.schema!==CONFIG.schema)throw new Error('Dieser Stand gehört nicht zur neuen CATGPT-Schicht (Format 4). Ältere Spielstände bleiben unverändert; bitte mit der bisherigen HTML-Datei fortsetzen oder hier eine neue Schicht beginnen.');
  if(!Array.isArray(p.endings)||p.endings.length>4||p.endings.some(x=>!Object.hasOwn(ENDINGS,x)))throw new Error('Ungültige Enden.');return {state:replay(p.events),endings:[...new Set(p.endings)]};
 }
 function metrics(s){const text=s.history.flatMap(h=>Array.isArray(h.text)?h.text:typeof h.text==='string'?[h.text]:[]).join(' ');return {scenes:s.visited.length,choices:s.events.filter(e=>e.type==='choose').length,photos:s.photos.length,words:text.trim().split(/\s+/).length,events:s.events.length};}
@@ -663,12 +804,76 @@ const gameAPI={CONFIG,CHAPTERS,STORY,PHOTO_STORY,DOCUMENTS,ENDINGS,STAT_NAMES,RO
 Object.values(gameAPI).forEach(deepFreeze);globalThis.CatGame=Object.freeze(gameAPI);
 
 })();</script>
+<!-- BEGIN CAT_AUDIO -->
+<script id="catAudio">
+/* Original Web Audio arrangement of the traditional melody Bruder Jakob.
+   Synthesized voices and effects; no recording, sample, external resource or library. */
+(()=>{'use strict';
+const KEY='catgpt.audio.v1';
+let prefs={muted:false,music:.24,effects:.45};
+try{const p=JSON.parse(localStorage.getItem(KEY)||'null');if(p){prefs.muted=p.muted===true;for(const k of ['music','effects'])if(Number.isFinite(p[k]))prefs[k]=Math.max(0,Math.min(1,p[k]));}}catch{}
+let ctx,master,musicBus,fxBus,timer=null,mode='home',unlocked=false,step=0,next=0,lastFX=0;
+const phrase=[[60,1],[62,1],[64,1],[60,1],[60,1],[62,1],[64,1],[60,1],[64,1],[65,1],[67,2],[64,1],[65,1],[67,2],[67,.5],[69,.5],[67,.5],[65,.5],[64,1],[60,1],[67,.5],[69,.5],[67,.5],[65,.5],[64,1],[60,1],[60,1],[55,1],[60,2],[60,1],[55,1],[60,2]];
+const hz=n=>440*2**((n-69)/12);
+function tone(bus,n,t,d,volume=.1,type='sine',meow=false){
+ const o=ctx.createOscillator(),g=ctx.createGain();o.type=type;o.frequency.setValueAtTime(hz(n)*(meow?1.2:1),t);
+ if(meow){o.frequency.exponentialRampToValueAtTime(hz(n),t+.075);o.frequency.exponentialRampToValueAtTime(hz(n)*.83,t+d);const f=ctx.createBiquadFilter();f.type='bandpass';f.Q.value=3;f.frequency.setValueAtTime(1250,t);f.frequency.exponentialRampToValueAtTime(430,t+d);o.connect(f);f.connect(g);}else o.connect(g);
+ g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(volume,t+.025);g.gain.exponentialRampToValueAtTime(.001,t+d);g.connect(bus);o.start(t);o.stop(t+d+.03);
+}
+function levels(){if(!ctx)return;const t=ctx.currentTime;master.gain.setTargetAtTime(prefs.muted?0:1,t,.035);musicBus.gain.setTargetAtTime(prefs.music,t,.15);fxBus.gain.setTargetAtTime(prefs.effects,t,.035);}
+function schedule(){
+ if(!ctx||ctx.state!=='running'||document.hidden||prefs.muted||mode==='home')return;
+ if(next<ctx.currentTime)next=ctx.currentTime+.07;
+ const beat=mode==='game'?.31:.46;
+ while(next<ctx.currentTime+.16){
+  const i=step%phrase.length,round=Math.floor(step/phrase.length),[note,length]=phrase[i];
+  // Alternate a meowing verse and an instrumental verse to leave room for reading.
+  const voice=round%2===0&&i%8<6;
+  tone(musicBus,note+12,next,beat*length*.78,voice?.12:.11,voice?'sawtooth':'triangle',voice);
+  if(i%4===0){tone(musicBus,i<14?48:43,next,beat*1.6,.13,'sine');tone(musicBus,i<14?55:50,next+.025,beat*.75,.045,'triangle');}
+  step++;next+=beat*length;
+ }
+}
+async function sync(){
+ if(!ctx)return;
+ levels();
+ const playing=unlocked&&!document.hidden&&!prefs.muted&&mode!=='home';
+ if(!playing){clearInterval(timer);timer=null;try{await ctx.suspend();}catch{}return;}
+ try{await ctx.resume();}catch{return;}
+ if(ctx.state!=='running'||document.hidden||prefs.muted||mode==='home')return;
+ if(!timer){next=ctx.currentTime+.06;schedule();timer=setInterval(schedule,80);}
+}
+async function unlock(){
+ try{if(!ctx){const Audio=window.AudioContext||window.webkitAudioContext;if(!Audio)return false;ctx=new Audio();master=ctx.createGain();musicBus=ctx.createGain();fxBus=ctx.createGain();musicBus.connect(master);fxBus.connect(master);const limit=ctx.createDynamicsCompressor();master.connect(limit);limit.connect(ctx.destination);}unlocked=true;await sync();return ctx.state==='running';}catch{return false;}
+}
+function effect(kind='tap'){
+ if(!ctx||ctx.state!=='running'||prefs.muted||!prefs.effects||document.hidden)return;
+ const t=ctx.currentTime;if(t-lastFX<.06)return;lastFX=t;
+ if(kind==='success'){[60,64,67,72].forEach((n,i)=>tone(fxBus,n+12,t+i*.09,.24,.15,'triangle'));tone(fxBus,76,t+.38,.33,.16,'sawtooth',true);}
+ else if(kind==='meow')tone(fxBus,72,t,.28,.14,'sawtooth',true);
+ else if(kind==='water'){[77,81,86].forEach((n,i)=>tone(fxBus,n,t+i*.055,.10,.09,'sine'));}
+ else if(kind==='sweep'){tone(fxBus,44,t,.15,.10,'triangle');tone(fxBus,51,t+.04,.08,.07,'triangle');}
+ else if(kind==='roll'){tone(fxBus,55,t,.07,.09,'triangle');}
+ else if(kind==='bowl'){tone(fxBus,86,t,.35,.10,'sine');tone(fxBus,93,t+.01,.18,.035,'sine');}
+ else if(kind==='message'){tone(fxBus,74,t,.12,.09,'sine');tone(fxBus,79,t+.07,.18,.08,'sine');}
+ else tone(fxBus,76,t,.065,.07,'sine');
+}
+function configure(changes){for(const k of ['music','effects'])if(Number.isFinite(changes[k]))prefs[k]=Math.max(0,Math.min(1,changes[k]));if(typeof changes.muted==='boolean')prefs.muted=changes.muted;try{localStorage.setItem(KEY,JSON.stringify(prefs));}catch{}sync();window.dispatchEvent(new Event('cat-audio-change'));}
+document.addEventListener('visibilitychange',sync);
+window.addEventListener('pagehide',()=>{clearInterval(timer);timer=null;ctx?.suspend().catch(()=>{});});
+window.addEventListener('pageshow',()=>{if(ctx)sync();});
+globalThis.CatAudio=Object.freeze({unlock,effect,configure,setMode(value){if(mode!==value){mode=value;sync();}},getState:()=>({...prefs,mode,unlocked,running:ctx?.state==='running',scheduled:timer!==null}),melody:'Bruder Jakob – Miau-Runde'});
+})();
+
+</script>
+<!-- END CAT_AUDIO -->
 <script id="gameUI">(()=>{'use strict';
 /* === SUCHANKER: CATGPT_RENDERING === */
 const G=globalThis.CatGame,$=id=>document.getElementById(id);
 const ASSETS=JSON.parse($('catAssets').textContent),PHOTOS=ASSETS.photos,PHOTO=new Map(PHOTOS.map(p=>[p.id,p]));
 if(PHOTOS.length!==33||PHOTOS.some(p=>p.number===14)||Object.keys(G.PHOTO_STORY).some(id=>!PHOTO.has(id)))throw new Error('Fotoliste unvollständig.');
 let state=G.fresh(),view='home',endings=[],settings={persist:false,largeText:false,reduceMotion:matchMedia('(prefers-reduced-motion: reduce)').matches};
+let legacySave=false;
 let storageProblem='',galleryFilter='all',lightboxId=null,lightboxIds=PHOTOS.map(p=>p.id),mediaId='director',rendered=0,lastReplyIndex=0;
 let confirmCallback=null,toastTimer=0,choiceLockUntil=0;
 const restoreFocus=new Map();
@@ -696,7 +901,7 @@ function renderFrame(){
  mediaId=currentPhoto();const p=PHOTO.get(mediaId);$('ceoPhoto').src=p.sceneSrc||p.src;$('ceoPhoto').alt=p.alt;$('ceoPhotoNumber').textContent=String(p.number).padStart(2,'0');$('ceoCaption').textContent=G.PHOTO_STORY[mediaId].caption;$('activity').textContent=state.complete?'Die nächste Aufgabe nicht erledigen.':state.pending?'Die nächste Aufgabe im Kopf bereits delegieren.':'Deine Tätigkeit als seine Vision interpretieren.';
  drawStats($('stats'));drawStats($('profileStats'));$('profilePhoto').src=p.src;$('profilePhoto').alt=p.alt;$('profileStatus').textContent=$('activity').textContent;
  $('startButton').querySelector('span').textContent=state.complete?'Zum abgeschlossenen Chat':state.started?'Gespräch fortsetzen':'Ted anschreiben';$('resumeNote').hidden=!state.started;$('resumeNote').textContent=state.complete?`${endings.length} von 4 Enden erlebt.`:state.started?`Dein Stand: ${G.CHAPTERS[state.chapter-1].short}`:'';
- applySettings();updateSaveLabel();updateJump();
+ if(view==='home'&&legacySave&&!state.started){$('resumeNote').hidden=false;$('resumeNote').textContent='Neue Geschichte, neue Schicht. Dein früherer Spielstand bleibt gespeichert und lässt sich mit Version 0.5 weiterspielen.';}applySettings();updateSaveLabel();updateJump();
 }
 function speaker(label='Ted'){const h=el('div','chat-speaker');const a=el('img','avatar');a.src=ASSETS.avatar;a.alt='';h.append(a,el('strong','',label),el('small','','CEO · BEHAUPTET ER'));return h;}
 function paragraphBlock(text,cls='chat-copy'){const b=el('div',cls);for(const t of text)b.append(el('p','',t));return b;}
@@ -721,91 +926,59 @@ function renderHistoryEntry(h,index){
  if(h.game){const badge=el('div','activity-badge',`Aufgabe im Chat · ${{ball:'IT-Rückholung',food:'Futterservice',litter:'Katzenklo'}[h.game]}`);badge.dataset.activity=h.game;content.append(badge);}
  row.append(content);return row;
 }
-function renderTranscript(force=false){
- const root=$('transcript');if(force||rendered>state.history.length){root.replaceChildren();rendered=0;}
- $('miniGame')?.remove();$('endingCard')?.remove();
- for(;rendered<state.history.length;rendered++)root.append(renderHistoryEntry(state.history[rendered],rendered));
- const n=G.STORY[state.node];if(n?.game&&!state.games[n.game].done&&!state.pending)renderMini();
- if(state.complete)root.append(receipt());renderChoices();
-}
 function receipt(){const e=G.ENDINGS[state.ending],r=el('article','ending-receipt');r.id='endingCard';r.append(el('div','eyebrow',`DEINE SCHICHTBILANZ · ENDE ${e.n} VON 4`),el('h2','',e.title),el('p','receipt-kicker',e.kicker));for(const [label,text] of [['DEIN ERGEBNIS',e.human],['TED',e.ted],['DIE FIRMA',e.company]]){const x=el('div','receipt-line');x.append(el('strong','',label),el('p','',text));r.append(x);}const games=el('div','result-stamps');for(const [id,name]of [['ball','Ball'],['food','Futter'],['litter','Klo']])games.append(el('span','',`${state.games[id].result==='skipped'?'↪':'✓'} ${name}`));r.append(games,el('p','end-fine',`${state.photos.length} / 33 Fotos im Chat. Dein Spielstand und das Protokoll bleiben verfügbar.`));return r;}
-function renderChoices(){
- const root=$('choices');root.replaceChildren();root.classList.toggle('game-dock',Boolean(state.started&&!state.pending&&G.STORY[state.node]?.game&&!state.complete));const rev=state.events.length;$('keyHint').textContent='1–4 WÄHLEN · KEIN ZEITDRUCK';$('readScene').hidden=!state.started;
- if(!state.started)return;
- if(state.complete){$('decisionLabel').textContent='Schicht beendet. Nicht dein Chat.';root.append(button('Bilanz exportieren','btn primary',exportReceipt,'download'),button('Anders entscheiden','btn',()=>askCheckpoint(5),'branch'),button('Neue Schicht','btn',askNew,'restart'));return;}
- if(state.pending){$('decisionLabel').textContent=state.pending.kind==='chapter'?'Deine Antwort wurde berücksichtigt. Wohin jetzt?':'Die Aufgabe ist erledigt. Ted schuldet dir eine Antwort.';$('keyHint').textContent='KEIN AUTOMATISCHER WECHSEL';const b=button(state.pending.label,'btn primary transition-confirm',()=>send({type:'advance',r:rev}),'arrow');b.id='advanceButton';root.append(b);return;}
- const n=G.STORY[state.node];
- if(n.game){$('decisionLabel').textContent='Deine Aufgabe läuft direkt im Chat.';$('keyHint').textContent='IN RUHE SPIELEN';root.append(button('Zur Aufgabe','btn',()=>scrollMini(),'game'),button('Hinweis','btn',()=>{if(!state.games[n.game].hint)send({type:'hint',game:n.game,r:rev});scrollMini();},'info'));return;}
- $('decisionLabel').textContent='Was antwortest du Ted?';
- G.choices(state).forEach((c,i)=>{const b=button('','choice-card',()=>{if(performance.now()<choiceLockUntil)return;send({type:'choose',node:n.id,id:c.id,r:rev});});b.dataset.choice=c.id;b.id=`choice-${i}`;b.append(el('span','choice-number',String(i+1)),el('span','choice-label',c.label),icon('arrow'));root.append(b);});
-}
-function openHistory(){const root=$('historyBody');root.replaceChildren();if(!state.started)root.append(el('p','','Noch kein Gespräch. Ted hatte bisher nur sich selbst als Publikum.'));state.history.forEach((h,i)=>{if(h.kind==='chapter')root.append(el('h3','log-chapter',h.title));if(h.kind==='scene'){root.append(button(h.title,'log-heading',()=>{closeDialogs();view='game';renderFrame();renderTranscript();scrollToEntry(i);}),paragraphBlock(h.text,'log-text'));}if(h.kind==='player')root.append(el('p','log-user','DU: '+h.text));if(h.kind==='reply')root.append(paragraphBlock(h.text,'log-reply'));});openDialog('historyDialog');}
-function scrollToEntry(index){requestAnimationFrame(()=>{const n=$('h-'+index);if(!n)return;const s=$('storyScroll');s.scrollTop+=n.getBoundingClientRect().top-s.getBoundingClientRect().top-18;updateJump();});}
-function scrollCurrent(){if($('miniGame')){scrollMini();return;}scrollToEntry(Math.max(0,lastReplyIndex));}
-function scrollMini(){requestAnimationFrame(()=>{const n=$('miniGame'),s=$('storyScroll');if(n)s.scrollTop+=n.getBoundingClientRect().top-s.getBoundingClientRect().top-14;updateJump();});}
-function updateJump(){const s=$('storyScroll');$('jumpCurrent').hidden=view!=='game'||s.scrollHeight-s.clientHeight-s.scrollTop<170;}
 function focusMini(id){if(id)requestAnimationFrame(()=>$(id)?.focus({preventScroll:true}));}
-function send(event){
- const before=state.history.length,oldNode=state.node,activeId=document.activeElement?.id;
- try{state=G.reduce(state,{...event,r:event.r===undefined?state.events.length:event.r});}catch(error){toast(error.message);return false;}
- if(state.complete&&!endings.includes(state.ending))endings.push(state.ending);
- renderFrame();renderTranscript();
- if(state.history.length>before){lastReplyIndex=before;choiceLockUntil=performance.now()+160;scrollToEntry(before);const spoken=state.history.slice(before).find(h=>h.kind==='reply'||h.kind==='scene');if(spoken)announce('Ted: '+spoken.text.join(' '));}
- else{focusMini(activeId);const g=state.games[G.STORY[state.node]?.game];if(g)announce(g.feedback);}
- if(oldNode!==state.node&&G.STORY[state.node]?.game)requestAnimationFrame(()=>updateJump());
- persist();return true;
-}
-function begin(){closeDialogs();view='game';if(!state.started)send({type:'start',r:0});else{renderFrame();renderTranscript();lastReplyIndex=Math.max(0,state.history.findLastIndex(h=>h.kind==='reply'||h.kind==='scene'));scrollCurrent();}}
-function showHome(){closeDialogs();view='home';renderFrame();$('homeTitle').tabIndex=-1;$('homeTitle').focus({preventScroll:true});}
+function showHome(){closeDialogs();walkToken++;CatAudio.setMode('home');view='home';renderFrame();$('homeTitle').tabIndex=-1;$('homeTitle').focus({preventScroll:true});}
 function askSkip(game){const rev=state.events.length;confirmAction('Abkürzung nehmen?', 'Die Aufgabe wird vereinfacht abgeschlossen, ohne Erfolgsbonus. Ted reagiert darauf und die Bilanz nennt die Abkürzung. Du kommst trotzdem weiter.',()=>send({type:'skip',game,r:rev}),'Vereinfacht abschließen');}
-function askCheckpoint(chapter){if(!Object.hasOwn(state.checkpoints,chapter))return;confirmAction('Dieses Kapitel neu spielen?',`„${G.CHAPTERS[chapter-1].title}“ startet am damaligen Anfang. Spätere Antworten, Aufgaben und Folgen werden zurückgesetzt. Exportiere vorher, um deinen bisherigen Weg zu behalten.`,()=>{state=G.checkpoint(state,chapter);view='game';lastReplyIndex=state.history.findLastIndex(h=>h.kind==='chapter');renderFrame();renderTranscript(true);persist();scrollToEntry(lastReplyIndex);},'Kapitel neu beginnen');}
-function askNew(){confirmAction('Eine neue Schicht?', 'Dein aktueller Durchlauf wird zurückgesetzt. Bereits erreichte Enden bleiben. Exportiere den Spielstand vorher, falls du diesen Gesprächsweg behalten möchtest.',()=>{state=G.fresh();rendered=0;lastReplyIndex=0;view='home';$('transcript').replaceChildren();$('choices').replaceChildren();renderFrame();persist();$('startButton').focus();},'Neue Schicht');}
+function askCheckpoint(chapter){if(!Object.hasOwn(state.checkpoints,chapter))return;confirmAction('Dieses Kapitel neu spielen?',`„${G.CHAPTERS[chapter-1].title}“ startet am damaligen Anfang. Spätere Antworten, Aufgaben und Folgen werden zurückgesetzt. Exportiere vorher, um deinen bisherigen Weg zu behalten.`,()=>{walkToken++;state=G.checkpoint(state,chapter);resetScene();view='game';lastReplyIndex=state.history.findLastIndex(h=>h.kind==='chapter');renderFrame();renderTranscript(true);persist();$('storyScroll').scrollTop=0;},'Kapitel neu beginnen');}
+function askNew(){confirmAction('Eine neue Schicht?', 'Dein aktueller Durchlauf wird zurückgesetzt. Bereits erreichte Enden bleiben. Exportiere den Spielstand vorher, falls du diesen Gesprächsweg behalten möchtest.',()=>{walkToken++;state=G.fresh();resetScene();CatAudio.setMode('home');rendered=0;lastReplyIndex=0;view='home';$('transcript').replaceChildren();$('choices').replaceChildren();renderFrame();persist();$('startButton').focus();},'Neue Schicht');}
 /* === SUCHANKER: CATGPT_GAME_MINIGAMES_UI === */
 function miniAction(text,id,fn,disabled=false,cls='btn'){const b=button(text,cls,fn);if(id)b.id=id;b.disabled=disabled;return b;}
 function renderMini(){
  $('miniGame')?.remove();const n=G.STORY[state.node];if(!n?.game||state.games[n.game].done||state.pending)return;
  const id=n.game,g=state.games[id],rev=state.events.length,root=el('section','chat-minigame');root.id='miniGame';root.setAttribute('aria-labelledby','miniTitle');
  const head=el('div','mini-header'),text=el('div');text.append(el('div','eyebrow',`KATZENALLTAG · AUFGABE ${{ball:1,food:2,litter:3}[id]} / 3`),el('h3','',({ball:'Die IT muss nach Hause.',food:'Das Napf-Meeting.',litter:'Das große Geschäft.'})[id]));text.lastElementChild.id='miniTitle';head.append(text,icon('game'));root.append(head);
- const toolbar=el('div','mini-toolbar');toolbar.append(miniAction(g.hint?'Hinweis offen':'Hinweis','gameHint',()=>send({type:'hint',game:id,r:rev}),g.hint),miniAction('Abkürzen','gameSkip',()=>askSkip(id)));root.append(toolbar);
- if(g.hint){const help={ball:'Die Möbel sind feste Hindernisse. Der Weg am linken und oberen Rand ist frei. Ball aufnehmen, zum gelben Startfeld unten links zurückgehen und übergeben. Danach vermeidet der Karton eine endlose Extrarunde.',food:'Wähle Hausmenü und die blaue Schale. Klicke zweimal auf + Portion und stelle Wasser dazu. Serviere. Danach entscheiden beide Fortsetzungen den Katzenwitz – die Bestellung ist bereits korrekt.',litter:'Klumpen: Felder 3, 7, 10, 13, 18 (die Beschriftung beginnt bei 1). Nutze die Schaufel und leere den Eimer spätestens nach 3 Klumpen. Die 4 Spuren davor brauchen den Besen. Eimer leeren, zweimal Spielstreu ergänzen und abnehmen.'};root.append(el('div','mini-help',help[id]));}
+ const toolbar=el('div','mini-toolbar');toolbar.append(miniAction(g.hint?'Hinweis offen':'Hinweis','gameHint',()=>send({type:'hint',game:id,r:rev}),g.hint),miniAction('Abkürzen','gameSkip',()=>askSkip(id)));toolbar.hidden=true;root.append(toolbar);
+ if(g.hint){const help={ball:'Tippe den Ball an. Dein Mensch sucht einen Weg um die Möbel. Ball aufnehmen, Startfeld antippen, übergeben. Im Karton bleibt die IT endlich im Büro.',food:'Wähle Hausmenü und die blaue Schale. Klicke zweimal auf + Portion und stelle Wasser dazu. Serviere. Danach entscheiden beide Fortsetzungen den Katzenwitz – die Bestellung ist bereits korrekt.',litter:'Klumpen: Felder 3, 7, 10, 13, 18 (die Beschriftung beginnt bei 1). Nutze die Schaufel und leere den Eimer spätestens nach 3 Klumpen. Die 4 Spuren davor brauchen den Besen. Eimer leeren, zweimal Spielstreu ergänzen und abnehmen.'};root.append(el('div','mini-help',help[id]));}
  if(id==='ball')renderBall(root,g,rev);if(id==='food')renderFood(root,g,rev);if(id==='litter')renderLitter(root,g,rev);
  $('transcript').append(root);
 }
 function feedback(root,text){const f=el('div','ted-game-feedback');f.id='gameFeedback';f.append(el('strong','','TED / LIVE-KOMMENTAR'),el('p','',text));root.append(f);}
 function renderBall(root,g,rev){
  const status=el('div','game-readout');status.append(el('span','',g.held?'● Ball dabei':'○ Ball abholen'),el('span','',`${g.steps} ${g.steps===1?'Schritt':'Schritte'}${g.throws?' · freiwillige Extrarunde':''}`));root.append(status);
- root.append(el('p','game-instruction','Du steuerst den Menschen zum Ball und zurück zum Feld „START“. Möbel und Ted stehen im Weg. Richtungstasten nutzen oder ein freies Nachbarfeld antippen.'));
+
  const board=el('div','room-grid');board.id='roomGrid';board.tabIndex=0;board.setAttribute('role','group');board.setAttribute('aria-label',`Zimmerplan. Du bist in Zeile ${g.y+1}, Spalte ${g.x+1}. Mit Pfeiltasten bewegen.`);
  for(let y=0;y<G.ROOM.height;y++)for(let x=0;x<G.ROOM.width;x++){
   const block=G.ROOM.blocks.find(b=>b.x===x&&b.y===y),player=x===g.x&&y===g.y,ball=!g.held&&x===g.ball[0]&&y===g.ball[1],home=x===0&&y===4;
-  const cell=button('','room-cell'+(block?' blocked':'')+(player?' is-player':'')+(home?' home':'')+(ball?' has-ball':''),()=>{const dx=x-g.x,dy=y-g.y;const key=Object.keys(G.DIRECTIONS).find(k=>G.DIRECTIONS[k][0]===dx&&G.DIRECTIONS[k][1]===dy);if(key&&G.legalMoves(g)[key])send({type:'ball_move',dir:key,r:rev});});cell.tabIndex=-1;cell.disabled=!!block||g.phase!=='fetch';cell.setAttribute('aria-label',`Zeile ${y+1}, Spalte ${x+1}: ${player?'Du':ball?'Ball':block?block.label:home?'Start und Übergabe':'frei'}`);
-  if(block){cell.append(el('span','',block.label==='Ted'?'TED':'▰'),el('small','',block.label==='Ted'?'liegt hier':block.label));}else if(player){cell.append(icon('person'),el('small','',g.held?'DU + BALL':'DU'));}else if(ball){cell.append(el('i','toy-ball'),el('small','','IT'));}else if(home)cell.append(el('small','','START'));else cell.append(el('span','room-dot','·'));board.append(cell);
+  const cell=button('','room-cell'+(block?' blocked':'')+(player?' is-player':'')+(home?' home':'')+(ball?' has-ball':''),()=>{walkTo(x,y);});cell.tabIndex=block?-1:0;cell.dataset.x=String(x);cell.dataset.y=String(y);cell.disabled=!!block||walking||g.phase!=='fetch';cell.setAttribute('aria-label',`Zeile ${y+1}, Spalte ${x+1}: ${player?'Du':ball?'Ball':block?block.label:home?'Start und Übergabe':'frei'}`);
+  if(block){cell.append(el('span','',block.label==='Ted'?'🐈':block.label==='Sofa'?'🛋️':'🪑'),el('small','',block.label==='Ted'?'liegt hier':block.label));}else if(player){cell.append(icon('person'),el('small','',g.held?'DU + BALL':'DU'));}else if(ball){cell.append(el('i','toy-ball'),el('small','','IT'));}else if(home)cell.append(el('small','','START'));else cell.append(el('span','room-dot','·'));board.append(cell);
  }
- board.addEventListener('keydown',e=>{const d={ArrowUp:'up',ArrowDown:'down',ArrowLeft:'left',ArrowRight:'right'}[e.key];if(d){e.preventDefault();e.stopPropagation();if(G.legalMoves(g)[d]){send({type:'ball_move',dir:d,r:rev});focusMini('roomGrid');}}});root.append(board);
+ board.addEventListener('keydown',e=>{const d={ArrowUp:'up',ArrowDown:'down',ArrowLeft:'left',ArrowRight:'right'}[e.key];if(d){e.preventDefault();e.stopPropagation();if(!walking&&G.legalMoves(g)[d]){send({type:'ball_move',dir:d,r:rev});focusMini('roomGrid');}}});root.append(board);root.prepend(el('p','game-instruction','Tippe ein Ziel an oder nutze die große Lauftaste. Ball holen und zum goldenen Startfeld zurückbringen.'));
  const controls=el('div','ball-controls'),pad=el('div','direction-pad');const dirs=[['up','↑','Nach oben'],['left','←','Nach links'],['down','↓','Nach unten'],['right','→','Nach rechts']];
  for(const [dir,label,aria]of dirs){const b=miniAction(label,'move-'+dir,()=>send({type:'ball_move',dir,r:rev}),!G.legalMoves(g)[dir],'btn direction '+dir);b.setAttribute('aria-label',aria);pad.append(b);}controls.append(pad);
  const act=el('div','ball-actions');if(g.phase==='fetch'){
   const pick=g.x===g.ball[0]&&g.y===g.ball[1]&&!g.held;const deliver=g.held&&g.x===0&&g.y===4;
+  if(!pick&&!deliver)act.append(miniAction(g.held?'Zurück zum Start':'Zur IT laufen','ballGo',()=>walkTo(...(g.held?[0,4]:g.ball)),walking,'btn primary'));
   act.append(miniAction(g.held?'Ball zurückbringen':'Ball aufheben','ballPick',()=>send({type:'ball_pick',r:rev}),!pick,'btn primary'),miniAction('Ball übergeben','ballDeliver',()=>send({type:'ball_deliver',r:rev}),!deliver));
  }controls.append(act);root.append(controls);feedback(root,g.feedback);
  if(g.phase==='settle'){const options=el('div','game-end-options');options.append(miniAction('Im Karton parken. IT bleibt da.','ballBox',()=>send({type:'ball_finish',method:'box',r:rev}),false,'btn primary'),miniAction('Vor Ted ablegen. Aufgabe erledigt.','ballFloor',()=>send({type:'ball_finish',method:'floor',r:rev})));if(!g.throws)options.append(miniAction('Na gut. Eine einzige Extrarunde.','ballThrow',()=>send({type:'ball_finish',method:'throw',r:rev})));root.append(options);}
 }
 function renderFood(root,g,rev){
- root.append(el('p','order-ticket','TEDS BESTELLUNG: Hausmenü · blaue Schale · 2 Spielportionen · Wasser daneben.'),el('p','game-instruction','Erfundene Bestellung, keine Fütterungsempfehlung für echte Katzen. Stelle die Spielportion zusammen und serviere sie.'));
- for(const group of ['menu','bowl']){root.append(el('h4','game-field-label',group==='menu'?'01 / Was kommt hinein?':'02 / Welche Schale?'));const cards=el('div','food-options');for(const o of G.FOOD_OPTIONS[group]){const b=button('','food-option'+(g[group]===o.id?' selected':''),()=>send({type:'food_pick',group,id:o.id,r:rev}));b.id=`food-${group}-${o.id}`;b.disabled=g.served||g[group]===o.id;b.setAttribute('aria-pressed',String(g[group]===o.id));b.append(el('strong','',o.label),el('small','',o.note));cards.append(b);}root.append(cards);}
+ root.append(el('p','order-ticket','TEDS BESTELLUNG: Hausmenü · blaue Schale · 2 Spielportionen · Wasser daneben.'),el('p','game-instruction','Die Bestellung steht oben. Danach bestimmst du, ob Ted selbst läuft oder auf ein Etikett hereinfällt.'));
+ for(const group of ['menu','bowl']){root.append(el('h4','game-field-label',group==='menu'?'01 / Was kommt hinein?':'02 / Welche Schale?'));const cards=el('div','food-options');for(const o of G.FOOD_OPTIONS[group]){const b=button('','food-option'+(g[group]===o.id?' selected':''),()=>send({type:'food_pick',group,id:o.id,r:rev}));b.id=`food-${group}-${o.id}`;b.dataset.food=o.id;b.disabled=g.served||g[group]===o.id;b.setAttribute('aria-pressed',String(g[group]===o.id));b.append(el('strong','',o.label),el('small','',o.note));cards.append(b);}root.append(cards);}
  const prep=el('div','food-prep');const visual=el('div','bowl-visual '+(g.bowl||''));visual.setAttribute('aria-label',`${g.scoops} Spielportionen im Napf`);const bowl=el('div','bowl');for(let i=0;i<g.scoops;i++)bowl.append(el('i','kibble'));visual.append(bowl,el('small','',`${g.scoops} / 2 PORTIONEN`));prep.append(visual);
  const tools=el('div','portion-controls');tools.append(miniAction('− Portion','portionMinus',()=>send({type:'food_scoop',delta:-1,r:rev}),g.served||g.scoops===0),miniAction('+ Portion','portionPlus',()=>send({type:'food_scoop',delta:1,r:rev}),g.served||g.scoops===3),miniAction(g.water?'✓ Wasser steht bereit':'Wasser dazustellen','foodWater',()=>send({type:'food_water',r:rev}),g.served||g.water));prep.append(tools);root.append(prep);feedback(root,g.feedback);
  if(!g.served)root.append(miniAction('Ted servieren','foodServe',()=>send({type:'food_serve',r:rev}),false,'btn primary'));
- else{const actions=el('div','game-end-options');actions.append(miniAction('Der Napf steht da. Geh bitte selbst hin.','foodWalk',()=>send({type:'food_finish',method:'walk',r:rev}),false,'btn primary'),miniAction('Dasselbe Futter als „Chefedition“ etikettieren.','foodLabel',()=>send({type:'food_finish',method:'label',r:rev})));root.append(actions);}
+ else{root.append(el('h4','game-field-label','DASSELBE ESSEN. NEUER MARKENWERT.'));const brands=el('div','food-options');for(const name of ['Chefedition','Napf Royal','Mousse de Miau']){const b=button(name,'btn'+(g.brand===name?' primary':''),()=>send({type:'food_brand',id:name,r:rev}));b.dataset.brand=name;b.setAttribute('aria-pressed',String(g.brand===name));brands.append(b);}root.append(brands);const actions=el('div','game-end-options');actions.append(miniAction('Der Napf steht da. Geh bitte selbst hin.','foodWalk',()=>send({type:'food_finish',method:'walk',r:rev}),false,'btn primary'),miniAction(`Als „${g.brand}“ verkaufen.`,'foodLabel',()=>send({type:'food_finish',method:'label',r:rev})));root.append(actions);}
 }
 function renderLitter(root,g,rev){
  const counters=el('div','game-readout');counters.append(el('span','',`${g.cleaned.filter(x=>x<20).length} / 5 Klumpen`),el('span','',`${g.cleaned.filter(x=>x>=20).length} / 4 Spuren`),el('span','',`Eimer ${g.bin} / 3`));root.append(counters);
  const tools=el('div','litter-tools');for(const [tool,label]of [['scoop','Schaufel'],['broom','Besen']]){const b=miniAction(label,'tool-'+tool,()=>send({type:'litter_tool',tool,r:rev}),g.inspection||g.tool===tool,'btn'+(g.tool===tool?' primary':''));b.setAttribute('aria-pressed',String(g.tool===tool));tools.append(b);}tools.append(miniAction('Eimer leeren','litterEmpty',()=>send({type:'litter_empty',r:rev}),g.inspection||g.bin===0));root.append(tools);
  root.append(el('p','game-instruction','Klumpen mit der Schaufel entfernen, die vier Pfotenspuren mit dem Besen wegfegen. Der Spieleimer fasst drei Klumpen.'));
  const tray=el('div','litter-grid');tray.setAttribute('role','group');tray.setAttribute('aria-label','Schematisches Spiel-Katzenklo mit zwanzig Feldern');
- for(let i=0;i<20;i++){const clump=G.LITTER.clumps.includes(i)&&!g.cleaned.includes(i);const b=miniAction('',`litter-cell-${i}`,()=>send({type:'litter_clean',cell:i,r:rev}),g.inspection||g.cleaned.includes(i),'litter-cell'+(clump?' clump':' clean'));b.setAttribute('aria-label',`Feld ${i+1}: ${clump?'Klumpen entfernen':'sauber'}`);if(clump){b.append(el('span','clump-shape'),el('small','',String(i+1)));}else b.append(el('span','',g.cleaned.includes(i)?'✓':'·'));tray.append(b);}root.append(tray);
- const traces=el('div','litter-traces');traces.setAttribute('role','group');traces.setAttribute('aria-label','Vier Spuren vor dem Katzenklo');for(const i of G.LITTER.tracks){const clean=g.cleaned.includes(i);const b=miniAction(clean?'✓':'🐾',`litter-cell-${i}`,()=>send({type:'litter_clean',cell:i,r:rev}),g.inspection||clean,'trace'+(clean?' clean':''));b.setAttribute('aria-label',`Spur ${i-19}: ${clean?'sauber':'mit Besen entfernen'}`);traces.append(b);}root.append(traces);feedback(root,g.feedback);
- const actions=el('div','game-end-options');if(!g.inspection){actions.append(miniAction(`Spielstreu ergänzen · ${g.scoops} / 2`,'litterFill',()=>send({type:'litter_fill',r:rev}),g.cleaned.length!==9||g.bin!==0||g.scoops>=2),miniAction('Abnahme öffnen','litterInspect',()=>send({type:'litter_inspect',r:rev}),!G.litterReady(g),'btn primary'));}else{actions.append(miniAction('Abnahme festhalten. Neue Spuren = neuer Auftrag.','litterDocument',()=>send({type:'litter_finish',method:'document',r:rev}),false,'btn primary'),miniAction('Stopp, Ted. Erst die Pfoten auf der Matte abstreifen.','litterStop',()=>send({type:'litter_finish',method:'stop',r:rev})));}root.append(actions);
+ for(let i=0;i<20;i++){const clump=G.LITTER.clumps.includes(i)&&!g.cleaned.includes(i);const b=miniAction('',`litter-cell-${i}`,()=>{if(state.games.litter.tool==='scoop'&&state.games.litter.bin===3)send({type:'litter_empty',r:state.events.length});send({type:'litter_clean',cell:i,r:state.events.length});},g.inspection||g.cleaned.includes(i),'litter-cell'+(clump?' clump':' clean'));b.setAttribute('aria-label',`Feld ${i+1}: ${clump?'Klumpen entfernen':'sauber'}`);if(clump){b.append(el('span','clump-shape'),el('small','',String(i+1)));}else b.append(el('span','',g.cleaned.includes(i)?'✓':'·'));tray.append(b);}root.append(tray);
+ const traces=el('div','litter-traces');traces.setAttribute('role','group');traces.setAttribute('aria-label','Vier Spuren vor dem Katzenklo');for(const i of G.LITTER.tracks){const clean=g.cleaned.includes(i);const b=miniAction(clean?'✓':'🐾',`litter-cell-${i}`,()=>send({type:'litter_clean',cell:i,r:rev}),g.inspection||clean,'trace'+(clean?' clean':''));b.setAttribute('aria-label',`Spur ${i-19}: ${clean?'sauber':'mit Besen entfernen'}`);traces.append(b);}root.append(traces);if(g.cleaned.filter(x=>x>=20).length<4){const sweep=miniAction('Alle Pfotenspuren wegfegen','sweepAll',()=>{if(state.games.litter.tool!=='broom')send({type:'litter_tool',tool:'broom',r:state.events.length});for(const cell of G.LITTER.tracks)if(!state.games.litter.cleaned.includes(cell))send({type:'litter_clean',cell,r:state.events.length});});root.append(sweep);}feedback(root,g.feedback);
+ const actions=el('div','game-end-options');if(!g.inspection){actions.append(miniAction(g.scoops===2?'✓ Frisches Streu eingefüllt':'Eimer leeren & frisches Streu einfüllen','litterFill',()=>{if(state.games.litter.bin)send({type:'litter_empty',r:state.events.length});while(state.games.litter.scoops<2)send({type:'litter_fill',r:state.events.length});},g.cleaned.length!==9||g.scoops>=2),miniAction('Abnahme öffnen','litterInspect',()=>send({type:'litter_inspect',r:rev}),!G.litterReady(g),'btn primary'));}else{actions.append(miniAction('Abnahme festhalten. Neue Spuren = neuer Auftrag.','litterDocument',()=>send({type:'litter_finish',method:'document',r:rev}),false,'btn primary'),miniAction('Stopp, Ted. Erst die Pfoten auf der Matte abstreifen.','litterStop',()=>send({type:'litter_finish',method:'stop',r:rev})));}root.append(actions);
 }
 
 /* === SUCHANKER: CATGPT_GALLERY === */
@@ -838,7 +1011,7 @@ function updateSaveLabel(){
 }
 function persist(){
  if(settings.persist){
-  try{const data=G.pack(state,endings);data.preferences={persist:true,largeText:settings.largeText,reduceMotion:settings.reduceMotion};const raw=JSON.stringify(data);localStorage.setItem(G.CONFIG.storageKey,raw);if(localStorage.getItem(G.CONFIG.storageKey)!==raw)throw new Error('Nicht gespeichert');storageProblem='';}
+  try{const data=G.pack(state,endings);data.preferences={persist:true,largeText:settings.largeText,reduceMotion:settings.reduceMotion};data.presentation=savePresentation();const raw=JSON.stringify(data);localStorage.setItem(G.CONFIG.storageKey,raw);if(localStorage.getItem(G.CONFIG.storageKey)!==raw)throw new Error('Nicht gespeichert');storageProblem='';}
   catch{settings.persist=false;storageProblem='Der Browser erlaubt kein verlässliches Speichern. Der Spielstand bleibt in diesem Tab. Bitte über „Spielstand exportieren“ sichern.';applySettings();toast(storageProblem);}
  }
  updateSaveLabel();
@@ -850,20 +1023,135 @@ function setPersistence(enabled){
 }
 function loadSaved(){
  let raw;try{raw=localStorage.getItem(G.CONFIG.storageKey);}catch{storageProblem='Der Browser stellt hier keinen lokalen Speicher bereit. Das Spiel funktioniert im Tab; ein Export bleibt möglich.';return;}
- try{if(!raw)return;const parsed=JSON.parse(raw);const restored=G.unpack(raw);state=restored.state;rendered=0;endings=restored.endings;if(state.complete&&!endings.includes(state.ending))endings.push(state.ending);settings.persist=true;settings.largeText=parsed.preferences?.largeText===true;settings.reduceMotion=parsed.preferences?.reduceMotion===true||matchMedia('(prefers-reduced-motion: reduce)').matches;}
+ try{if(!raw){legacySave=!!localStorage.getItem('catgpt.game.v3');return;}const parsed=JSON.parse(raw);const restored=G.unpack(raw);state=restored.state;restorePresentation(parsed.presentation);rendered=0;endings=restored.endings;if(state.complete&&!endings.includes(state.ending))endings.push(state.ending);settings.persist=true;settings.largeText=parsed.preferences?.largeText===true;settings.reduceMotion=parsed.preferences?.reduceMotion===true||matchMedia('(prefers-reduced-motion: reduce)').matches;}
  catch(error){storageProblem='Ein gespeicherter Stand konnte nicht geladen werden. Es wurde nichts überschrieben. Du kannst neu beginnen oder einen gültigen Export importieren.';settings.persist=false;setTimeout(()=>toast(storageProblem),300);}
 }
 function downloadFile(name,text,type='application/json;charset=utf-8'){
  const blob=new Blob([text],{type}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),10000);
 }
-function exportSave(){if(!state.started)return;downloadFile('catgpt-spielstand.json',JSON.stringify(G.pack(state,endings),null,2));toast('Spielstanddatei erstellt. Sie kann hier wieder importiert werden.');}
+function exportSave(){if(!state.started)return;const data=G.pack(state,endings);data.presentation=savePresentation();downloadFile('catgpt-spielstand.json',JSON.stringify(data,null,2));toast('Spielstanddatei erstellt. Sie kann hier wieder importiert werden.');}
 async function importSave(file){
  if(!file)return;
  if(file.size>G.CONFIG.maxSaveBytes){toast('Die Datei ist zu groß für einen CATGPT-Spielstand.');return;}
- let restored;try{restored=G.unpack(await file.text());}catch(error){toast(`Nicht importiert: ${error.message}`);return;}
- confirmAction('Spielstand übernehmen?',`Der Import ersetzt deinen aktuellen Durchlauf${restored.state.started?` durch Kapitel ${restored.state.chapter}`:' durch eine noch nicht begonnene Schicht'}. Bestehende Enden bleiben vermerkt. Exportiere deinen bisherigen Stand vorher, falls du ihn behalten möchtest.`,()=>{state=restored.state;rendered=0;endings=[...new Set([...endings,...restored.endings,...(state.complete?[state.ending]:[])])];view=state.started?'game':'home';renderFrame();if(state.started){renderTranscript(true);lastReplyIndex=Math.max(0,state.history.findLastIndex(h=>h.kind==='reply'||h.kind==='scene'));scrollCurrent();}else{$('transcript').replaceChildren();$('choices').replaceChildren();}persist();toast('Spielstand übernommen.');},'Importieren');
+ let restored,importedPresentation;try{const raw=await file.text();restored=G.unpack(raw);importedPresentation=JSON.parse(raw).presentation;}catch(error){toast(`Nicht importiert: ${error.message}`);return;}
+ confirmAction('Spielstand übernehmen?',`Der Import ersetzt deinen aktuellen Durchlauf${restored.state.started?` durch Kapitel ${restored.state.chapter}`:' durch eine noch nicht begonnene Schicht'}. Bestehende Enden bleiben vermerkt. Exportiere deinen bisherigen Stand vorher, falls du ihn behalten möchtest.`,()=>{state=restored.state;restorePresentation(importedPresentation);rendered=0;endings=[...new Set([...endings,...restored.endings,...(state.complete?[state.ending]:[])])];view=state.started?'game':'home';renderFrame();if(state.started){renderTranscript();lastReplyIndex=Math.max(0,state.history.findLastIndex(h=>h.kind==='reply'||h.kind==='scene'));scrollCurrent();}else{$('transcript').replaceChildren();$('choices').replaceChildren();}persist();toast('Spielstand übernommen.');},'Importieren');
 }
 function exportReceipt(){if(!state.complete)return;const e=G.ENDINGS[state.ending];let text=`CATGPT · DER CEO SCHLÄFT\nVersion ${G.CONFIG.version}\n\n${e.title}\n${e.kicker}\n\n${e.human}\nTed: ${e.ted}\n\nDEINE AUFGABEN\n`;for(const [id,name]of [['ball','Ball zurückholen'],['food','Futterservice'],['litter','Katzenklo']])text+=`${name}: ${state.games[id].result==='skipped'?'vereinfacht abgeschlossen':'erledigt'}\n`;text+=`\nDOKUMENTE\n${state.inventory.map(id=>G.DOCUMENTS[id].title).join('\n')||'Keine'}\n\nSatire-Spiel. Echte Katze, erfundene Unternehmensgeschichte.\n`;downloadFile('catgpt-schichtbilanz.txt',text,'text/plain;charset=utf-8');toast('Schichtbilanz erstellt.');}
+/* BEGIN SCENE_EDITION */
+/* Current-scene presentation. The full, replayable conversation stays in state.history. */
+let sceneFlow={node:null,photo:0,review:null},walking=false,walkToken=0,lastBallPosition=null;
+function sceneEntry(){return state.history.findLast(h=>h.kind==='scene');}
+function savePresentation(){return {node:sceneFlow.node,photo:sceneFlow.photo,review:sceneFlow.review,revision:state.events.length};}
+function restorePresentation(p){
+ sceneFlow={node:state.node,photo:0,review:null};
+ if(!p||p.revision!==state.events.length||p.node!==state.node)return;
+ const count=sceneEntry()?.photos?.length||1;
+ if(Number.isInteger(p.photo)&&p.photo>=0&&p.photo<count)sceneFlow.photo=p.photo;
+ const r=p.review;
+ if(r&&Number.isInteger(r.sceneIndex)&&Number.isInteger(r.replyIndex)&&state.history[r.sceneIndex]?.kind==='scene'&&state.history[r.replyIndex]?.kind==='player'&&r.replyIndex>r.sceneIndex&&r.replyIndex<state.history.length)sceneFlow.review={sceneIndex:r.sceneIndex,replyIndex:r.replyIndex};
+}
+function resetScene(){sceneFlow={node:state.node,photo:0,review:null};}
+function stagePhoto(id){const b=chatPhoto(id);b.className='scene-photo';b.querySelector('img').loading='eager';return b;}
+function renderTranscript(force=false){
+ if(!state.started)return;
+ if(force)resetScene();
+ if(sceneFlow.node!==state.node&&!sceneFlow.review)resetScene();
+ const root=$('transcript');root.replaceChildren();
+ const review=sceneFlow.review,h=review?state.history[review.sceneIndex]:sceneEntry();
+ if(!h)return;
+ const stage=el('article','scene-stage'+(review?' review':''));stage.id='currentStage';
+ const currentId=review?h.photos?.at(-1):h.photos?.[sceneFlow.photo];
+ const kicker=el('div','scene-kicker');kicker.append(el('span','',review?'TED HAT GEANTWORTET':G.CHAPTERS[h.chapter-1].short.toUpperCase()),el('span','',currentId?`FOTO ${String(PHOTO.get(currentId).number).padStart(2,'0')}`:'TED HAT NOCH WAS'));stage.append(kicker);
+ const heading=el('h2','scene-title',h.title);heading.id='currentTitle';heading.tabIndex=-1;stage.append(heading);
+ const photos=h.photos||[],photo=review?photos.at(-1):photos[Math.min(sceneFlow.photo,photos.length-1)];
+ if(photo)stage.append(stagePhoto(photo));
+ if(review){
+  const added=state.history.slice(review.replyIndex),player=added.find(x=>x.kind==='player'),reply=added.find(x=>x.kind==='reply');
+  if(player){const bubble=el('div','review-player');bubble.append(el('small','','DU'),document.createTextNode(player.text));stage.append(bubble);}
+  const copy=paragraphBlock(reply?.text||['Ted hat deine Antwort notiert. Mit einer Pfote.'],'scene-copy');copy.prepend(el('strong','ted-label','TED / GESCHÄFTSFÜHRUNG'));stage.append(copy);
+  const effects=added.filter(x=>x.kind==='effect').flatMap(x=>x.text||[]);if(effects.length)stage.append(el('p','review-effects',effects.join(' · ')));
+ }else if(!h.game||state.pending){
+  if(photos.length>1){const dots=el('div','scene-progress');dots.setAttribute('aria-label',`Bild ${sceneFlow.photo+1} von ${photos.length}`);photos.forEach((_,i)=>dots.append(el('i',i===sceneFlow.photo?'active':'')));stage.append(dots);}
+  const text=photo&&sceneFlow.photo<photos.length-1?[G.PHOTO_STORY[photo].note]:h.text;
+  const copy=paragraphBlock(text,'scene-copy');copy.prepend(el('strong','ted-label','TED / CEO, ANGEBLICH'));stage.append(copy);
+  if(h.document)stage.append(button('Beweisstück ansehen','btn',()=>openDocuments(h.document),'document'));
+ }
+ if(!h.game||review||state.pending)root.append(stage);
+ if(!review&&G.STORY[state.node]?.game&&!state.pending){renderMini();animateBall();}
+ if(!review&&state.complete)root.append(receipt());
+ renderChoices();updateJump();
+ CatAudio.setMode(view==='home'?'home':!review&&G.STORY[state.node]?.game&&!state.pending?'game':'story');
+}
+function continueScene(){
+ if(walking)return;
+ if(sceneFlow.review){sceneFlow.review=null;sceneFlow.node=state.node;sceneFlow.photo=0;if(state.pending){send({type:'advance',r:state.events.length});return;}renderFrame();renderTranscript();}
+ else{sceneFlow.photo++;renderTranscript();}
+ $('storyScroll').scrollTop=0;persist();$('currentTitle')?.focus({preventScroll:true});CatAudio.effect('message');
+}
+function renderChoices(){
+ const root=$('choices');root.replaceChildren();$('readScene').hidden=true;
+ const n=G.STORY[state.node],rev=state.events.length;root.classList.toggle('game-dock',Boolean(n?.game&&!state.pending&&!sceneFlow.review));
+ if(!state.started)return;
+ if(sceneFlow.review){$('decisionLabel').textContent='Ted ist fertig. Du bestimmst das Tempo.';const b=button(state.pending?state.pending.label:'Weiter geht’s','btn primary',continueScene,'arrow');b.id='continueScene';root.append(b);return;}
+ const photos=sceneEntry()?.photos||[];
+ if(sceneFlow.photo<photos.length-1){$('decisionLabel').textContent='Die Firmenführung geht weiter.';const b=button('Nächstes Beweisfoto','btn primary',continueScene,'images');b.id='nextScenePhoto';root.append(b);return;}
+ if(state.complete){$('decisionLabel').textContent='Schicht beendet. Ted übt schon Nichtstun.';root.append(button('Deine Bilanz mitnehmen','btn primary',exportReceipt,'download'),button('Noch eine Schicht?','btn',askNew,'restart'));return;}
+ if(state.pending){$('decisionLabel').textContent='Bereit für den nächsten Moment?';const b=button(state.pending.label,'btn primary',()=>send({type:'advance',r:rev}),'arrow');b.id='advanceButton';root.append(b);return;}
+ if(n.game){$('decisionLabel').textContent='Du spielst. Ted beaufsichtigt.';root.append(button('Hinweis','btn',()=>{if(!state.games[n.game].hint)send({type:'hint',game:n.game,r:state.events.length});else toast({ball:'Tippe auf den Ball, dann auf den Startplatz. Möbel und Ted bleiben im Weg.',food:'Hausmenü, blaue Schale, zwei Portionen, Wasser. Der Name der Chefedition ist dir überlassen.',litter:'Schaufel für Klumpen, Besen für Spuren. Danach Streu ergänzen und abnehmen.'}[n.game]);},'info'),button('Abkürzen','btn',()=>askSkip(n.game),'right'));return;}
+ $('decisionLabel').textContent='Was antwortest du?';
+ G.choices(state).forEach((c,i)=>{const b=button('','choice-card',()=>{if(performance.now()<choiceLockUntil)return;send({type:'choose',node:n.id,id:c.id,r:rev});});b.dataset.choice=c.id;b.id=`choice-${i}`;b.append(el('span','choice-label',c.label),icon('arrow'));root.append(b);});
+}
+function send(event){
+ if((sceneFlow.review&&event.type==='choose')||(walking&&event.type!=='ball_move'&&!['skip','hint'].includes(event.type)))return false;
+ const scroll=$('storyScroll'),top=scroll.scrollTop,before=state.history.length,oldNode=state.node,oldScene=state.history.findLastIndex(h=>h.kind==='scene'),activeId=document.activeElement?.id;
+ try{state=G.reduce(state,{...event,r:event.r===undefined?state.events.length:event.r});}catch(error){toast(error.message);return false;}
+ if(state.complete&&!endings.includes(state.ending))endings.push(state.ending);
+ const added=state.history.slice(before),hasReply=added.some(h=>h.kind==='reply');
+ if(hasReply&&oldScene>=0){sceneFlow={node:state.node,photo:0,review:{sceneIndex:oldScene,replyIndex:before}};CatAudio.effect(state.complete||state.pending?.kind==='game'?'success':'message');}
+ else if(oldNode!==state.node){resetScene();CatAudio.effect('message');}
+ else CatAudio.effect(event.type.startsWith('ball_')?'roll':event.type==='food_water'?'water':event.type.startsWith('food_')?'bowl':event.type.startsWith('litter_')?'sweep':'tap');
+ renderFrame();renderTranscript();
+ // Choosing an answer never asks the browser to scroll to another history entry.
+ scroll.scrollTop=event.type==='start'||event.type==='advance'?0:top;
+ if(activeId&&!hasReply)focusMini(activeId);
+ if(hasReply)announce('Ted: '+added.find(h=>h.kind==='reply').text.join(' '));else if(G.STORY[state.node]?.game)announce(state.games[G.STORY[state.node].game].feedback);
+ choiceLockUntil=performance.now()+130;persist();return true;
+}
+function begin(){closeDialogs();view='game';CatAudio.setMode('story');CatAudio.unlock();if(!state.started)send({type:'start',r:0});else{renderFrame();renderTranscript();$('storyScroll').scrollTop=0;}}
+function scrollToEntry(){openHistory();}
+function scrollCurrent(){if(view==='game')$('storyScroll').scrollTop=0;}
+function scrollMini(){if(view==='game')$('storyScroll').scrollTop=0;}
+function updateJump(){$('jumpCurrent').hidden=true;}
+function openHistory(){
+ const root=$('historyBody');root.replaceChildren();
+ if(!state.started)root.append(el('p','','Ted übt das Vorstellungsgespräch noch an sich selbst.'));
+ state.history.forEach(h=>{if(h.kind==='chapter')root.append(el('h3','log-chapter',h.title));if(h.kind==='scene'){root.append(el('h4','log-heading',h.title));for(const id of h.photos||[]){const b=button('','',()=>openPhoto(id));b.setAttribute('aria-label',PHOTO.get(id).alt);b.append(image(id,'history-photo'));root.append(b);}root.append(paragraphBlock(h.text,'log-text'));}if(h.kind==='player')root.append(el('p','log-user','DU: '+h.text));if(h.kind==='reply')root.append(paragraphBlock(h.text,'log-reply'));});openDialog('historyDialog');
+}
+async function walkTo(x,y){
+ if(walking||sceneFlow.review||state.pending||state.node!=='c2_ball')return;
+ const g=state.games.ball;if(g.phase!=='fetch')return;
+ const q=[[g.x,g.y,[]]],seen=new Set();let path=null;
+ while(q.length){const [cx,cy,p]=q.shift(),key=cx+','+cy;if(seen.has(key))continue;seen.add(key);if(cx===x&&cy===y){path=p;break;}for(const [dir,[dx,dy]]of Object.entries(G.DIRECTIONS)){const nx=cx+dx,ny=cy+dy;if(nx>=0&&ny>=0&&nx<G.ROOM.width&&ny<G.ROOM.height&&!G.ROOM.blocks.some(b=>b.x===nx&&b.y===ny))q.push([nx,ny,[...p,dir]]);}}
+ if(path===null){toast('Da liegt ein Möbelstück. Oder Ted. Beides bewegt sich beruflich nicht.');return;}
+ const token=++walkToken;walking=true;const node=state.node;
+ try{for(const dir of path){if(token!==walkToken||state.node!==node||state.pending||view!=='game'||document.querySelector('dialog[open]'))break;if(!send({type:'ball_move',dir,r:state.events.length}))break;await new Promise(r=>setTimeout(r,settings.reduceMotion?0:100));}}finally{walking=false;if(state.node===node&&!sceneFlow.review)renderTranscript();}
+}
+function animateBall(){
+ if(state.node!=='c2_ball'){lastBallPosition=null;return;}
+ const g=state.games.ball,cell=$('roomGrid')?.querySelector('.is-player'),avatar=cell?.querySelector('svg');
+ if(avatar&&lastBallPosition&&!settings.reduceMotion){const dx=lastBallPosition.x-g.x,dy=lastBallPosition.y-g.y;if(Math.abs(dx)+Math.abs(dy)===1)avatar.animate([{transform:`translate(${dx*(cell.offsetWidth+3)}px,${dy*(cell.offsetHeight+3)}px)`},{transform:'translate(0,0)'}],{duration:95,easing:'ease-out'});}
+ lastBallPosition={x:g.x,y:g.y};
+}
+function syncAudioUI(){const a=CatAudio.getState();$('soundToggle').textContent=a.muted?'Ton aus':'Ton an';$('soundToggle').setAttribute('aria-label',a.muted?'Ton einschalten':'Ton ausschalten');$('soundToggle').setAttribute('aria-pressed',String(!a.muted));$('audioMuted').checked=a.muted;$('musicVolume').value=String(Math.round(a.music*100));$('effectsVolume').value=String(Math.round(a.effects*100));$('musicValue').textContent=`${Math.round(a.music*100)} %`;$('effectsValue').textContent=`${Math.round(a.effects*100)} %`;}
+$('soundToggle').addEventListener('click',()=>{CatAudio.configure({muted:!CatAudio.getState().muted});CatAudio.unlock();});
+$('audioMuted').addEventListener('change',e=>{CatAudio.configure({muted:e.target.checked});CatAudio.unlock();});
+$('musicVolume').addEventListener('input',e=>{CatAudio.configure({music:Number(e.target.value)/100});CatAudio.unlock();});
+$('effectsVolume').addEventListener('input',e=>{CatAudio.configure({effects:Number(e.target.value)/100});CatAudio.unlock();CatAudio.effect('bowl');});
+window.addEventListener('cat-audio-change',syncAudioUI);syncAudioUI();
+document.addEventListener('click',e=>{if(e.target.closest('button'))CatAudio.effect('tap');});
+
+/* END SCENE_EDITION */
+
 /* === SUCHANKER: CATGPT_EVENTS_ACCESSIBILITY === */
 const actions={history:openHistory,home:showHome,gallery:openGallery,documents:()=>openDocuments(),settings:()=>{updateSaveLabel();openDialog('settingsDialog');},about:()=>openDialog('aboutDialog'),navigation:()=>{renderChapters($('mobileChapterNav'));openDialog('navigationDialog');},profile:()=>{renderFrame();openDialog('profileDialog');}};
 document.addEventListener('click',e=>{const close=e.target.closest('[data-close]');if(close){close.closest('dialog')?.close();return;}const a=e.target.closest('[data-action]');if(a&&actions[a.dataset.action])actions[a.dataset.action]();});
@@ -884,7 +1172,7 @@ document.addEventListener('keydown',e=>{
  const d=document.querySelector('dialog[open]');if(d){if(d.id==='galleryDialog'&&lightboxId&&!['INPUT','TEXTAREA'].includes(document.activeElement.tagName)){if(e.key==='ArrowLeft'){e.preventDefault();stepPhoto(-1);}if(e.key==='ArrowRight'){e.preventDefault();stepPhoto(1);}}return;}
  if(view!=='game'||state.complete||['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName)||performance.now()<choiceLockUntil)return;
  // Arrow keys belong only to the room board. No accidental chapter or story navigation.
- if(/^[1-4]$/.test(e.key)&&!state.pending&&!G.STORY[state.node]?.game){const c=G.choices(state)[Number(e.key)-1];if(c){e.preventDefault();send({type:'choose',node:state.node,id:c.id,r:state.events.length});}}
+ if(/^[1-4]$/.test(e.key)&&!sceneFlow.review&&sceneFlow.photo>=(sceneEntry()?.photos?.length||1)-1&&!state.pending&&!G.STORY[state.node]?.game){const c=G.choices(state)[Number(e.key)-1];if(c){e.preventDefault();send({type:'choose',node:state.node,id:c.id,r:state.events.length});}}
 });
 let swipe=null;$('lightboxImage').addEventListener('touchstart',e=>{if(e.touches.length===1)swipe={x:e.touches[0].clientX,y:e.touches[0].clientY};},{passive:true});$('lightboxImage').addEventListener('touchend',e=>{if(!swipe||!e.changedTouches.length)return;const dx=e.changedTouches[0].clientX-swipe.x,dy=e.changedTouches[0].clientY-swipe.y;swipe=null;if(Math.abs(dx)>60&&Math.abs(dx)>Math.abs(dy)*1.5)stepPhoto(dx<0?1:-1);},{passive:true});
 $('topAvatar').src=ASSETS.avatar;$('heroPhoto').src=PHOTO.get('desk').src;$('heroPhoto').alt=PHOTO.get('desk').alt;
