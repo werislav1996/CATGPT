@@ -1,0 +1,46 @@
+PASS One full scene on screen, not an accumulating chat transcript
+PASS Initial image uses the curated presentation crop
+PASS The chosen answer and Ted reaction are present beside the new image
+PASS Previous-slide navigation changes only the view
+PASS Readback removes active answer buttons
+PASS Answer shortcut cannot alter state while reading an old slide
+PASS Dispatch rejects a decision while the interface is in readback
+PASS Returning to the present preserves all flags, statistics and history
+PASS Arrow-key readback never awards points or consumes a story choice
+PASS Dialog history contains the real earlier choices and responses
+PASS A history heading opens the matching old slide without rewinding gameplay
+PASS New-photo filter contains exactly eleven freely accessible pictures
+PASS Browsing unseen photographs never grants story progress
+PASS Lightbox shows the full frame, not the cropped slideshow copy
+PASS All 33 full frames and 25 presentation crops decode in Chromium
+PASS The toy-team image is the correct main stage picture
+PASS New team decision changes the immediately following remote-IT story
+PASS Photo navigation changes to the right historical photograph
+PASS A completed minigame is a read-only slide, never reactivated
+PASS Resume from the home page returns to the current decision, not the old slide
+PASS Desk scene preserves the full wide shot and workstation joke
+PASS Mobile Ted-read button reveals the dialogue without choosing an answer
+PASS c4_edge: matching photo and mobile layout without horizontal overflow
+PASS c4_benefits: matching photo and mobile layout without horizontal overflow
+PASS c3_pivot: matching photo and mobile layout without horizontal overflow
+PASS c2_portfolio: matching photo and mobile layout without horizontal overflow
+PASS c4_security: matching photo and mobile layout without horizontal overflow
+PASS c2_remoteit: matching photo and mobile layout without horizontal overflow
+PASS c3_solar: matching photo and mobile layout without horizontal overflow
+PASS c3_market: matching photo and mobile layout without horizontal overflow
+PASS c5_walkover: matching photo and mobile layout without horizontal overflow
+PASS c2_desk: matching photo and mobile layout without horizontal overflow
+PASS c4_approval: matching photo and mobile layout without horizontal overflow
+PASS A joke paw stamp does not silently grant a binding recognition document
+PASS New-version saving leaves the previous game key untouched
+PASS Old-schema import gives a precise 0.3 explanation and never replaces the run
+PASS Slideshow, gallery, history and readback generate no JavaScript errors
+PASS No external network calls in new photo-story scenarios
+{
+  "passed": 38,
+  "failed": 0,
+  "total": 38,
+  "runtime_errors": [],
+  "network_requests": [],
+  "environment": "Chromium; unmodified delivered HTML loaded with set_content; explicit memory-storage adapter; actual game buttons and JSON import used"
+}

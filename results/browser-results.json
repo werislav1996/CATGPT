@@ -57,7 +57,7 @@
       "passed": true
     },
     {
-      "name": "Gallery is immediately complete: 22 accessible cards",
+      "name": "Gallery is immediately complete: 33 accessible cards",
       "passed": true
     },
     {
@@ -69,7 +69,7 @@
       "passed": true
     },
     {
-      "name": "Chapter filter exposes all four HQ photos",
+      "name": "Chapter filter exposes all seven HQ photos",
       "passed": true
     },
     {
@@ -81,7 +81,7 @@
       "passed": true
     },
     {
-      "name": "All 22 full-size photos decode and are reachable with Next",
+      "name": "All 33 full-size photos decode and are reachable with Next",
       "passed": true
     },
     {

@@ -11,13 +11,13 @@ PASS Only reached chapters are replayable
 PASS Cancelling a chapter restart preserves every event
 PASS Confirmed chapter restart resets only its later consequences
 PASS Double-click does not consume a second decision
-PASS Gallery is immediately complete: 22 accessible cards
+PASS Gallery is immediately complete: 33 accessible cards
 PASS Excluded original number 14 is not returned
 PASS Gallery filename search finds the exact approved photo
-PASS Chapter filter exposes all four HQ photos
+PASS Chapter filter exposes all seven HQ photos
 PASS Filtered lightbox uses only its matching gallery set
 PASS Lightbox next-photo keyboard navigation works
-PASS All 22 full-size photos decode and are reachable with Next
+PASS All 33 full-size photos decode and are reachable with Next
 PASS Escape closes the photo archive without changing the story
 PASS Saved game resumes directly at the active IT minigame
 PASS IT inspection displays a readable clue and persists it

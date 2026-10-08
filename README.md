@@ -1,97 +1,94 @@
 # CATGPT – Der CEO schläft
-## Du machst die Arbeit. Ted macht den Eindruck.
+## Version 0.4.0 · Die spielbare Foto-Story · 8. Oktober 2026
 
-Version 0.3.0 · Offline-Story-Spiel · Deutsch
+**Du machst die Arbeit. Ted macht den Eindruck.**
 
-Ted, ein fauler Britisch-Kurzhaar-Kater, ist CEO von CATGPT. Die KI hat Firma, Website, Präsentation und Arbeitsvertrag erstellt. Jetzt fehlt nur noch jemand, der die Arbeit macht: du.
+Ted ist ein fauler Britisch-Kurzhaar-Kater und der einzige CEO dieser Satire. Die KI hat seine Firma gebaut. Der Mensch soll sie jetzt vorführen. Du entscheidest, wer arbeitet, wer die Anerkennung bekommt und wer am Ende Feierabend hat.
 
-## Spielen
+## Starten
 
-**[Jetzt im Browser spielen](https://werislav1996.github.io/CATGPT/)**
+Öffne **`catgpt.html` im normalen Browser** und klicke auf **„Schicht beginnen“**. Keine Installation, kein Server, kein Konto, kein API-Schlüssel. Bilder, Dialoge, Spiellogik und Gestaltung sind in dieser Datei enthalten. Eine Dateivorschau in einem Messenger oder Chat kann die Ausführung von JavaScript verhindern; dann die Datei im Browser öffnen.
 
-`catgpt.html` im normalen Browser öffnen und **„Schicht beginnen“** wählen. Kein Konto, keine Installation, kein API-Schlüssel und kein Server sind für das Spiel erforderlich. Die Datei enthält Oberfläche, Dialoge, Spielregeln und alle 22 freigegebenen Fotos. Eine reine Dateivorschau führt JavaScript möglicherweise nicht aus; dann die Datei außerhalb der Vorschau im Browser öffnen.
+Der zentrale Dateiname bleibt `catgpt.html`. Ersetze damit die bisherige Ausgabe. Die kleine `index.html` im Paket leitet mit einem relativen Pfad auf dieselbe Datei weiter und hat einen anklickbaren Ersatzlink. Sie enthält keine zweite Spielkopie. Für einen eigenen statischen Webauftritt gehören beide HTML-Dateien in denselben Ordner. Dieses Paket wurde nicht veröffentlicht oder zu GitHub gepusht.
 
-`index.html` ist ein relativer Einstieg zu derselben `catgpt.html`. Der eigentliche Quelltext bleibt in **einer Datei mit gleichbleibendem Namen**. Das Spiel wird aus diesem Repository über GitHub Pages veröffentlicht.
+## Was sich geändert hat
 
-## Veröffentlichung
+Die Fotos sind jetzt die Bühne und nicht mehr eine Seitenkarte neben einem langen Chat. Zu jeder Szene gehören ein großes Motiv, ein konkreter Bildwitz, Teds Dialog und deine Antworten. Auf dem Schreibtisch blockiert Ted die Arbeit als „Firewall“. Der Spielzeughaufen ist sein Team, der Ball hinter dem Tischgestell arbeitet remote. Seine Drehung im Bett gilt als Unternehmens-Pivot.
 
-Änderungen auf `main` werden automatisch mit den 157 Spieltests geprüft und anschließend über GitHub Pages veröffentlicht. Nur `index.html`, `catgpt.html` und `.nojekyll` werden als Website ausgeliefert. Der Workflow kann unter **Actions → Publish game to GitHub Pages** auch manuell gestartet werden.
+Es gibt **33 freigegebene Fotos**, davon **11 neu**, und **68 geschriebene Szenen insgesamt**. Nicht jeder Zweig erscheint in einem einzelnen Durchlauf. Die fünf Kapitel, drei Minispiele und vier Enden bleiben erhalten. Alle 33 Fotos haben feste Stationen in einem vollständigen Spielweg; dafür ist kein bestimmtes Ende erforderlich. Die frühere Originalnummer **14 (`1000601355.jpg`) bleibt ausgeschlossen**.
 
-## Was enthalten ist
+Die circa 20 Minuten bleiben ein Ziel für Lesen, Entscheiden und Spielen, keine gemessene Garantie. Automatisierte Testwege ersetzen keinen zeitlich gemessenen menschlichen Durchlauf. Es gibt keinen automatischen Folienwechsel und keine künstlichen Wartezeiten.
 
-Fünf Kapitel, 57 geschriebene Szenen insgesamt und vier mögliche Abschlüsse. In den untersuchten Durchläufen werden etwa 40–43 Szenen und 36–39 Storyentscheidungen durchlaufen, zusätzlich zu den Minispielen. Die Kapitel heißen **Die Einstellung**, **Das Hauptquartier**, **Die Produktidee**, **Die Krise** und **Der Demo Day**.
+## Die Foto-Story bedienen
 
-Antwortkarten ersetzen das alte freie Texteingabefeld. Die Auswahl führt zu festen, vorbereiteten Handlungszweigen. Frühere Forderungen, gesicherte Beweise und Vereinbarungen werden später aufgegriffen. Es ist ein Autorenspiel, kein frei antwortender KI-Chat. Teds Behauptung, alles von KI erledigen zu lassen, gehört zur erfundenen Unternehmensgeschichte.
+- **Antwortkarten**: Eine Auswahl setzt die Geschichte fort. Teds unmittelbare Reaktion bleibt auf der nächsten Folie im Bereich „Gerade eben“ mit einem kleinen Bild der vorherigen Szene sichtbar.
+- **Zurück / vorwärts / Protokoll**: Bereits gesehene Folien nochmals lesen. Das ist ausschließlich Rückschau; Werte, Dokumente und Entscheidungen verändern sich nicht. „Zur aktuellen Szene“ bringt dich zurück zur noch offenen Wahl. Im Protokoll kannst du die Szenenüberschriften anklicken.
+- **Tastatur**: 1–4 wählen an der aktuellen Szene eine Antwort. Pfeiltasten blättern in bereits gelesenen Folien, ohne Entscheidungen zu treffen. Escape schließt Dialogfenster. Im Rückblick gibt es keine aktiven Spielentscheidungen.
+- **Auf dem Handy**: Das Foto steht über dem Text. Mit „Ted lesen“ springst du zum Dialog, ohne eine Antwort auszuwählen. Die Antwortkarten bleiben am unteren Bildschirmrand erreichbar.
+- **Beweisfotos / Foto vergrößern**: Das Archiv enthält von Anfang an alle freigegebenen Fotos. Motiv, Dateiname oder Originalnummer sind suchbar. „Neu · 11“ zeigt die zuletzt ergänzten Bilder. Vergrößerung und Vor-/Zurücknavigation zeigen die vollständigen Motive.
 
-Die angestrebte Länge beträgt ungefähr **20 Minuten**, abhängig von Lesetempo, Entscheidungen, Galerie und Minispielen. Eine zeitlich gemessene menschliche Proberunde wurde noch nicht durchgeführt. Es gibt keine künstlichen Wartezeiten, keinen verbindlichen Countdown und keinen Zeitdruck beim Lesen.
+Für 25 Fotos gibt es zusätzlich bewusst gewählte Bühnenausschnitte, damit Ted und wichtige Requisiten besser lesbar sind. Im Fotoarchiv und in der Vergrößerung wird immer das vollständige Motiv angezeigt. Beide Varianten sind optimierte, eingebettete WebP-Kopien; es sind nicht die unkomprimierten Originaldateien. Die bearbeiteten Kopien enthalten keine EXIF-Metadaten. An den Original-Uploads wurde nichts verändert.
 
-## Bedienung
+## Entscheidungen und Minispiele
 
-- **Antworten:** Eine der zwei bis vier Karten anklicken oder, außerhalb eines Dialogfensters, die entsprechende Ziffer **1–4** drücken. Einzelne Übergänge haben nur eine Weiter-Antwort.
-- **Kapitel:** Erreichte Kapitel sind links beziehungsweise im Handy-Menü erreichbar. Ein bestätigter Kapitelneustart stellt den damaligen Anfang wieder her und entfernt spätere Entscheidungen und Belohnungen. Bisher erreichte Enden bleiben in der Übersicht erhalten.
-- **Fotoarchiv:** „Beweisfotos“ oder das Bildsymbol öffnen. Alle 22 Fotos sind von Beginn an zugänglich, auch ohne Freischaltung. Nach Motiv, Dateiname oder Originalnummer suchen, nach Kapitel filtern und ein Foto vergrößern. In der Vergrößerung funktionieren Vor/Zurück, die Pfeiltasten und auf geeigneten Touchgeräten Wischgesten. Escape schließt das Fenster.
-- **Dokumente:** Gesicherte Beweise und bestätigte Vereinbarungen sind in „Deine Dokumente“ nachlesbar. Das Öffnen allein verleiht keine Vorteile.
-- **Darstellung:** Unter „Spiel & Einstellungen“ lassen sich größere Schrift und reduzierte Bewegung einstellen. Auf kleinen Bildschirmen öffnet das Katzensymbol Teds Profil und Werte.
+**Wohlwollen, Substanz und Show** sowie konkrete Dokumente beeinflussen Reaktionen und Enden. Neue Entscheidungen wirken später weiter: Mitarbeiterrechte für die Bälle, Remote-Arbeit für die IT, Platz am Schreibtisch und ein eigener Sitzplatz haben Rückbezüge. Ein scherzhafter Pfotenstempel ersetzt dagegen keine tatsächlich ausgehandelte Anerkennung.
 
-**Teds Wohlwollen**, **Substanz** und **Show** reichen jeweils von 0 bis 5. Sie beeinflussen Verhandlungen und Vorführung. Nicht jede höfliche Antwort ist die beste und nicht jede freche Antwort ist schlecht. Wiederholtes Öffnen von Menüs verändert keine Werte.
+Die drei Minispiele bleiben Teil der Geschichte:
 
-## Die drei Minispiele – ohne Lösungsspoiler
+1. **Schrank-IT**: Die sichtbaren Gegenstände untersuchen und die Startreihenfolge herausfinden. Ball, Scharnier, Wäsche und Teds Pfote liefern die Hinweise.
+2. **Pitch-Baukasten**: Produkt, Zielgruppe und Versprechen kombinieren. Der bestätigte Pitch wird im weiteren Verlauf verwendet.
+3. **Nickerchen-Firewall**: Sechs Störungen mit begrenzten Möglichkeiten erledigen, an die KI delegieren oder stummschalten. Die Vorfälle beziehen sich jetzt auf Lampen, Bälle und Teds Sofa-Unternehmen.
 
-**Wo ist hier der Server?** Im Schrankbüro Gegenstände untersuchen und aus den Hinweisen drei Neustart-Schritte zusammensetzen. Die Untersuchungsstellen gibt es als Bildbereiche und beschriftete Schaltflächen. Fehler sind korrigierbar.
+Hinweise und Überspringen sind vorhanden. Fehler ändern das Ergebnis, blockieren aber keinen vollständigen Durchlauf. Die Enden heißen „Mitgründer wider Willen“, „Chief Human Officer“, „Schlaf erfolgreich skaliert“ und „Exit durch die Katzenklappe“.
 
-**Der Pitch-Baukasten.** Produkt, Zielgruppe und Versprechen aus je drei Karten auswählen. Der vollständige Satz ist vor dem Bestätigen sichtbar. Alle 27 Kombinationen werden ausgewertet. Änderungen vor dem Bestätigen vergeben keine Punkte; der fertige Pitch wird später tatsächlich benutzt.
+## Spielstand: neue Handlung, eigener Speicher
 
-**Die Nickerchen-Firewall.** Sechs Störungen bearbeiten. Stummschalten, an die KI delegieren und selbst erledigen stehen jeweils nur zweimal zur Verfügung. Der Weckpegel ist ein Spielelement, kein Timer. Eine schlechte Entscheidung führt zu einer anderen Reaktion, nicht zum Neustart der Geschichte.
+**Für diese Ausgabe eine neue Schicht beginnen.** Version 0.4 verwendet Speicherformat 2 und den eigenen Schlüssel `catgpt.game.v2`. Die vorherige Ausgabe 0.3 verwendete `catgpt.game.v1`. Alte gespeicherte Daten werden weder gelöscht noch überschrieben, aber sie werden nicht in die neue Handlung übernommen.
 
-Jedes Minispiel bietet Hinweise und eine bestätigungspflichtige Möglichkeit zum Überspringen. Überspringen führt zu einer improvisierten Lösung ohne vollständigen Erfolgsbonus; die Schicht bleibt abschließbar.
+Ein Export aus Version 0.3 wird mit einer verständlichen Meldung abgewiesen. Für dessen Fortsetzung die bisherige HTML-Ausgabe behalten. Der Grund sind die neuen verpflichtenden Zwischenszenen und Entscheidungen: Ein altes Ereignisprotokoll kann nicht eindeutig in die neue Geschichte übersetzt werden.
 
-## Spielstand sichern
+Dauerhaftes lokales Speichern ist weiterhin freiwillig. Unter **„Spiel & Einstellungen“** findest du Spielstand-Export und -Import sowie die Anzeige der Speichereinstellung. Ein Export ist eine kleine JSON-Datei und enthält keine Bildkopien. Prüfe vor dem Schließen die Speicheranzeige; bei verweigertem Speicher darfst du dich nicht auf ein dauerhaftes Speichern verlassen. Mit dem Export bleibt eine unabhängige Sicherung möglich.
 
-Dauerhaftes Speichern ist zunächst **ausgeschaltet**. Ohne Aktivierung bleibt der Fortschritt im geöffneten Tab. Die Option **„Spielstand auf diesem Gerät speichern“** verwendet den eigenen Browserspeicher-Schlüssel `catgpt.game.v1`. Der frühere Chat-Speicher `catgpt.v1.local` wird nicht geändert oder entfernt.
+Erreichte Kapitel können von ihrem gespeicherten Kapitelbeginn neu gestartet werden. Spätere Ereignisse werden verworfen, anstatt Belohnungen oder Dokumente doppelt zu vergeben. Exportiere vorher, um den bisherigen Zweig unabhängig zu behalten.
 
-Unter „Spiel & Einstellungen“ stehen **Spielstand exportieren** und **Spielstand importieren** zur Verfügung. Der JSON-Export enthält Entscheidungen, Minispielaktionen und die Liste bereits erlebter Enden, nicht die eingebetteten Fotos. Ein Import wird auf gültige Spielereignisse geprüft und erst nach Bestätigung übernommen. Die JSON-Datei nicht manuell bearbeiten. Die Text-Bilanz am Schluss ist eine separate Lesefassung, kein importierbarer Spielstand.
+## Änderungen am Quelltext: echte Suchanker
 
-Bei direkt geöffneten Dateien oder eingeschränktem Browserspeicher kann dauerhaftes Speichern nicht verfügbar sein. Das Spiel zeigt dann eine Warnung, läuft im Tab aber weiter. **Vor einem Browserwechsel, Umbenennen/Verschieben der HTML-Datei oder Ersetzen durch eine neue Version den Spielstand exportieren.** Das ist auch die unabhängige Sicherung, wenn der Browser seine Daten löscht.
-
-## Fotos und Geschichte
-
-22 freigegebene Fotos sind eingebettet. Die alten Originalnummern bleiben erhalten; **Nr. 14 (`1000601355.jpg`) bleibt ausgeschlossen**. Alle 22 Motive besitzen einen festen Storymoment; die geprüften vollständigen Wege besuchten alle 22. Das Archiv ist unabhängig davon vollständig erreichbar. Die Motive stammen aus den bereitgestellten Fotos, die Datei verwendet bereits optimierte Bildkopien.
-
-Ted ist die einzige Figur mit Katzenidentität. Unternehmensgeschichte, Titel, gespielte Stimmung und Bildunterschriften sind Satire und keine Tatsachenbehauptungen über sein wirkliches Verhalten.
-
-## Quelltext ändern – Suchanker in catgpt.html
+Die einzige zu bearbeitende Laufzeitdatei ist **`catgpt.html`**. Mit Strg+F oder Cmd+F findest du diese Kommentare:
 
 | Suchanker | Inhalt |
 |---|---|
-| `CATGPT_DESIGN` | Farben, Layout, mobile Darstellung und Lesbarkeit |
-| `CATGPT_FOTOS` | Eingebettete Bilddaten und Originalnummern |
-| `CATGPT_CONFIG` | Version, Speichergrenzen und Grundkonfiguration |
-| `CATGPT_GAME_STORY` | Geschriebene Szenen, Auswahlmöglichkeiten und Rückbezüge |
-| `CATGPT_GAME_STATE` | Zustandsänderungen, gültige Ereignisse, Replay und Checkpoints |
-| `CATGPT_GAME_MINIGAMES` | Regeln und Auswertung der drei Spiele |
-| `CATGPT_GAME_ENDINGS` | Endeauswahl und Abschlussdaten; enthält Spoiler |
-| `CATGPT_RENDERING` | Nachrichten, Antwortkarten, Spieloberflächen und Status |
-| `CATGPT_CHAT_FLOW` | Wechsel zwischen Szenen und Schutz vor doppelten Klicks |
-| `CATGPT_GALLERY` | Archiv, Suche, Filter und Vergrößerung |
-| `CATGPT_LOCAL_STORAGE` | Laden, Speichern, JSON-Import und Export |
-| `CATGPT_EVENTS_ACCESSIBILITY` | Tastatur, Fokus, Dialoge und Bedienereignisse |
+| `CATGPT_FOTOS` | Eingebettete Fotos, Metadaten und Avatar. Bilddaten nicht versehentlich abschneiden. |
+| `CATGPT_GAME_STORY` | Ursprüngliches Szenengerüst, Kennungen und Antworten. |
+| `CATGPT_FOTO_STORY_04` | Neue Foto-Szenen, überschriebene Bildwitze, Zwischenschritte und Rückbezüge. Für Änderungen an sichtbaren Storytexten zuerst hier prüfen. |
+| `CATGPT_MINIGAME_BILDWITZE` | Neue bildbezogene Minispieltexte und Ereignisse. |
+| `CATGPT_GAME_MINIGAMES` | Minispielregeln, Auswertung und Zustandsänderungen. |
+| `CATGPT_SLIDESHOW` | Einzelfolien, Rückblick, Dialogprotokoll und Antwortdarstellung. |
+| `CATGPT_SLIDESHOW_DESIGN` | Foto-Bühne, Desktop- und Handyaufteilung sowie Bühnenausschnitte. |
+| `CATGPT_GAME_STATE` | Ereignisprüfung, Spielzustand, Replay und Checkpoints. |
+| `CATGPT_LOCAL_STORAGE` | Freiwilliges Speichern, Export/Import und Fehlerbehandlung. |
+| `CATGPT_CONFIG` | Versionsnummer, Speicherformat und Speicherkennung. |
 
-Es gibt keine Laufzeit-Abhängigkeiten. Das alte optionale KI-Backend gehört **nicht** zu diesem Spielpaket. Die Spielseite nimmt keine API-Verbindungen auf und fordert keinen Schlüssel an.
+Die Foto-Story erweitert ein vorhandenes Grundgerüst. Ein Text unter `CATGPT_GAME_STORY` kann weiter unten durch `CATGPT_FOTO_STORY_04` ersetzt werden; maßgeblich ist dann die spätere Zuweisung. Alte Antwortkennungen nicht beiläufig umbenennen, da sie Bestandteil der gespeicherten Ereignisse sind.
 
-## Tests erneut ausführen
+## Dateien und Entwicklungstests
 
-Zum Spielen werden diese Werkzeuge nicht benötigt. Die Tests wurden mit Node.js **22.16.0**, Python **3.13.5**, Playwright **1.57.0** und Chromium **144.0.7559.96** durchgeführt.
+Zum Spielen genügt `catgpt.html`. `index.html` und `.nojekyll` sind der optionale statische Einstieg. `FOTOS.md` enthält die Zuordnung aller Motive. `TESTBERICHT.md`, `tests/` und `results/` dokumentieren die tatsächlich ausgeführten Prüfungen.
 
-Aus diesem Verzeichnis:
+Die Tests sind nur für die Entwicklung, nicht zum Spielen erforderlich. Die Logiktests wurden unter Node.js 22.16.0 ausgeführt:
 
 ```sh
-node --test tests/game.test.mjs
+npm test
+# oder ohne npm:
+node --test tests/game.test.mjs tests/slideshow.test.mjs
 ```
 
-Das erzeugt auch die gültigen Spielstand-Fixtures für die Browserprüfungen. Für diese benötigt Python das Paket `playwright` und eine lokale Chromium-Installation. `CHROMIUM_PATH` kann auf die ausführbare Browserdatei gesetzt werden:
+Die Browserprüfungen benötigen zusätzlich Python, Playwright und ein auffindbares Chromium:
 
 ```sh
 python tests/browser_checks.py
+python tests/slideshow_browser.py
 ```
 
-Die Browserprüfungen laden die unveränderte HTML-Datei als Testdokument mit `set_content` und ersetzen für Speicherfälle die Storage-Schnittstelle durch ausdrücklich definierte Testadapter. Sie sind kein Test einer veröffentlichten Seite. `TESTBERICHT.md` dokumentiert Umfang und Grenzen; `results/` enthält die ausgeführten Prüfungen. **Tests und Spielstand-Fixtures enthalten Handlungsspoiler.**
+Die Tests laden die vollständige HTML-Datei als Testdokument und verwenden explizite Speicheradapter. Einzelheiten, Prüfergebnisse und Grenzen stehen im Testbericht. Die Bildaudit-Datei dokumentiert die in dieser Auslieferung eingebetteten Fotos und ihre Hashes.
+
+**Satire-Projekt. Ted ist echt. Seine Unternehmensrolle und seine Dialoge sind eine geschriebene Rollenfigur.**

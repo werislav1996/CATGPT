@@ -1,0 +1,162 @@
+{
+  "passed": 38,
+  "failed": 0,
+  "total": 38,
+  "results": [
+    {
+      "name": "One full scene on screen, not an accumulating chat transcript",
+      "passed": true
+    },
+    {
+      "name": "Initial image uses the curated presentation crop",
+      "passed": true
+    },
+    {
+      "name": "The chosen answer and Ted reaction are present beside the new image",
+      "passed": true
+    },
+    {
+      "name": "Previous-slide navigation changes only the view",
+      "passed": true
+    },
+    {
+      "name": "Readback removes active answer buttons",
+      "passed": true
+    },
+    {
+      "name": "Answer shortcut cannot alter state while reading an old slide",
+      "passed": true
+    },
+    {
+      "name": "Dispatch rejects a decision while the interface is in readback",
+      "passed": true
+    },
+    {
+      "name": "Returning to the present preserves all flags, statistics and history",
+      "passed": true
+    },
+    {
+      "name": "Arrow-key readback never awards points or consumes a story choice",
+      "passed": true
+    },
+    {
+      "name": "Dialog history contains the real earlier choices and responses",
+      "passed": true
+    },
+    {
+      "name": "A history heading opens the matching old slide without rewinding gameplay",
+      "passed": true
+    },
+    {
+      "name": "New-photo filter contains exactly eleven freely accessible pictures",
+      "passed": true
+    },
+    {
+      "name": "Browsing unseen photographs never grants story progress",
+      "passed": true
+    },
+    {
+      "name": "Lightbox shows the full frame, not the cropped slideshow copy",
+      "passed": true
+    },
+    {
+      "name": "All 33 full frames and 25 presentation crops decode in Chromium",
+      "passed": true
+    },
+    {
+      "name": "The toy-team image is the correct main stage picture",
+      "passed": true
+    },
+    {
+      "name": "New team decision changes the immediately following remote-IT story",
+      "passed": true
+    },
+    {
+      "name": "Photo navigation changes to the right historical photograph",
+      "passed": true
+    },
+    {
+      "name": "A completed minigame is a read-only slide, never reactivated",
+      "passed": true
+    },
+    {
+      "name": "Resume from the home page returns to the current decision, not the old slide",
+      "passed": true
+    },
+    {
+      "name": "Desk scene preserves the full wide shot and workstation joke",
+      "passed": true
+    },
+    {
+      "name": "Mobile Ted-read button reveals the dialogue without choosing an answer",
+      "passed": true
+    },
+    {
+      "name": "c4_edge: matching photo and mobile layout without horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "c4_benefits: matching photo and mobile layout without horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "c3_pivot: matching photo and mobile layout without horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "c2_portfolio: matching photo and mobile layout without horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "c4_security: matching photo and mobile layout without horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "c2_remoteit: matching photo and mobile layout without horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "c3_solar: matching photo and mobile layout without horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "c3_market: matching photo and mobile layout without horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "c5_walkover: matching photo and mobile layout without horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "c2_desk: matching photo and mobile layout without horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "c4_approval: matching photo and mobile layout without horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "A joke paw stamp does not silently grant a binding recognition document",
+      "passed": true
+    },
+    {
+      "name": "New-version saving leaves the previous game key untouched",
+      "passed": true
+    },
+    {
+      "name": "Old-schema import gives a precise 0.3 explanation and never replaces the run",
+      "passed": true
+    },
+    {
+      "name": "Slideshow, gallery, history and readback generate no JavaScript errors",
+      "passed": true
+    },
+    {
+      "name": "No external network calls in new photo-story scenarios",
+      "passed": true
+    }
+  ],
+  "runtime_errors": [],
+  "network_requests": [],
+  "environment": "Chromium; unmodified delivered HTML loaded with set_content; explicit memory-storage adapter; actual game buttons and JSON import used"
+}
