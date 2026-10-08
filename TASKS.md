@@ -2,7 +2,7 @@
 
 Stand: 8. Oktober 2026
 Planungsbasis: Repository `werislav1996/CATGPT`, Commit `7d85646`, Spielversion 0.5.0
-Status: Version 0.6 umgesetzt und lokal geprüft; Veröffentlichung wird separat dokumentiert. Offene Checkboxen kennzeichnen verbleibende Prüfungen oder Detailarbeit, insbesondere echte Mobilgeräte und menschliche Hör-/Spieltests.
+Status: Version 0.6 umgesetzt, lokal und auf GitHub geprüft und veröffentlicht. Offene Checkboxen kennzeichnen verbleibende Prüfungen oder Detailarbeit, insbesondere echte Mobilgeräte und menschliche Hör-/Spieltests.
 
 ## 1. Zielbild
 
@@ -315,10 +315,10 @@ Gewünscht ist eine alberne Katzen-Miau-Parodie eines bekannteren Liedes mit ein
 - [x] **K03** Fotoverzeichnis und Testbericht aktualisieren; historische Nachweise nicht als aktuelle Prüfung ausgeben.
 - [x] **K04** Prüfsummen für die tatsächlich ausgelieferten Dateien aktualisieren.
 - [x] **K05** GitHub-Pages-Workflow auf aktuelle Tests und gegebenenfalls zusätzliche Audio-Assets abstimmen.
-- [ ] **K06** Vollständigen finalen Diff prüfen und Änderungen nachvollziehbar committen.
-- [ ] **K07** Fertige Version im bestehenden Repository veröffentlichen und erfolgreiches Pages-Deployment abwarten.
-- [ ] **K08** Auf der öffentlichen URL Spielstart, mobile Antworten, mindestens einen Aufgabenabschluss und Audiosteuerung prüfen.
-- [ ] **K09** Live-Link, Versionsstand, abgeschlossene Prüfungen und verbleibende Einschränkungen knapp festhalten.
+- [x] **K06** Vollständigen finalen Diff prüfen und Änderungen nachvollziehbar committen.
+- [x] **K07** Fertige Version im bestehenden Repository veröffentlichen und erfolgreiches Pages-Deployment abwarten.
+- [x] **K08** Auf der öffentlichen URL Spielstart, mobile Antworten, mindestens einen Aufgabenabschluss und Audiosteuerung prüfen.
+- [x] **K09** Live-Link, Versionsstand, abgeschlossene Prüfungen und verbleibende Einschränkungen knapp festhalten.
 
 **Abnahme:** `https://werislav1996.github.io/CATGPT/` liefert die geprüfte neue Version. Alle benötigten Dateien sind vorhanden. Lokaler Stand, Dokumentation und veröffentlichte Version passen zusammen.
 
@@ -343,15 +343,15 @@ Diese Extras ersetzen keine offenen Muss-Kriterien und sollen den Durchlauf nich
 
 ## 17. Fertigstellung der gesamten Version
 
-- [ ] Mobile Oberfläche ist einfach, konsistent und schön; Antworten sind mit einem Daumen erreichbar.
-- [ ] Keine erzwungenen Scrollsprünge nach Antworten.
-- [ ] Mindestens 30 Fotos pro vollständigem Weg; der gemeinsame Hauptweg zeigt alle 33 mit eigenen Pointen.
-- [ ] Story steigert sich und greift Entscheidungen wieder auf.
-- [ ] Alle drei Minispiele sind kurz, verständlich, sichtbar reaktiv und fehlerverzeihend.
-- [ ] Musik, Miau-Motive und UI-Effekte sind vollständig integriert und abschaltbar.
-- [ ] Alle vier Enden, Speicherfunktionen und Abkürzungen funktionieren.
+- [x] Mobile Oberfläche ist einfach, konsistent und schön; Antworten sind mit einem Daumen erreichbar.
+- [x] Keine erzwungenen Scrollsprünge nach Antworten.
+- [x] Mindestens 30 Fotos pro vollständigem Weg; der gemeinsame Hauptweg zeigt alle 33 mit eigenen Pointen.
+- [x] Story steigert sich und greift Entscheidungen wieder auf.
+- [x] Alle drei Minispiele sind kurz, verständlich, sichtbar reaktiv und fehlerverzeihend.
+- [x] Musik, Miau-Motive und UI-Effekte sind vollständig integriert und abschaltbar.
+- [x] Alle vier Enden, Speicherfunktionen und Abkürzungen funktionieren.
 - [ ] Technische Prüfungen und ein menschlicher mobiler Probedurchlauf sind dokumentiert.
-- [ ] GitHub Pages liefert die abschließend geprüfte Version.
+- [x] GitHub Pages liefert die abschließend geprüfte Version.
 
 ## 18. Umsetzungsprotokoll
 
@@ -359,7 +359,7 @@ Hier nur tatsächlich abgeschlossene Arbeiten eintragen.
 
 | Datum | Aufgaben-IDs | Ergebnis / Dateien | Prüfnachweis | Noch offen |
 |---|---|---|---|---|
-| 08.10.2026 | A–J, K01–K05 | Version 0.6: Szenenansicht, einzeln präsentierte Fotos, kürzere Story, überarbeitete Minispiele, Bruder-Jakob-Musik und Effekte. | 64 Node-Tests einschließlich 300 Pfaden; 18 Browser-Prüfgruppen, vollständiger UI-Durchlauf mit 33 sichtbaren Fotos. | Echte Mobilgeräte, menschliches Probespielen/Hören und Veröffentlichung. |
+| 08.10.2026 | A–J, K01–K05 | Version 0.6: Szenenansicht, einzeln präsentierte Fotos, kürzere Story, überarbeitete Minispiele, Bruder-Jakob-Musik und Effekte. | 64 Node-Tests einschließlich 300 Pfaden; 18 Browser-Prüfgruppen, vollständiger UI-Durchlauf mit 33 sichtbaren Fotos. | Echte Mobilgeräte und menschliches Probespielen/Hören. |
 
 ### Grenzen des aktuellen Nachweises
 
@@ -368,3 +368,9 @@ Hier nur tatsächlich abgeschlossene Arbeiten eintragen.
 - H05 ist technisch mit Hüllkurven und Pegelbegrenzung umgesetzt. Ein subjektiver Hörtest bleibt H03/J15.
 - B05 bleibt für kleine Spielfeldzellen offen: die allgemeinen Buttons sind groß, das 7×5-Feld hat auf sehr schmalen Displays kleinere Zellen. Zielklicks und automatische Wege reduzieren die erforderliche Präzision. Gleichwertige große Lauftasten erlauben die Bedienung ohne Treffen kleiner Zellen.
 - A05/A06 und J18 bleiben offen für eine weitergehende Bereinigung alter CSS-Schichten und echte mobile Leistungsprofile.
+
+### Veröffentlichung
+
+Version 0.6 ist unter https://werislav1996.github.io/CATGPT/ veröffentlicht. Code-Commit: `6cbfd76`. GitHub-Run `37772629041`: Build, 64 Node-Tests, 18 Browser-Prüfgruppen und Pages-Deployment erfolgreich.
+
+Direkt auf der öffentlichen URL zusätzlich geprüft: Version 0.6.0, Einstieg, Audio starten/stummschalten/wiederaufnehmen, Bild- und Antwortwechsel sowie komplette Ballaufgabe über die großen Lauftasten bei 390×844. Keine JavaScript-Fehler.
